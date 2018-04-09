@@ -20,8 +20,8 @@ Updates this Week
 
 Goals for Upcoming Week
 =======================
-- Continue team communication early 
-- Reach out to another researcher for potential access to repository
-- Solidify directions for project and begin researching implementation needs.
-- Plan multiple group meetings throughout the week, before our next project deadline.
-	- Suggest architecture and implementation breakdown planning 
+[] Continue team communication early 
+[] Reach out to another researcher for potential access to repository
+[] Solidify directions for project and begin researching implementation needs.
+[] Plan multiple group meetings throughout the week, before our next project deadline.
+	[] Suggest architecture and implementation breakdown planning 
