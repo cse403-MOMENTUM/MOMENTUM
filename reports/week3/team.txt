@@ -1,0 +1,49 @@
+﻿Goals from Last Week
+=======================
+1. [All] Choosing a direction for our project
+   a. [All] Decide between focusing on research/process or implementation
+      i. [All] Decide whether to extend an existing project or build from scratch
+      ii. [All] Decide which processes/methods we should incorporate
+2. [All] Create high-level outline (with other details) of how to approach our project 
+3. [Austin] Reach out to at least one more researcher to request access to their existing repository
+
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+1.a:
+We chose to begin with a simpler implementation of a GUI application. Upon completion, we imagine that we will incorporate some research to refine our application’s time estimation model.
+
+1.a.i:
+We chose to start from scratch (because most other implementations do not exist, are not accessible, or would be confusing to extend), incorporating outside source code as is convenient.
+
+1.a.ii:
+We chose to extend upon the implementation of Evidence-based Scheduling after completing our initial development of a “Minimum Viable Product” GUI.
+
+2: This goal needs to be more specific. We added a high-level schedule in our Project Proposal, but we did not enumerate anything in much detail.
+
+3: Incomplete. We chose not to pursue this direction with our project.
+
+
+Other Accomplishments
+---------------------
+- Continued research into existing models for time estimation. Learned about COCOMO and other related processes as well as the equation whose parameters characterize each model. We discovered that EBS also fits into this model.
+- Initial website mockups
+
+
+Goals for Upcoming Week
+=======================
+1. [All] Refine and revise schedule 
+2. [All] Finish architecture plan
+   a. [All] Decide GUI model
+   b. [All] Define high-level classes/files/etc. (dependency graph)
+   c. [All] Decide general language/languages used
+1. [All] Complete development of initial “Minimum Viable Product” GUI and estimation model (Phase 1)
+   a. [TBD] Build backend implementation model, based heavily on EBS
+   b. [TBD] Create frontend web-app 
+   c. [All] Specific: Make decision between JavaScript and TypeScript
+1. Probability Visualizations
+   a. [Josh] Ask UW Interactive Data Lab for source code of “Uncertainty Bus” and “When-ish is my bus”
+   b. [TBD] Implement visualizations (potentially dot-based)
