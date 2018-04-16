@@ -1,0 +1,33 @@
+Leon Pan
+CSE 403: Week 4 Individual Report
+
+
+Goals from last week
+=======================
+• Continue research on current tools
+• Plan meetings and improve communication with the team
+• Help decide on the direction the project will go
+  o Decide on what tool to build an extension on
+  o Help create basic design for GUI
+• Discuss feedback with the team
+• Discuss architectural and implementation planning for the project with the team
+
+Progress made this week
+=======================
+• Researched current tools
+• Attended team and client meeting
+• Decided on project direction with the team
+  o Design a new GUI for EBS
+• Helped complete team reports
+  o Discussed feedback from previous report
+  o Discuss architectural and implementation planning
+  o Wrote the discriptions for each page in our GUI mockup
+• Discussed and helped create presentation
+• Presented our project
+
+Goals for Following Week
+=======================
+• Begin implementation
+• Help with creating a user manual for our project
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
