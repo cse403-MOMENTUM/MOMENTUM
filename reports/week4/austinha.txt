@@ -1,0 +1,34 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 4 Individual Report |
++-----------------------------------+
+
+Goals from Last Week
+=======================
++-----------------------------------+
+| KEY:                              |
+| []  -- task was not completed     |
+| [x] -- task was completed.        |
+| [~] -- task is no longer relevant |
++-----------------------------------+
+
+[x] Continue team communication early 
+[x] Reach out to another researcher for potential access to repository
+[x] Solidify directions for project and begin researching implementation needs.
+[x] Plan multiple group meetings throughout the week, before our next project deadline.
+	[x] Suggest architecture and implementation breakdown planning 
+
+
+Updates this Week
+=======================
+(See checklist above for updates on goals from last week)
+Feeling good this week about how our group is challenging each other and working together towards a common goal. I have the impression that we all trust one another. Until yesterday, we were still struggling to define what our group's goals truly were for the project. We have discussed what we all would like to see in the project, and I think we are at an understanding that we will have a focus on helping small teams with project-wide effort estimation. 
+
+I am feeling a little concerned about the expectations for the course. I think many expectations are laid out well, but I also feel like my group is still in need of some more guidance on the project along with the existing feedback on our technical writing skills. I hope that we can find more guidance at this Thursday's meeting.
+
+Goals for Upcoming Week
+=======================
+[] Lead charge on short-term task breakdown
+[] Lead charge on long-term project breakdown
+[] Ensure someone is responsible for user research
+[] Begin implementation of EBS model using TypeScript (subject to change)
