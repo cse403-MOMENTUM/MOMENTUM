@@ -1,0 +1,26 @@
+Anita Leung
+CSE 403: Week 3 Individual Report
+
+
+Previous Goals 
+=======================
+- Locating case studies related to our project
+- Look at each research paper and time tracking methods to weigh which tool may be most useful
+- If possible, brainstorm the high level architecture/implementation plan for our project
+- Help delegate tasks for each team member
+
+
+Updates this Week
+=======================
+- Attended three team meetings (2 - 4 hours per meeting) and a client meeting
+- Research current tools and their implementation
+- Research Momentum UI
+- Begin helping delegating tasks for each team member
+- Begin implementation phase 
+- Help outline user study
+
+
+Goals for Upcoming Week
+=======================
+- Complete three user studies
+- After user studies are finished, implement the MVP for our GUI  
