@@ -1,0 +1,9 @@
+// TypeScript configuration
+{
+  "compilerOptions": {
+    "module": "commonjs"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
