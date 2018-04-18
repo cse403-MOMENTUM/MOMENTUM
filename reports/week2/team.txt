@@ -1,0 +1,23 @@
+﻿Goals from Last Week
+=======================
+N/A
+
+
+Updates This Week
+====================
+Accomplished
+* Met with each other and with a TA in person to clarify the assignment
+* Extensive research that included gathering resources as well as summarizing them
+* Set up team collaboration channels (Slack, Google Drive, Github repository)
+* Reached out to scholars to request for open source code
+
+
+Goals for Upcoming Week
+==========================
+* [All] Choosing a direction for our project
+   * [All] Decide between focusing on research/process or implementation
+      * Assuming Implementation direction:
+         * [All] Decide whether to extend an existing project or build from scratch
+         * [All] Decide which processes/methods we should incorporate
+* [All] Create high-level outline (with other details) of how to approach our project 
+* [Austin] Reach out to at least one more researcher to request access to their existing repository

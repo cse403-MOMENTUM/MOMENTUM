@@ -1,0 +1,27 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 3 Individual Report |
++-----------------------------------+
+
+Goals from Last Week
+=======================
+N/A
+
+
+Updates this Week
+=======================
+- Helped complete team report
+	- Wrote problem statement, as well as some risks and payoffs
+	- Performed some major revision and edit suggestions
+	- Created and contributed heavily to a running "Research and Similar Projects" document
+- Attended team and client meetings
+- Set up Facebook Messenger (for initial short-term communication), as well as Slack (for continued long-term communication)
+
+
+Goals for Upcoming Week
+=======================
+[] Continue team communication early 
+[] Reach out to another researcher for potential access to repository
+[] Solidify directions for project and begin researching implementation needs.
+[] Plan multiple group meetings throughout the week, before our next project deadline.
+	[] Suggest architecture and implementation breakdown planning 

@@ -1,0 +1,24 @@
+
+Haley Ruth
+CSE 403: Week 3 Individual Report
+
+
+Previous Goals 
+=======================
+N/A
+
+
+Updates this Week
+=======================
+- Attended team and client meetings
+- Participated in writing project proposal document
+  -> Focused mainly on "Motivation" and "Schedule" sections
+- Researched similar projects (e.g. PSP)
+
+
+Goals for Upcoming Week
+=======================
+- Participate in assigning teammates production tasks
+- Schedule and attend team meetings
+- Address staff concerns about high level implementation
+- Reach out to researchers to access similar projects
