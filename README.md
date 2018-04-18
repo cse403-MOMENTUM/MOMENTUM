@@ -8,7 +8,9 @@ Info about TypeScript: https://www.typescriptlang.org/docs/handbook/typescript-i
 
 # Organization
 `momentum/index.tsx` is the main file
+
 `momentum/components` contains components which can be include in `index.tsx`
+
 `momentum/data` contains data that components and `index.tsx` can use
 
 `momentum/components/App` contains an example component
