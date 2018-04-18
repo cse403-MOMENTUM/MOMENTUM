@@ -4,6 +4,7 @@ https://cse403-momentum.github.io/MOMENTUM/
 Initialized with https://github.com/Microsoft/TypeScript-React-Starter. Check that link for details about specific files.
 
 Info about React: https://reactjs.org/tutorial/tutorial.html
+
 Info about TypeScript: https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
 
 # Organization
