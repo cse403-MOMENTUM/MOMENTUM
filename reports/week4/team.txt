@@ -1,0 +1,31 @@
+Goals from Last Week
+=======================
+1. [All] Refine and revise schedule 
+2. [All] Finish architecture plan
+   a. [All] Decide GUI model
+   b. [All] Define high-level classes/files/etc. (dependency graph)
+   c. [All] Decide general language/languages used
+1. [All] Complete development of initial “Minimum Viable Product” GUI and estimation model (Phase 1)
+   a. [TBD] Build backend implementation model, based heavily on EBS
+   b. [TBD] Create frontend web-app 
+   c. [All] Specific: Make decision between JavaScript and TypeScript
+1. Probability Visualizations
+   a. [Josh] Ask UW Interactive Data Lab for source code of “Uncertainty Bus” and “When-ish is my bus”
+   b. [TBD] Implement visualizations (potentially dot-based)
+
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+
+
+
+Other Accomplishments
+---------------------
+
+
+
+Goals for Upcoming Week
+=======================
