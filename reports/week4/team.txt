@@ -19,13 +19,33 @@ Updates This Week
 
 Updates on Goals
 ----------------
+1: We refined the schedule by adding a couple more details and filling in week 6
 
+2.a: We've completed a low fidelity mock-up of the GUI model 
+2.b: We haven't yet hashed out a high-level dependency graph of our architecture plan, however we did decide on a general direction in how to improve the accuracy of Momentum
+
+3.a: We're currently working on building the backend implementation model
+3.b: We're building the bare-bones of the frontend portion. Our goal is to finish most of this by the end of this week
+3.c: We've decided to use TypeScript unless problems arise down the road
+
+4.a: Josh is currently working on the data graph for this week
+4.b: Anita is assigned to work on other visualizations
 
 
 Other Accomplishments
 ---------------------
-
+- We've learned more about Manuscript, one of the existing competing tools through having to conduct user research on it 
+- Josh initialized website with React and Typescript https://cse403-momentum.github.io/MOMENTUM/ 
 
 
 Goals for Upcoming Week
 =======================
+1. [Haley and Leon] Finish conducting and analyzing user research
+2. [Austin] Work on user manual
+3. [Josh and Anita] Start implementing the front/backend of our web app 
+4. [All] Refine mvp with additional enhancements based on user research
+5. [All] Improve project goals based on client feedback
+	5.a [All] Establish metrics for software success and evaluation plan so that we can reasonably complete this within the time frame of our course
+	5.b [All] Refine our motivation and specify differences of what our tool vs existing tools accomplish
+
+
