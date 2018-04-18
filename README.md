@@ -25,5 +25,5 @@ The project was tested using VSCode . YMMV with other tools.
 # Running
 From `/momentum`:
 - `npm start` starts the dev server (use this for development). the site will update automatically when you edit files
-- `npm run build` compiles an optimized version of project (use this for deployment)
 - `npm test` runs tests
+- `npm run deploy` builds the site **and pushes to gh-pages branch**
