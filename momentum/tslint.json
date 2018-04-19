@@ -8,7 +8,11 @@
   },
   "rules": {
     "quotemark": [true, "single", "jsx-double"],
+<<<<<<< HEAD
     "no-console": false,
     "no-any": true
+=======
+    "no-console": false
+>>>>>>> renders normal distribution, kinda
   }
 }
