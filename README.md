@@ -30,6 +30,24 @@ The setup above is probably incomplete. Let Josh know about setup issues.
 
 The project was tested using VSCode . YMMV with other tools.
 
+# Using VSCode
+VSCode is a useful, general-purpose IDE. There are lots of extensions available and linting, debugging, version control, etc. are all integrated. Once you've installed VSCode, familiarize yourself with the sidebar.
+
+1. `brew tap caskroom/cask`
+2. `brew cask install visual-studio-code`
+3. Follow this to launch VSCode from terminal/command line: https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+4. To open MOMENTUM run `code .` from this directory.
+5. Install these useful extensions (add more if you find other helpful ones):
+**Super Useful**
+- Bracket Pair Colorizer
+- TSLint
+- npm
+- npm Intellisense
+**May Be Useful**
+- Code Spell Checker
+- TypeScript Hero
+- TypeScript Importer
+
 # Running
 From `/momentum`:
 - `npm start` starts the dev server (use this for development). the site will update automatically when you edit files
