@@ -10,11 +10,15 @@ Info about TypeScript: https://www.typescriptlang.org/docs/handbook/typescript-i
 # Organization
 `momentum/index.tsx` is the main file
 
-`momentum/components` contains components which can be include in `index.tsx`
+`momentum/components` contains components (`*.tsx`) which can be included in `index.tsx`
 
 `momentum/data` contains data that components and `index.tsx` can use
 
-`momentum/components/App` contains an example component
+`momentum/styles` contains CSS files (`*.css`)
+
+`momentum/tests` contains test files (`*.test.tsx`)
+
+`momentum/components/App.tsx` contains an example component
 
 # How to get setup (assuming macOS).
 1. Install HomeBrew
