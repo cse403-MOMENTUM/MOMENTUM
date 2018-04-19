@@ -24,6 +24,7 @@ Info about TypeScript: https://www.typescriptlang.org/docs/handbook/typescript-i
 1. Install HomeBrew
 2. Install Node: `brew install node`
 3. Install TypeScript: `npm i -g typescript`
+4. Navigate to `momentum` and run `npm install`
 
 The setup above is probably incomplete. Let Josh know about setup issues.
 
