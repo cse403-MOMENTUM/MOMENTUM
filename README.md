@@ -38,11 +38,13 @@ VSCode is a useful, general-purpose IDE. There are lots of extensions available 
 3. Follow this to launch VSCode from terminal/command line: https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
 4. To open MOMENTUM run `code .` from this directory.
 5. Install these useful extensions (add more if you find other helpful ones):
+
 **Super Useful**
 - Bracket Pair Colorizer
 - TSLint
 - npm
 - npm Intellisense
+
 **May Be Useful**
 - Code Spell Checker
 - TypeScript Hero
