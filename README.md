@@ -1,5 +1,5 @@
 # MOMENTUM
-User manual: https://github.com/cse403-MOMENTUM/MOMENTUM/blob/master/reports/week4/user-manual.md
+User manual: https://github.com/cse403-MOMENTUM/MOMENTUM/blob/master/user-manual.md
 
 Project: https://cse403-momentum.github.io/MOMENTUM/
 
