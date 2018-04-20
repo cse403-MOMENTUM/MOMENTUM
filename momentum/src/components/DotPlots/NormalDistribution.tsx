@@ -54,10 +54,13 @@ class NormalDistribution extends React.Component<IProps, {}> {
     }
 
     return (
-      <svg transform={'translate(' + margin.left + ',' + margin.top + ')'} width={paddedWidth} height={paddedHeight}>
+      <svg width={paddedWidth} height={paddedHeight}>
+      {/* hack to get padding to work */}
+      <g transform={'translate(' + margin.left + ',' + margin.top + ')'}>
         <XAxis width={width} height={height} scale={this.xScale}/>
-        <YAxis padding={margin.left} height={height} scale={this.yScale} />
+        <YAxis height={height} scale={this.yScale} />
         <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} />
+      </g>
       </svg>
     );
   }
