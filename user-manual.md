@@ -28,7 +28,7 @@ _Momentum_ is a webapp that can be found at [cse403-momentum.github.io/MOMENTUM]
 ## Momentum Information Hierarchy
 Momentum's fundamental component is the Project. A Project can be broken into two main sub-components: Users (team members) and Tasks (Figure 1).
 
-![Figure 1. Momentum Project structure](user-manual-imgs/project-structure.png)
+![Figure 1. Momentum Project structure](resources/user-manual-imgs/project-structure.png)
 *Figure 1. Conceptual Momentum Project structure*
 
 ### Users
@@ -67,7 +67,7 @@ If you already have an account, you may log in at [cse403-momentum.github.io/MOM
 ### Creating and Managing Projects
 After you've signed in, the landing page is your _Projects_ page (Figure 2). Here, you have the option to enter a specific Project or create a new Project. Project titles and number of team members are displayed.
 
-![Figure 2. _Projects_ overview page](user-manual-imgs/mockup/projects-page.png)
+![Figure 2. _Projects_ overview page](resources/user-manual-imgs/mockup/projects-page.png)
 *Figure 2. Projects overview page*
 
 #### Making a new Project
@@ -78,12 +78,12 @@ You will then be prompted to invite other Users to work on your project and will
 #### Working on an existing Project
 To enter a specific project, click on its card. You will be brought to your Project's home page, where a list of Tasks and their information are displayed (Figure 3). Additionally, statistics and projected ship dates are displayed so that the team has context on its progress.
 
-![Figure 3. Specific Project home page](user-manual-imgs/mockup/project-homepage.png)
+![Figure 3. Specific Project home page](resources/user-manual-imgs/mockup/project-homepage.png)
 *Figure 3. Specific Project home page*
 
 You may create new Tasks from this page as well. This is done by clicking the "+" button near the top of the page. Figure 4 shows the Task creation screen, where you will enter a Task name, description, priority, and assignee (who will, in turn, enter an effort estimate in hours).
 
-![Figure 4. Task creation view](user-manual-imgs/mockup/task-entry.png)
+![Figure 4. Task creation view](resources/user-manual-imgs/mockup/task-entry.png)
 *Figure 4. Task creation view*
 
 To view more information about a Task, and to perform certain actions on that Task, you can click on it in the Task list. (See "Tracking Effort" section below for more information on Task manipulation.)
@@ -91,7 +91,7 @@ To view more information about a Task, and to perform certain actions on that Ta
 ### Tracking Effort
 Clicking on a Task from a Project's home page will bring you to a detailed view of that Task (Figure 5), and will allow you track time spent on the Task or mark that Task as completed. **It is crucial that an estimate has been made _before_ a User begins working on a Task, and it is equally crucial that the User begins and ends time tracking for that task appropriately.**
 
-![Figure 5. Task detail view](user-manual-imgs/mockup/task-detail-view.png)
+![Figure 5. Task detail view](resources/user-manual-imgs/mockup/task-detail-view.png)
 *Figure 5. Task detail view*
 
 ### Getting a Ship Date Distribution
