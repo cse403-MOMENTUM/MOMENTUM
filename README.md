@@ -1,5 +1,7 @@
 # MOMENTUM
-https://cse403-momentum.github.io/MOMENTUM/
+User manual: https://github.com/cse403-MOMENTUM/MOMENTUM/blob/master/reports/week4/user-manual.md
+
+Project: https://cse403-momentum.github.io/MOMENTUM/
 
 Initialized with https://github.com/Microsoft/TypeScript-React-Starter. Check that link for details about specific files.
 
