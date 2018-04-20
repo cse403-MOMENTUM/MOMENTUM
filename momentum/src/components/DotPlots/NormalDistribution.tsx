@@ -1,11 +1,7 @@
 import * as d3 from 'd3';
 import * as React from 'react';
 import DotPlot from './DotPlot';
-<<<<<<< HEAD
 import Graph from './Graph';
-=======
-// import Graph from './Graph';
->>>>>>> broken dotplots, but they exist
 
 interface IProps {
   margin: {
@@ -22,11 +18,11 @@ interface IProps {
 class NormalDistribution extends React.Component<IProps, {}> {
   // taken from Jason Davies science library
   // https://github.com/jasondavies/science.js/blob/master/src/stats/distribution/gaussian.js
-  // private static gaussian_pdf(x: number, mean: number, sigma: number) {
-  //   const gaussianConstant = 1 / Math.sqrt(2 * Math.PI);
-  //   const adjustedX = (x - mean) / sigma;
-  //   return gaussianConstant * Math.exp(-.5 * adjustedX * adjustedX) / sigma;
-  // };
+  private static gaussian_pdf(x: number, mean: number, sigma: number) {
+    const gaussianConstant = 1 / Math.sqrt(2 * Math.PI);
+    const adjustedX = (x - mean) / sigma;
+    return gaussianConstant * Math.exp(-.5 * adjustedX * adjustedX) / sigma;
+  };
 
   public ref: SVGElement;
 
@@ -53,9 +49,9 @@ class NormalDistribution extends React.Component<IProps, {}> {
     const paddedWidth = width + margin.left + margin.right;
     const paddedHeight = height + margin.top + margin.bottom;
 
-    // function graphFun(x: number) {
-    //   return NormalDistribution.gaussian_pdf(x, 0, 1);
-    // }
+    function graphFun(x: number) {
+      return NormalDistribution.gaussian_pdf(x, 0, 1);
+    }
 
     return (
       <svg width={paddedWidth} height={paddedHeight}>
