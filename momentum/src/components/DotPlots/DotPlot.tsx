@@ -19,15 +19,15 @@ interface IProps {
 }
 
 class DotPlot extends React.Component<IProps, {}> {
-  private static getSamples(numSamples: number) {
+  private static getSamples(numSamples: number): number[] {
     const start = 1/numSamples / 2;
     const stop = 1 - 1/numSamples / 2;
     const step = (stop - start) / (numSamples - 1);
     return _.range(start, stop + step, step);
   }
 
-  private static getQuantiles(numSamples: number) {
-    return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)]);
+  private static getQuantiles(numSamples: number): Array<[number, number]> {
+    return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)] as [number, number]);
   }
 
   public render() {
@@ -35,7 +35,40 @@ class DotPlot extends React.Component<IProps, {}> {
       <g transform={'translate(' + this.props.translate.x + ',' + this.props.translate.y + ')'}>
         <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
         <YAxis height={this.props.height} scale={this.props.yScale} />
+        {this.plotHistogram()}
+      </g>
+    );
+  }
 
+  private plotHistogram() {
+    // full plot
+    const plot = this.makeHistogram().map((bin, iBin) => {
+      // dots in each bin
+      const dots = bin.map((dot, iDot) => {
+        const radius = (this.props.xScale(bin.x1) - this.props.xScale(bin.x0))/2;
+
+        return (
+          <circle
+            key={iDot}
+            r={radius}
+            cx={0} // determined by bin
+            cy={-iDot * 2 * radius - radius}
+            />
+        )
+      });
+
+      // wrap dots in a group
+      return (
+        <g className="bin" key={iBin} transform={'translate(' + this.props.xScale(bin.x0) + ',' + this.props.height + ')'}>
+          {dots}
+        </g>
+      );
+    });
+
+    // wrap plot in a group
+    return (
+      <g className="plot">
+        {plot}
       </g>
     );
   }
@@ -43,8 +76,8 @@ class DotPlot extends React.Component<IProps, {}> {
   private makeHistogram() {
     return d3.histogram()
       .domain(this.props.xScale.domain() as [number, number])
-      .thresholds(this.props.xScale.ticks(this.props.bins));
-      // .value(function(d) { return d.Value;} )
+      .thresholds(this.props.xScale.ticks(this.props.bins))
+      (DotPlot.getQuantiles(this.props.samples).map(d => d[1]));
   }
 }
 
