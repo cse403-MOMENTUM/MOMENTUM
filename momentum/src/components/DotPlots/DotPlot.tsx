@@ -20,10 +20,14 @@ interface IProps {
 
 class DotPlot extends React.Component<IProps, {}> {
 <<<<<<< HEAD
+<<<<<<< HEAD
   private static getSamples(numSamples: number): number[] {
 =======
   private static getSamples(numSamples: number) {
 >>>>>>> dotplots WIP. committing before break
+=======
+  private static getSamples(numSamples: number): number[] {
+>>>>>>> broken dotplots, but they exist
     const start = 1/numSamples / 2;
     const stop = 1 - 1/numSamples / 2;
     const step = (stop - start) / (numSamples - 1);
@@ -31,12 +35,17 @@ class DotPlot extends React.Component<IProps, {}> {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   private static getQuantiles(numSamples: number): Array<[number, number]> {
     return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)] as [number, number]);
 =======
   private static getQuantiles(numSamples: number) {
     return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)]);
 >>>>>>> dotplots WIP. committing before break
+=======
+  private static getQuantiles(numSamples: number): Array<[number, number]> {
+    return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)] as [number, number]);
+>>>>>>> broken dotplots, but they exist
   }
 
   public render() {
@@ -45,6 +54,9 @@ class DotPlot extends React.Component<IProps, {}> {
         <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
         <YAxis height={this.props.height} scale={this.props.yScale} />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> broken dotplots, but they exist
         {this.plotHistogram()}
       </g>
     );
@@ -56,6 +68,7 @@ class DotPlot extends React.Component<IProps, {}> {
       // dots in each bin
       const dots = bin.map((dot, iDot) => {
         const radius = (this.props.xScale(bin.x1) - this.props.xScale(bin.x0))/2;
+<<<<<<< HEAD
 
         return (
           <circle
@@ -82,6 +95,31 @@ class DotPlot extends React.Component<IProps, {}> {
 =======
 
 >>>>>>> dotplots WIP. committing before break
+=======
+
+        return (
+          <circle
+            key={iDot}
+            r={radius}
+            cx={0} // determined by bin
+            cy={-iDot * 2 * radius - radius}
+            />
+        )
+      });
+
+      // wrap dots in a group
+      return (
+        <g className="bin" key={iBin} transform={'translate(' + this.props.xScale(bin.x0) + ',' + this.props.height + ')'}>
+          {dots}
+        </g>
+      );
+    });
+
+    // wrap plot in a group
+    return (
+      <g className="plot">
+        {plot}
+>>>>>>> broken dotplots, but they exist
       </g>
     );
   }
@@ -90,12 +128,17 @@ class DotPlot extends React.Component<IProps, {}> {
     return d3.histogram()
       .domain(this.props.xScale.domain() as [number, number])
 <<<<<<< HEAD
+<<<<<<< HEAD
       .thresholds(this.props.xScale.ticks(this.props.bins))
       (DotPlot.getQuantiles(this.props.samples).map(d => d[1]));
 =======
       .thresholds(this.props.xScale.ticks(this.props.bins));
       // .value(function(d) { return d.Value;} )
 >>>>>>> dotplots WIP. committing before break
+=======
+      .thresholds(this.props.xScale.ticks(this.props.bins))
+      (DotPlot.getQuantiles(this.props.samples).map(d => d[1]));
+>>>>>>> broken dotplots, but they exist
   }
 }
 
