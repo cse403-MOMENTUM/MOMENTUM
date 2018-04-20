@@ -6,6 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <NormalDistribution width={960} height={450}
+    z_limit={4}
     margin={{
       bottom: 30,
       left: 50,

@@ -1,7 +1,12 @@
 import * as d3 from 'd3';
 import * as React from 'react';
+import XAxis from './XAxis';
+import YAxis from './YAxis';
 
 interface IProps {
+  width: number;
+  height: number;
+  translate: {x: number, y: number};
   xScale: d3.ScaleContinuousNumeric<number, number>;
   yScale: d3.ScaleContinuousNumeric<number, number>;
   numPoints: number;
@@ -13,7 +18,11 @@ class Graph extends React.Component<IProps, {}> {
 
   public render() {
     return (
-    <path className="line" d={this.makeLine()(this.makeData())!} stroke="black" fill="none" />
+      <g transform={'translate(' + this.props.translate.x + ',' + this.props.translate.y + ')'}>
+        <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
+        <YAxis height={this.props.height} scale={this.props.yScale} />
+        <path className="line" d={this.makeLine()(this.makeData())!} stroke="black" fill="none" />
+      </g>
     );
   }
 

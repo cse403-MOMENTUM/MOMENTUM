@@ -1,16 +1,15 @@
 import * as d3 from 'd3';
 import * as React from 'react';
 import Graph from './Graph';
-import XAxis from './XAxis';
-import YAxis from './YAxis';
 
 interface IProps {
   margin: {
-    bottom: 30,
-    left: 50,
-    right: 20,
-    top: 20
+    bottom: number,
+    left: number,
+    right: number,
+    top: number
   };
+  z_limit: number;
   width: number;
   height: number;
 }
@@ -32,8 +31,8 @@ class NormalDistribution extends React.Component<IProps, {}> {
   constructor(props: IProps) {
     super(props);
     this.xScale = d3.scaleLinear()
-                    //  .domain([-7,7])
-                     .range([0, this.props.width]);
+                    .domain([0 - (this.props.z_limit * 1), 0 + (this.props.z_limit * 1)])
+                    .range([0, this.props.width]);
     this.yScale = d3.scaleLinear()
                    //  .domain([0,.6])
                      .range([this.props.height, 0]);
@@ -55,12 +54,7 @@ class NormalDistribution extends React.Component<IProps, {}> {
 
     return (
       <svg width={paddedWidth} height={paddedHeight}>
-      {/* hack to get padding to work */}
-      <g transform={'translate(' + margin.left + ',' + margin.top + ')'}>
-        <XAxis width={width} height={height} scale={this.xScale}/>
-        <YAxis height={height} scale={this.yScale} />
-        <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} />
-      </g>
+        <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} width={width} height={height} translate={{x: margin.left, y: margin.top}} />
       </svg>
     );
   }
