@@ -58,8 +58,8 @@ class NormalDistribution extends React.Component<IProps, {}> {
         <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} width={width} height={height} translate={{x: margin.left, y: margin.top}} />
         <DotPlot
           xScale={this.xScale} yScale={this.yScale}
-          samples={20}
-          bins={25}
+          samples={50}
+          bins={20}
           width={width} height={height}
           translate={{x: margin.left, y: margin.top}} />
       </svg>

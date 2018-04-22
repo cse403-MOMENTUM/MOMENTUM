@@ -45,7 +45,7 @@ class DotPlot extends React.Component<IProps, {}> {
     const plot = this.makeHistogram().map((bin, iBin) => {
       // dots in each bin
       const dots = bin.map((dot, iDot) => {
-        const radius = (this.props.xScale(bin.x1) - this.props.xScale(bin.x0))/2;
+        const radius = Math.min((this.props.xScale(bin.x1) - this.props.xScale(bin.x0))/2, 12);
 
         return (
           <circle
@@ -59,7 +59,7 @@ class DotPlot extends React.Component<IProps, {}> {
 
       // wrap dots in a group
       return (
-        <g className="bin" key={iBin} transform={'translate(' + this.props.xScale(bin.x0) + ',' + this.props.height + ')'}>
+        <g className="bin" key={iBin} transform={'translate(' + this.props.xScale(d3.mean([bin.x0, bin.x1])!) + ',' + this.props.height + ')'}>
           {dots}
         </g>
       );
