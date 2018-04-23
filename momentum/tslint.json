@@ -5,5 +5,10 @@
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]
+  },
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "no-console": false,
+    "no-any": true
   }
 }
