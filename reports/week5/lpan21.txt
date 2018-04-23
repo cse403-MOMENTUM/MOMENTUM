@@ -1,0 +1,24 @@
+Leon Pan
+CSE 403: Week 5 Individual Report
+
+
+Goals from last week
+=======================
+• Begin implementation
+• Help with creating a user manual for our project
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+
+Progress made this week
+=======================
+• Attended team and client meeting
+  o Discussed feedback from previous report
+• Wrote document for user studies
+• Began conducting user studies on Manuscript
+
+Goals for Following Week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Conduct more user studies
+  o Get feedback on Manuscript to use as evidence for problems with current tools
