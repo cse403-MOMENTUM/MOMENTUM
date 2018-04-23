@@ -9,10 +9,15 @@
   "rules": {
     "quotemark": [true, "single", "jsx-double"],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "no-console": false,
     "no-any": true
 =======
     "no-console": false
 >>>>>>> renders normal distribution, kinda
+=======
+    "no-console": false,
+    "no-any": true
+>>>>>>> adds types, adds task list to DOM, disallows any
   }
 }
