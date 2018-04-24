@@ -14,5 +14,7 @@ cache:
     - "momentum/node_modules"
 
 deploy:
-  script:
-    - npm run deploy
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
