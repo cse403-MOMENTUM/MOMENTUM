@@ -17,12 +17,7 @@ jobs:
     - stage: test
       script:
         - npm test
-    - stage: deploy
-      script:
-        - npm run deploy
 
-stages:
-  - build
-  - test
-  - name: deploy
-    if: branch = master
+deploy:
+  script:
+    - npm run deploy
