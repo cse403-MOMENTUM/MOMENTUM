@@ -2,21 +2,16 @@ language: node_js
 node_js:
   - "node"
 
-jobs:
-  include:
-    - stage: build
-      before_script:
-        - npm i -g typescript
-      script:
-        - cd momentum
-        - npm install
-        - npm run build
-      cache:
-        directories:
-          - "momentum/node_modules"
-    - stage: test
-      script:
-        - npm test
+before_script:
+  - npm i -g typescript
+script:
+  - cd momentum
+  - npm install
+  - npm run build
+  - npm test
+cache:
+  directories:
+    - "momentum/node_modules"
 
 deploy:
   script:
