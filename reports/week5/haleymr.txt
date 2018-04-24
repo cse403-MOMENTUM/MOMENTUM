@@ -1,0 +1,25 @@
+Haley Ruth
+CSE 403: Week 5 Individual Report
+
+
+Previous Goals 
+=======================
+- Participate in assigning teammates implementation tasks
+- Schedule and attend team meetings
+- Finish version 2 of GUI for Momentum
+- Begin database work
+- Schedule and outline user research
+
+
+Updates this Week
+=======================
+- Attended team and client meetings
+- Created outlines for user testing and research
+
+
+Goals for Upcoming Week
+=======================
+- Schedule and attend team meetings
+- Update GUI if needed
+- Begin database work
+- Finish user testing and research
