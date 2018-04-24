@@ -1,0 +1,32 @@
+Josh Pollock
+CSE 403: Week 4 Individual Report
+
+4/17-4/23 Goals
+========================
+- Ensure a minimal website is set up.
+- Implement "When-ish is my bus?" visualization.
+  - Ask if anyone else would like to work on this.
+- Find *one* paper on automating time estimation.
+- Establish a good system for pushing to the repo.
+- Flesh out architecture and implementation plan.
+
+Actual Progress
+========================
+I established a system for pushing to the repo, although I've already screwed it up. It's based on the protocol I use for my research project. We work on various things in different branches/forks and submit PRs. We periodically rebase to stay up to date with master. When these PRs are ready to go, we squash and merge them. This ensures that the master branch stays under control.
+
+I found a paper that provides a good overview of existing tools and methods. I did not find any on automating time estimation, though.
+https://www.researchgate.net/publication/233759508_Automatic_Control_of_the_Software_Development_Process_with_Regard_to_Risk_Analysis?enrichId=rgreq-82c075593d5ad238dd900157563860f6-XXX&enrichSource=Y292ZXJQYWdlOzIzMzc1OTUwODtBUzoxMDE5NzkxMzMwNTQ5ODNAMTQwMTMyNTEyODY5MQ%3D%3D&el=1_x_3&_esc=publicationCoverPdf
+
+I completed a prototype of "When-ish is my bus?" I think I will table the rest of that part so that I can work on the main logic, which is taking longer than I thought. I did not ask anyone if they'd like to work on this part.
+
+I did not work on architecture and implementation as much as I'd have liked, but I did learn about React and Redux, and I have a clearer sense of how to use these tools to set up a good architecture.
+
+I am also working on setting up Travis CI. By the end of the day tomorrow it should be set up to automatically build and test PRs and auto-deploy master to gh-pages.
+
+4/24-4/30 Goals
+========================
+- Complete Travis CI
+- Add option for linting to not prevent compilation. Enable for devs but not for CI.
+- (With Anita) Complete a working prototype of our architecture including tasks, teams, projects. Add actions that update these.
+  - Stretch Goal: This should be integrated with the current visualization tech.
+  

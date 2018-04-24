@@ -1,0 +1,22 @@
+Anita Leung
+CSE 403: Week 3 Individual Report
+
+
+Previous Goals 
+=======================
+- Complete three user studies
+- After user studies are finished, implement the MVP for our GUI  
+
+
+Updates this Week
+=======================
+- Set up coding environment
+- Made progress on task creation for our project
+- Helped revise week 4 report
+- Read about React/Redux (tutorials, guides, articles)
+
+
+Goals for Upcoming Week
+=======================
+- Finish task creation (rendering the task data on a separate section)
+- Finish the task start/stop page

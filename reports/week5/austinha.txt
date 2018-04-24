@@ -1,0 +1,41 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 5 Individual Report |
++-----------------------------------+
+
+
+Goals from Last Week
+=======================
++-----------------------------------+
+| KEY:                              |
+| []  -- task was not completed     |
+| [x] -- task was completed.        |
+| [~] -- task is no longer relevant |
++-----------------------------------+
+
+[] Lead charge on short-term task breakdown
+[] Lead charge on long-term project breakdown
+[x] Ensure someone is responsible for user research
+[~] Begin implementation of EBS model using TypeScript (subject to change)
+
+
+Updates this Week
+=======================
+(See checklist above for updates on goals from last week)
+
+Other tasks completed this week:
+- Wrote user manual
+- Completed team-mate feedback survey
+
+Finally starting to feel more solidified about the directions of our project now that we've begun user testing and some implementation. I think that a lot of the staff's concerns about our project stem from the fact that we have not substantiated our claim that Manuscript is hard to use with evidence. By completing user testing, we will be able to create much clearer metrics for Momentum to improve upon.
+
+I'm also still feeling a little confused about the expectations of this course. Again, hopefully we will have time to discuss these at this week's meeting.
+
+
+Goals for Upcoming Week
+=======================
+[] Create spreadsheet model of EBS for team usage
+[] Lead charge on long-term project breakdown
+[] Continue implementation of EBS model
+[] Help create tests for EBS model
+[] Help with user testing (if needed)
