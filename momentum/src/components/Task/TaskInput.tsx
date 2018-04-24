@@ -19,18 +19,22 @@ class TaskInput extends React.Component<IProps, IState> {
     };
   }
 
-  public handleOnChange = (event: any) : void => {
+  // TODO(Anita) fix event type
+  public handleOnChange = (event: React.FormEvent<HTMLInputElement>) : void => {
     // NOTE: We may not need this action handler
     // https://reactjs.org/docs/forms.html#handling-multiple-inputs
+    // TODO(Anita) fix event type
     this.setState({ 
-      name: event.target.value 
+      name: (event.target as HTMLInputElement).value 
     });
   }
 
-  public handleSubmit = (event: any) : void => {
+  // TODO(Anita) fix event type
+  public handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
     // TODO: handles what happens when the user saves a new task
     event.preventDefault();
-    const data = new FormData(event.target);
+    // TODO(Anita) fix event type
+    const data = new FormData(event.target as HTMLFormElement);
 
     fetch('/api/form-submit-url', {
       body: data,
