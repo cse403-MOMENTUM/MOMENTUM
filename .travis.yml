@@ -15,6 +15,9 @@ cache:
 
 deploy:
   provider: script
-  script: bash ./deploy.sh
+  script:
+    - cd $TRAVIS_BUILD_DIR
+    - chmod +x ./deploy.sh
+    - ./deploy.sh
   on:
     branch: master
