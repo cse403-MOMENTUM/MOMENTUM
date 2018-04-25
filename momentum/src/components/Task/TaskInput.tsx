@@ -32,6 +32,7 @@ class TaskInput extends React.Component<IProps, IState> {
     // TODO: handles what happens when the user saves a new task
     event.preventDefault();
     const data = new FormData(event.target as HTMLFormElement);
+    alert('You made a new task ' + this.state.taskName + '!');
 
     fetch('/api/form-submit-url', {
       body: data,
