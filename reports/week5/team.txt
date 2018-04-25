@@ -26,3 +26,4 @@ Goals for Upcoming Week
     [Anita] set up a database to store users and tasks, then have the task form post data into the database and retrieving and displaying data.
     [Josh] Refine visualization and hook it into the main app. Help Anita with core implementation.
 2: [Haley and Leon] Complete more user studies. Help with refining our tool using the feedback on Manuscript.
+3: [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
