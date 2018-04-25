@@ -15,7 +15,7 @@ ReactDOM.render(
         right: 20,
         top: 20
       }} />
-      <TaskInput defaultName={'???'} />
+      <TaskInput taskName="My Task" />
   </div>,
   document.getElementById('root') as HTMLElement
 );

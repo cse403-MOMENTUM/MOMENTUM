@@ -4,36 +4,33 @@ import * as React from 'react';
 // import logo from '../data/logo.svg';
 
 interface IProps {
-  defaultName: string
+  taskName: string
 }
 
 interface IState {
-  name: string
+  taskName: string
 }
 
 class TaskInput extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = { 
-      name: this.props.defaultName,
+      taskName: this.props.taskName,
     };
   }
 
-  // TODO(Anita) fix event type
   public handleOnChange = (event: React.FormEvent<HTMLInputElement>) : void => {
     // NOTE: We may not need this action handler
     // https://reactjs.org/docs/forms.html#handling-multiple-inputs
-    // TODO(Anita) fix event type
+    const target = event.target as HTMLInputElement;
     this.setState({ 
-      name: (event.target as HTMLInputElement).value 
+      taskName: target.value 
     });
   }
 
-  // TODO(Anita) fix event type
   public handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
     // TODO: handles what happens when the user saves a new task
     event.preventDefault();
-    // TODO(Anita) fix event type
     const data = new FormData(event.target as HTMLFormElement);
 
     fetch('/api/form-submit-url', {
@@ -44,34 +41,40 @@ class TaskInput extends React.Component<IProps, IState> {
 
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">This task name: { this.state.name }</h1>
+      <div className="task-detail">
+        <header className="task-detail-header">
+          <h1 className="task-detail-title">This task name: { this.state.taskName }</h1>
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Task name 
+
+            <div id="task-name">
+              <label htmlFor="taskName">Task name</label>
               <input type="text" name="taskName" onChange={ this.handleOnChange } />
-            </label>
-            <label>
-              Priority level
+            </div>
+
+            <div id="task-priority">
+              <label htmlFor="taskImportance">Priority level</label>
               <input type="radio" name="taskImportance" value="green" /> Green
               <input type="radio" name="taskImportance" value="yellow" /> Yellow
               <input type="radio" name="taskImportance" value="red" /> Red
-            </label>
-            <label>
-              Your task time estimate
+            </div>
+            
+            <div id="task-estimate">
+              <label htmlFor="taskTimeEstimate">Your task time estimate</label>
               <input type="text" name="taskTimeEstimate" onChange={ this.handleOnChange } />   
               hours         
-            </label>
-            <label>
-              Task description
+            </div>
+
+            <div id="task-description">
+              <label htmlFor="taskDescription">Task description</label>
               <textarea
                 placeholder="Enter your task description here..."
                 name="taskDescription"
               />
-            </label>
+            </div>
 
-            <button>Create this task</button>
+            <div className="button">
+              <button type="submit">Create this task</button>
+            </div>
           </form>
         </header>
       </div>
