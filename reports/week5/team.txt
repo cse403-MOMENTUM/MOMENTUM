@@ -1,0 +1,28 @@
+Goals from Last Week
+=======================
+1: [Haley and Leon] Finish conducting and analyzing user research
+2: [Austin] Work on user manual
+3: [Josh and Anita] Start implementing the front/backend of our web app 
+4: [All] Refine mvp with additional enhancements based on user research
+5: [All] Improve project goals based on client feedback
+    [All] Establish metrics for software success and evaluation plan so that we can reasonably complete this within the time frame of our course
+    [All] Refine our motivation and specify differences of what our tool vs existing tools accomplish
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+1: Began conducting user research. Will be conducting more user research this weekend.
+2: Finished User manual.
+3: Josh successfully got a normal distribution graph to render,and installed Travis.
+Anita successfully got a basic task form to render and set up her coding environment.
+4: We have not refined our mvp yet with user research.
+5: We will establish our metrics and use client feedback to refine our motivation tonight.
+
+Goals for Upcoming Week
+=======================
+1: Continue implementation
+    [Anita] set up a database to store users and tasks, then have the task form post data into the database and retrieving and displaying data.
+    [Josh] Refine visualization and hook it into the main app. Help Anita with core implementation.
+2: [Haley and Leon] Complete more user studies. Help with refining our tool using the feedback on Manuscript.
