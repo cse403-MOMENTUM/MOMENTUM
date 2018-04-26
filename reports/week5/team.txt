@@ -27,3 +27,34 @@ Goals for Upcoming Week
     [Josh] Refine visualization and hook it into the main app. Help Anita with core implementation.
 2: [Haley and Leon] Complete more user studies. Help with refining our tool using the feedback on Manuscript.
 3: [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Updates
+- Began user studies
+- Began implementation
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Our concerns about the last set of feedback (on Project 4)
+  - Comments received
+    - Lack of justification on claims
+      - We should have more evidence to justify our claims as we complete more user studies on Manuscript
+    - Differences between Manuscript and our tool
+      - Do both the tools display the same information but visualize them differently?
+      - How is this beneficial?
+    - Using Manuscript for our project
+    - Why is ease of maintenance of the tool relevant as one of your two main goals?
+    - Document is at too low a level of detail
+    - Document should list all the features of your software and compare it to others
+      - You need to give an overview first before diving into specifics
+    - Concrete details about our evaluation
+    - Task dependencies
+- Clarifications
+  - Expectations / Grading Rubric
+  - Responsibility to other teams as their customers
