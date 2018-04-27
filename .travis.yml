@@ -5,19 +5,16 @@ node_js:
 before_script:
   - npm i -g typescript
 script:
-  - cd momentum
-  - npm install
-  - npm run build
-  - npm test
+  - ./build.sh 
 cache:
   directories:
     - "momentum/node_modules"
 
-# deploy:
-#   provider: script
-#   script:
-#     - cd $TRAVIS_BUILD_DIR
+ deploy:
+   provider: script
+   script:
+     - cd $TRAVIS_BUILD_DIR
 #     - chmod +x ./deploy.sh
-#     - ./deploy.sh
-#   on:
-#     branch: master
+     - ./deploy.sh
+   on:
+     branch: master
