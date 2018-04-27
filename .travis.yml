@@ -5,10 +5,7 @@ node_js:
 before_script:
   - npm i -g typescript
 script:
-  - cd momentum
-  - npm install
-  - npm run build
-  - npm test
+  - ./build.sh 
 cache:
   directories:
     - "momentum/node_modules"
