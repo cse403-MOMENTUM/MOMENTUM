@@ -1,0 +1,44 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 6 Individual Report |
++-----------------------------------+
+
+
+Goals from Last Week
+=======================
++-----------------------------------+
+| KEY:                              |
+| []  -- task was not completed     |
+| [x] -- task was completed.        |
+| [~] -- task is no longer relevant |
++-----------------------------------+
+
+[x] Create spreadsheet model of EBS for team usage
+[] Lead charge on long-term project breakdown
+[x] Continue implementation of EBS model
+[] Help create tests for EBS model
+[~] Help with user testing (if needed)
+
+Updates this Week
+=======================
+(See checklist above for updates on goals from last week)
+
+Other tasks completed this week:
+- Helped with major revisions in project report
+- Researched/learned Redux, React, Travis CI
+- Added build bash script to repository
+
+Feeling better about the direction of our project this week. I came to realize from the
+staff's feedback that their main concerns are the basis of our problem -- and that doing
+things such as user testing might be the best option to remedy many of these concerns.
+Now that Haley is set on User Testing Manuscript to find pain points, we can focus 
+much more on our implementation of back-end features, and focus on usability (the most
+important aspect) last, once we have found out the best ways to perform these 
+improvements.
+
+Goals for Upcoming Week
+=======================
+[] Create re-made, finalized architecture
+[] Implement EBS logic
+[] Help create tests for EBS model
+[] Implement client-side database using Redux
