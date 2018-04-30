@@ -1,0 +1,26 @@
+Josh Pollock
+CSE 403: Week 6 Individual Report
+
+4/24-4/30 Goals
+========================
+- Complete Travis CI
+- Add option for linting to not prevent compilation. Enable for devs but not for CI.
+- (With Anita) Complete a working prototype of our architecture including tasks, teams, projects. Add actions that update these.
+  - Stretch Goal: This should be integrated with the current visualization tech.
+
+Actual Progress
+========================
+I did not get as much done this week as I would have liked. Going forward I will spend more time on project implementation.
+
+I participated in a broader discussion about how to integrate an external database and high-level UI elements into our project. I did research on UI libraries and am pushing for Semantic UI as the very top of our dev stack.
+
+I did not do more work on Travis CI since it is not important beyond what we have already done. Austin took over some of that, which was a good way for him to also learn how Travis CI works.
+
+The linting option has also been tabled, but may appear in the future.
+
+I added commentary about visualizations to this week's report.
+
+5/1-5/7 Goals
+========================
+- Work with Austin to add EBS backend to Momentum
+- Ensure every part of our software stack is working smoothly.
