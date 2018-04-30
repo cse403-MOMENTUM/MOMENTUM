@@ -1,0 +1,20 @@
+Anita Leung
+CSE 403: Week 3 Individual Report
+
+
+Previous Goals 
+=======================
+- Finish task creation (rendering the task data on a separate section)
+- Finish the task start/stop page
+
+
+Updates this Week
+=======================
+- Finished the task creation portion
+
+
+Goals for Upcoming Week
+=======================
+- Finish the task start/stop page
+- Import semantic ui to project
+- Finish front-end portions (project view, login, task view)
