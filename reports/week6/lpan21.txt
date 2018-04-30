@@ -1,0 +1,27 @@
+Leon Pan
+CSE 403: Week 6 Individual Report
+
+
+Goals from last week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Conduct more user studies
+  o Get feedback on Manuscript to use as evidence for problems with current tools
+
+Progress made this week
+=======================
+• Attended team and client meeting
+  o Discussed feedback from previous report
+  o Discussed feedback from user studies
+  o Assigning specific tasks for each team member
+• Help address feedback on weekly report
+• Research on integrating react/redux with a database
+  o Focus on using SQL as the database
+
+Goals for Following Week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Help address feedback on weekly report
+• Help out the team with other tasks
