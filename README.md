@@ -9,6 +9,8 @@ Info about React: https://reactjs.org/tutorial/tutorial.html
 
 Info about TypeScript: https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
 
+Info about Semantic UI React: https://react.semantic-ui.com/introduction
+
 # Organization
 `momentum/index.tsx` is the main file
 
@@ -57,3 +59,4 @@ From `/momentum`:
 - `npm start` starts the dev server (use this for development). the site will update automatically when you edit files
 - `npm test` runs tests
 - `npm run deploy` builds the site **and pushes to gh-pages branch**
+- `npm install` installs dependencies
