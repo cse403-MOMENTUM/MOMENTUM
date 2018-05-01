@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Form } from 'semantic-ui-react'
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
@@ -32,6 +33,7 @@ class TaskInput extends React.Component<IProps, IState> {
     // TODO: handles what happens when the user saves a new task
     event.preventDefault();
     const data = new FormData(event.target as HTMLFormElement);
+    alert('You made a new task ' + this.state.taskName + '!');
 
     fetch('/api/form-submit-url', {
       body: data,
@@ -44,38 +46,33 @@ class TaskInput extends React.Component<IProps, IState> {
       <div className="task-detail">
         <header className="task-detail-header">
           <h1 className="task-detail-title">This task name: { this.state.taskName }</h1>
-          <form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit}>
+        
+            <Form.Input 
+              inline={true}
+              fluid={true} 
+              label="Task Name"
+              placeholder="Task name"
+              onChange={ this.handleOnChange }/>
 
-            <div id="task-name">
-              <label htmlFor="taskName">Task name</label>
-              <input type="text" name="taskName" onChange={ this.handleOnChange } />
-            </div>
-
-            <div id="task-priority">
+            <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
-              <input type="radio" name="taskImportance" value="green" /> Green
-              <input type="radio" name="taskImportance" value="yellow" /> Yellow
-              <input type="radio" name="taskImportance" value="red" /> Red
-            </div>
+              
+              <Form.Radio label="Low" value="l" /> 
+              <Form.Radio label="Medium" value="m" /> 
+              <Form.Radio label="High" value="h" /> 
+            </Form.Group>
             
-            <div id="task-estimate">
-              <label htmlFor="taskTimeEstimate">Your task time estimate</label>
-              <input type="text" name="taskTimeEstimate" onChange={ this.handleOnChange } />   
-              hours         
-            </div>
+            <Form.Group inline={true}>
+              <Form.Input inline={true} label="Your task time estimate" /> hours
+            </Form.Group>
 
-            <div id="task-description">
-              <label htmlFor="taskDescription">Task description</label>
-              <textarea
-                placeholder="Enter your task description here..."
-                name="taskDescription"
-              />
-            </div>
+            <Form.TextArea 
+              label="Task description" 
+              placeholder="Enter your task description" />
 
-            <div className="button">
-              <button type="submit">Create this task</button>
-            </div>
-          </form>
+            <Form.Button color="blue" type="submit">Create this task</Form.Button>
+          </Form>
         </header>
       </div>
     );

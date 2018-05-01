@@ -23,7 +23,7 @@ class DotPlot extends React.Component<IProps, {}> {
     const start = 1/numSamples / 2;
     const stop = 1 - 1/numSamples / 2;
     const step = (stop - start) / (numSamples - 1);
-    return _.range(start, stop + step, step);
+    return _.range(start, stop + step, step); 
   }
 
   private static getQuantiles(numSamples: number): Array<[number, number]> {
