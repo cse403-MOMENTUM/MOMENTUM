@@ -1,0 +1,46 @@
+Goals from Last Week
+=======================
+1: Continue implementation
+    [Anita] set up a database to store users and tasks, then have the task form post data into the database and retrieving and displaying data.
+    [Josh] Refine visualization and hook it into the main app. Help Anita with core implementation.
+2: [Haley and Leon] Complete more user studies. Help with refining our tool using the feedback on Manuscript.
+3: [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+1: Finished initial user research on Manuscript.
+2: Updated updating report.
+3: Josh and Anita refined architecture using Redux and React.
+4: We have not refined our mvp yet with user research.
+5: Integration with database abilities has been researched.
+
+Goals for Upcoming Week
+=======================
+1: Continue implementation
+    [Anita] 
+    [Josh] 
+2:  [Haley] finish all user studies on Manuscript, make edits to MVP, then conduct user studies on MVP
+3:  [Leon] continue researching database integration with React/Redux, tie actions to database queries
+3:  [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Updates
+- Finished most user studies with Manuscript
+- Finished core architecture planning
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Questions concerning project implementation/research importance
+  - Timing for user testing 
+  - Importance of testing vs. implementing tool
+- Clarifications
+  - Responsibility to other teams as their customers
