@@ -1,5 +1,5 @@
 import { TodoTypes } from '../../action-types';
-import { IAddTodoAction, IToggleTodoAction } from './actions';
+import { IAddTodoAction, IToggleTodoAction } from '../../action-types';
 
 export function addTodo(text: string): IAddTodoAction {
   return {

@@ -5,6 +5,22 @@ export const enum TodoTypes {
   TOGGLE_TODO = 'TOGGLE_TODO'
 }
 
+export interface IAddTodoAction {
+  type: TodoTypes.ADD_TODO;
+  payload: {
+    todo: {
+      id: number,
+      text: string,
+      done: boolean
+    }
+  };
+}
+
+export interface IToggleTodoAction {
+  type: TodoTypes.TOGGLE_TODO;
+  payload: { todoId: number };
+}
+
 export const enum Visibility {
   SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 }
