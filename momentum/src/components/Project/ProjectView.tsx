@@ -23,18 +23,18 @@ class ProjectView extends React.Component<IProps, IState> {
 
   constructor(props: IProps) {
     super(props);
-    this.state = { 
+    this.state = {
       taskName: this.props.taskName,
     };
   }
-  
+
 
   public handleOnChange = (event: React.FormEvent<HTMLInputElement>) : void => {
     // NOTE: We may not need this action handler
     // https://reactjs.org/docs/forms.html#handling-multiple-inputs
     const target = event.target as HTMLInputElement;
-    this.setState({ 
-      taskName: target.value 
+    this.setState({
+      taskName: target.value
     });
   }
 
@@ -52,8 +52,8 @@ class ProjectView extends React.Component<IProps, IState> {
 
   public render() {
     return (
-        <Modal 
-            closeIcon={true}    
+        <Modal
+            closeIcon={true}
             trigger={<Button color="yellow">New Task</Button>}
             style={this.inlineStyle.modal}>
             <Modal.Header>Create new task</Modal.Header>
@@ -65,4 +65,4 @@ class ProjectView extends React.Component<IProps, IState> {
   }
 }
 
-export default ProjectView; 
+export default ProjectView;
