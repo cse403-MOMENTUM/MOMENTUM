@@ -7,6 +7,7 @@ import ProjectView from './components/Project/ProjectView';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
+// TODO: style should be moved to a separate file.
 const style = {
   h1: {
     marginTop: '3em',

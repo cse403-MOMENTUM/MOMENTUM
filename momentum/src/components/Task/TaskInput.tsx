@@ -15,7 +15,7 @@ interface IState {
 class TaskInput extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
-    this.state = { 
+    this.state = {
       taskName: this.props.taskName,
     };
   }
@@ -24,8 +24,8 @@ class TaskInput extends React.Component<IProps, IState> {
     // NOTE: We may not need this action handler
     // https://reactjs.org/docs/forms.html#handling-multiple-inputs
     const target = event.target as HTMLInputElement;
-    this.setState({ 
-      taskName: target.value 
+    this.setState({
+      taskName: target.value
     });
   }
 
@@ -47,28 +47,28 @@ class TaskInput extends React.Component<IProps, IState> {
         <header className="task-detail-header">
           <h1 className="task-detail-title">This task name: { this.state.taskName }</h1>
           <Form onSubmit={this.handleSubmit}>
-        
-            <Form.Input 
+
+            <Form.Input
               inline={true}
-              fluid={true} 
+              fluid={true}
               label="Task Name"
               placeholder="Task name"
               onChange={ this.handleOnChange }/>
 
             <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
-              
-              <Form.Radio label="Low" value="l" /> 
-              <Form.Radio label="Medium" value="m" /> 
-              <Form.Radio label="High" value="h" /> 
+
+              <Form.Radio label="Low" value="l" />
+              <Form.Radio label="Medium" value="m" />
+              <Form.Radio label="High" value="h" />
             </Form.Group>
-            
+
             <Form.Group inline={true}>
               <Form.Input inline={true} label="Your task time estimate" /> hours
             </Form.Group>
 
-            <Form.TextArea 
-              label="Task description" 
+            <Form.TextArea
+              label="Task description"
               placeholder="Enter your task description" />
 
             <Form.Button color="blue" type="submit">Create this task</Form.Button>
@@ -79,4 +79,4 @@ class TaskInput extends React.Component<IProps, IState> {
   }
 }
 
-export default TaskInput; 
+export default TaskInput;
