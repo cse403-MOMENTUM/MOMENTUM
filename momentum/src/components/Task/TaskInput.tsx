@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { Form } from 'semantic-ui-react'
+import { Form } from 'semantic-ui-react';
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
 
 interface IProps {
-  taskName: string
+  taskName: string;
 }
 
 interface IState {
-  taskName: string
+  taskName: string;
 }
 
 class TaskInput extends React.Component<IProps, IState> {

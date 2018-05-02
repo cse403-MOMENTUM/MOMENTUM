@@ -54,7 +54,7 @@ class DotPlot extends React.Component<IProps, {}> {
             cx={0} // determined by bin
             cy={-iDot * 2 * radius - radius}
             />
-        )
+        );
       });
 
       // wrap dots in a group

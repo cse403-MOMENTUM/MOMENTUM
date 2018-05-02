@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { Button, Modal } from 'semantic-ui-react'
+import { Button, Modal } from 'semantic-ui-react';
 import TaskInput from '../Task/TaskInput';
 
 // import logo from '../data/logo.svg';
 
 interface IProps {
-  taskName: string
+  taskName: string;
 }
 
 interface IState {
-  taskName: string
+  taskName: string;
 }
 
 class ProjectView extends React.Component<IProps, IState> {

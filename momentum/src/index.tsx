@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Header } from 'semantic-ui-react'
+import { Container, Header } from 'semantic-ui-react';
 import NormalDistribution from './components/DotPlots/NormalDistribution';
 import ProjectView from './components/Project/ProjectView';
 import './index.css';
@@ -12,7 +12,7 @@ const style = {
   h1: {
     marginTop: '3em',
   }
-}
+};
 
 ReactDOM.render(
   <div>
