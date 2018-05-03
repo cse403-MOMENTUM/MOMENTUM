@@ -16,12 +16,13 @@ Updates on Goals
 3: Josh and Anita refined architecture using Redux and React.
 4: We have not refined our mvp yet with user research.
 5: Integration with database abilities has been researched.
+6: Visualization hooks have been postponed until the rest of the app is in a more concrete state.
 
 Goals for Upcoming Week
 =======================
 1: Continue implementation
     [Anita] 
-    [Josh] 
+    [Josh] Refactor existing work into nearly-finalized architecture. Add Redux logic to React components.
 2:  [Haley] finish all user studies on Manuscript, make edits to MVP, then conduct user studies on MVP
 3:  [Leon] continue researching database integration with React/Redux, tie actions to database queries
 3:  [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
