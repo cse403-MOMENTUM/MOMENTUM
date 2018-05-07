@@ -1,6 +1,16 @@
 import * as React from 'react';
-import { Menu } from 'semantic-ui-react';
-import '../styles/App.css';
+import 'semantic-ui-css/semantic.min.css';
+import { Container, Header, Menu } from 'semantic-ui-react';
+import NormalDistribution from './scenes/DotPlots/NormalDistribution';
+import Project from './scenes/Project';
+
+// import '../styles/App.css';
+
+const style = {
+  h1: {
+    marginTop: '3em',
+  }
+}
 
 class App extends React.Component {
   public render() {
@@ -52,6 +62,23 @@ class App extends React.Component {
           Fixed Footer
         </Menu.Item>
       </Menu>
+      <Header
+        as="h1"
+        content="Project Name" // TODO: dynamically get appropriate title
+        style={style.h1}
+        textAlign="center"
+        />
+      <Container>
+        <Project taskName="smthing" />
+        <NormalDistribution width={960} height={450}
+          z_limit={4}
+          margin={{
+            bottom: 30,
+            left: 50,
+            right: 20,
+            top: 20
+          }} />
+        </Container>
     </div>
     );
   }
