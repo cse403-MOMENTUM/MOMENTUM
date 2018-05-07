@@ -1,85 +1,57 @@
 import * as React from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Header, Menu } from 'semantic-ui-react';
+import { Container, Menu } from 'semantic-ui-react';
+import logo from './data/momentum-logo.png';
 import NormalDistribution from './scenes/DotPlots/NormalDistribution';
 import Project from './scenes/Project';
 
-// import '../styles/App.css';
-
-const style = {
-  h1: {
-    marginTop: '3em',
-  }
-};
+import './styles/App.css';
 
 class App extends React.Component {
+  public state = {};
+
+  public handleItemClick = (event: React.MouseEvent<HTMLElement>, {name } : { name : string }) => this.setState({ activeItem: name });
+
   public render() {
     return (
-      <div
-      style={{
-        // see some additional required styles in index.css
-        display: 'flex',
-        flexDirection: 'column',
-        height: '100%'
-      }}>
-      { /* the following section is fixed to the top */ }
-      <Menu
-        inverted={true}
-        color="green"
-        borderless={true}
-        style={{
-          borderRadius: 0, // clear semantic-ui style
-          flexShrink: 0, // don't allow flexbox to shrink it
-          margin: 0 // clear semantic-ui style
-        }}>
-        <Menu.Item as="h1"
-          header={true}>
-          Fixed Header
-        </Menu.Item>
-      </Menu>
-      { /* the following section is in the middle, and it can scroll */ }
-      <div
-        style={{
-          flexGrow: 1,
-          overflowX: 'hidden',
-          overflowY: 'auto',
-        }}>
-          <p style={{paddingBottom: '200%'}}>This container can scroll vertically. Give it a try!</p>
-          <p>You made it to the bottom!</p>
-      </div>
-      { /* the following section is fixed to the bottom */ }
-      <Menu
-        inverted={true}
-        color="green"
-        borderless={true}
-        style={{
-          borderRadius: 0, // clear semantic-ui style
-          flexShrink: 0, // don't allow flexbox to shrink it
-          margin: 0 // clear semantic-ui style
-        }}>
-        <Menu.Item
-          header={true}>
-          Fixed Footer
-        </Menu.Item>
-      </Menu>
-      <Header
-        as="h1"
-        content="Project Name" // TODO: dynamically get appropriate title
-        style={style.h1}
-        textAlign="center"
-        />
-      <Container>
-        <Project taskName="smthing" />
-        <NormalDistribution width={960} height={450}
-          z_limit={4}
-          margin={{
-            bottom: 30,
-            left: 50,
-            right: 20,
-            top: 20
-          }} />
+      <div>
+        <Menu
+          secondary={true}
+          id="menu-bar">
+          <Menu.Item
+            name="home"
+            className="logo"
+            onClick={this.handleItemClick}
+          > <img src={logo} className="App-logo" alt="logo" /> </Menu.Item>
+        </Menu>
+        <Container>
+          <Project taskName="smthing" />
+          <NormalDistribution width={960} height={450}
+            z_limit={4}
+            margin={{
+              bottom: 30,
+              left: 50,
+              right: 20,
+              top: 20
+            }} />
         </Container>
-    </div>
+        <Menu
+          secondary={true}
+          id="footer">
+          <Menu.Item
+            name="about"
+            onClick={this.handleItemClick}
+          > About </Menu.Item>
+          <Menu.Item
+            name="developers"
+            onClick={this.handleItemClick}
+          > Developers </Menu.Item>
+          <Menu.Item
+            name="privacy"
+            onClick={this.handleItemClick}
+          > Privacy </Menu.Item>
+        </Menu>
+      </div>
     );
   }
 }

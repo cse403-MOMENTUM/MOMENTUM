@@ -3,8 +3,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  width: 50px;
 }
 
 .App-header {
@@ -21,6 +20,25 @@
 .App-intro {
   font-size: large;
 }
+
+/* Custom styles */
+
+#menu-bar {
+  background-color: #434343;
+}
+
+  #menu-bar .item {
+    padding: 1em;
+  }
+
+#footer {
+  background: #C4C4C4;
+}
+
+  #footer .item {
+    color: #EEEEEE;
+  }
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
