@@ -1,0 +1,39 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 7 Individual Report |
++-----------------------------------+
+
+
+Goals from Last Week
+=======================
++-----------------------------------+
+| KEY:                              |
+| []  -- task was not completed     |
+| [x] -- task was completed.        |
+| [~] -- task is no longer relevant |
++-----------------------------------+
+
+[x] Create re-made, finalized architecture
+[] Implement EBS logic
+[] Help create tests for EBS model
+[] Implement client-side database using Redux
+
+
+Updates this Week
+=======================
+(See checklist above for updates on goals from last week)
+
+Other tasks completed this week:
+- Helped with revisions in project report
+
+Wasn't as productive in this class as I would have liked this week (I was 
+consumed with other courses' midterms and midterm projects), but I 
+think the group is in good position to deliver a first draft this week.
+We plan on meeting up Tuesday to my knowledge to double down on everything.
+
+
+Goals for Upcoming Week
+=======================
+[] Help implement working model of EBS logic
+[] Help create tests for EBS model
+[] Help run intial user testing for Momentum
