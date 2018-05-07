@@ -10,7 +10,7 @@ const style = {
   h1: {
     marginTop: '3em',
   }
-}
+};
 
 class App extends React.Component {
   public render() {

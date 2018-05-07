@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { Button, Modal } from 'semantic-ui-react'
+import { Button, Modal } from 'semantic-ui-react';
 import TaskInput from './components/TaskInput';
 // import TaskView from './components/TaskView';
 
 interface IProps {
-  taskName: string
+  taskName: string;
 }
 
 interface IState {
-  taskName: string
+  taskName: string;
 }
 
 class ProjectView extends React.Component<IProps, IState> {
@@ -19,11 +19,11 @@ class ProjectView extends React.Component<IProps, IState> {
         marginTop: '10% !importagitnt' // I think this is being overridden
     }
   };
-  
+
   public render() {
     return (
-      <Modal 
-        closeIcon={true} 
+      <Modal
+        closeIcon={true}
         trigger={<Button color="yellow">New Task</Button>}
         style={this.inlineStyle.modal}>
         <Modal.Header>Create new task</Modal.Header>
@@ -35,4 +35,4 @@ class ProjectView extends React.Component<IProps, IState> {
   }
 }
 
-export default ProjectView; 
+export default ProjectView;

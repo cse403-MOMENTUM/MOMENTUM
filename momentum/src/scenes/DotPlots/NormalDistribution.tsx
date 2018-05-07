@@ -22,12 +22,12 @@ class NormalDistribution extends React.Component<IProps, {}> {
     const gaussianConstant = 1 / Math.sqrt(2 * Math.PI);
     const adjustedX = (x - mean) / sigma;
     return gaussianConstant * Math.exp(-.5 * adjustedX * adjustedX) / sigma;
-  };
+  }
 
   public ref: SVGElement;
 
   private xScale: d3.ScaleContinuousNumeric<number, number>;
-  private yScale: d3.ScaleContinuousNumeric<number, number>;;
+  private yScale: d3.ScaleContinuousNumeric<number, number>;
 
   constructor(props: IProps) {
     super(props);
