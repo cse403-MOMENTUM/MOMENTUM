@@ -1,0 +1,42 @@
+Goals from Last Week
+=======================
+1: Continue implementation
+    [Anita] 
+    [Josh] Refactor existing work into nearly-finalized architecture. Add Redux logic to React components.
+2:  [Haley] finish all user studies on Manuscript, make edits to MVP, then conduct user studies on MVP
+3:  [Leon] continue researching database integration with React/Redux, tie actions to database queries
+4:  [Austin] Help tie in the ends (user studies analyzation, implementation, team project)
+
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+1: 
+[Anita]  Installed Semantics UI, added header/footer bars, added modal with task creation on main app
+[Josh] Redefined project structure 
+2: [Haley] Will finish last few user studies on Manuscript, will start on user research for Momentum
+3: [Leon] Researched on databases to use in our project
+4: [Austin] Helped hash out user studies analyzation
+
+Goals for Upcoming Week
+=======================
+Continue implementation
+[Anita] Refactor existing code to separate presentation from logic, finish login, table, task view
+[Josh] 
+[Leon] Work on drafting tables and commands for inserting, updating, and deleting items from the database
+[Austin] Ramp up on helping with implementation
+[Haley] Complete more user studies on Momentum. Help with refining our tool using the feedback on Manuscript.
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Clarifications
+  - Expectations for week 7 project assignment?
