@@ -8,7 +8,7 @@ import * as React from 'react';
 import XAxis from './XAxis';
 import YAxis from './YAxis';
 
-interface IProps {
+interface Props {
   translate: {x: number, y: number};
   width: number;
   height: number;
@@ -18,7 +18,7 @@ interface IProps {
   bins: number;
 }
 
-class DotPlot extends React.Component<IProps, {}> {
+class DotPlot extends React.Component<Props, {}> {
   private static getSamples(numSamples: number): number[] {
     const start = 1/numSamples / 2;
     const stop = 1 - 1/numSamples / 2;

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import { IAddTodoAction, IToggleTodoAction, TodoTypes } from '../../action-types';
+import { AddTodoAction, TodoTypes, ToggleTodoAction } from '../../action-types';
 
-type Action = IAddTodoAction | IToggleTodoAction;
+type Action = AddTodoAction | ToggleTodoAction;
 
 // this method can be confusing because it serves two purposes:
 // 1 - it create a new todo
@@ -10,9 +10,9 @@ const todo = (state: {completed: boolean, id: number} | undefined, action: Actio
   switch (action.type) {
     case TodoTypes.ADD_TODO:
       return {
+        completed: false,
         id: action.payload.todo.id,
-        text: action.payload.todo.text,
-        completed: false
+        text: action.payload.todo.text
       };
     case TodoTypes.TOGGLE_TODO:
       if (state!.id !== action.payload.todoId) {

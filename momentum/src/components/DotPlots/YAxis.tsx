@@ -1,12 +1,12 @@
 import * as d3 from 'd3';
 import * as React from 'react';
 
-interface IProps {
+interface Props {
   height: number;
   scale: d3.ScaleContinuousNumeric<number, number>;
 }
 
-class YAxis extends React.Component<IProps, {}> {
+class YAxis extends React.Component<Props, {}> {
   public ref: SVGGElement;
 
   public render() {

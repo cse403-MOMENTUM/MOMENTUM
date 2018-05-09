@@ -1,7 +1,7 @@
 import { TodoTypes } from '../../action-types';
-import { IAddTodoAction, IToggleTodoAction } from '../../action-types';
+import { AddTodoAction, ToggleTodoAction } from '../../action-types';
 
-export function addTodo(text: string): IAddTodoAction {
+export function addTodo(text: string): AddTodoAction {
   return {
     type: TodoTypes.ADD_TODO,
     payload: {
@@ -14,7 +14,7 @@ export function addTodo(text: string): IAddTodoAction {
   };
 }
 
-export function toggleTodo(todoId: number): IToggleTodoAction {
+export function toggleTodo(todoId: number): ToggleTodoAction {
   return {
     type: TodoTypes.TOGGLE_TODO,
     payload: { todoId }

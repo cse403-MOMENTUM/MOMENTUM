@@ -4,16 +4,16 @@ import { Form } from 'semantic-ui-react';
 
 // import logo from '../data/logo.svg';
 
-interface IProps {
+interface Props {
   taskName: string;
 }
 
-interface IState {
+interface State {
   taskName: string;
 }
 
-class TaskInput extends React.Component<IProps, IState> {
-  constructor(props: IProps) {
+class TaskInput extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       taskName: this.props.taskName,

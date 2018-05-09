@@ -5,7 +5,7 @@ export const enum TodoTypes {
   TOGGLE_TODO = 'TOGGLE_TODO'
 }
 
-export interface IAddTodoAction {
+export interface AddTodoAction {
   type: TodoTypes.ADD_TODO;
   payload: {
     todo: {
@@ -16,7 +16,7 @@ export interface IAddTodoAction {
   };
 }
 
-export interface IToggleTodoAction {
+export interface ToggleTodoAction {
   type: TodoTypes.TOGGLE_TODO;
   payload: { todoId: number };
 }
