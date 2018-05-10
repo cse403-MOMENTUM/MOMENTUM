@@ -14,10 +14,15 @@
         color: #FDC02F;
     }
 
+#login-form {
+    margin-top: 22em;
+}
+
 #sign-in {
     color: '#FEFEFE';
     font-weight: lighter;
     text-transform: uppercase;
+    margin-bottom: 1.5em;
     width: 100%;
 }
 

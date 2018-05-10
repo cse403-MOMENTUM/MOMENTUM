@@ -17,14 +17,14 @@ class ProjectView extends React.Component<{}, {}> {
   public render() {
     return (
         <Grid columns="two" divided={true} relaxed={true} id="login-grid">
-            <Grid.Row stretched={true} >
+            <Grid.Row>
                 <Grid.Column textAlign="right" className="middle aligned">
                     <div className="center align">
                         <h1 id="login-title" className="ui center align"><span className="yellow-text">Moment</span>um</h1>
                     </div>
                 </Grid.Column>
                 <Grid.Column width={4} className="middle align">
-                    <Form>
+                    <Form id="login-form">
                     <Form.Field>
                     <input placeholder="Email address" />
                     </Form.Field>
