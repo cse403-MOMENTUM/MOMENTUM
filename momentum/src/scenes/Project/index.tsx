@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Header, Modal, Table } from 'semantic-ui-react';
+import { Button, Header, Icon, Modal, Table } from 'semantic-ui-react';
 import TaskInput from './components/TaskInput';
 // import TaskView from './components/TaskView';
 
@@ -35,6 +35,7 @@ class ProjectView extends React.Component<IProps, IState> {
             <TaskInput taskName="My Task" />
             </Modal.Content>
         </Modal>
+        <Icon name="filter" />
         <Table singleLine={true}>
           <Table.Header>
             <Table.Row>
