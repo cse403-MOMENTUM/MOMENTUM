@@ -4,6 +4,7 @@ import { Container, Menu } from 'semantic-ui-react';
 import logo from './data/momentum-logo.png';
 import NormalDistribution from './scenes/DotPlots/NormalDistribution';
 import Project from './scenes/Project';
+import Login from './scenes/Project/components/Login';
 
 import './styles/App.css';
 
@@ -15,6 +16,7 @@ class App extends React.Component {
   public render() {
     return (
       <div>
+        <Login />
         <Menu
           secondary={true}
           id="menu-bar">

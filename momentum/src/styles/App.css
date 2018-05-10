@@ -23,6 +23,22 @@
 
 /* Custom styles */
 
+.yellow {
+  background-color: #FDC02F;
+}
+
+a.secondary-link {
+  color: #5F5F5F;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 #menu-bar {
   background-color: #434343;
 }
