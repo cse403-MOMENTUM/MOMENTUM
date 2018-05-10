@@ -24,3 +24,15 @@ export interface ToggleTodoAction {
 export const enum Visibility {
   SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 }
+
+// ACTUAL TYPES
+export const enum TaskTypes {
+  SET_CURRENT_TASK = 'SET_CURRENT_TASK'
+}
+
+export interface SetCurrTaskAction {
+  type: TaskTypes.SET_CURRENT_TASK;
+  payload: {
+      taskName: string
+  };
+}

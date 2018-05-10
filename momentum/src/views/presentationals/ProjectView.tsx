@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button, Modal } from 'semantic-ui-react';
-import TaskInput from './TaskInput';
+import TaskInputRedux from '../containers/TaskInputRedux';
 
 // import logo from '../data/logo.svg';
 
@@ -21,7 +21,7 @@ class ProjectView extends React.Component<{}, {}> {
             style={this.inlineStyle.modal}>
             <Modal.Header>Create new task</Modal.Header>
             <Modal.Content>
-                <TaskInput taskName="My Task" />
+                <TaskInputRedux />
             </Modal.Content>
         </Modal>
     );
