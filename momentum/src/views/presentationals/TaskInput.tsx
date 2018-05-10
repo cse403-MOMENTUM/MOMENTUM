@@ -12,11 +12,15 @@ interface Props {
 }
 
 class TaskInput extends React.Component<Props, {}> {
+  constructor(props: Props) {
+    super(props);
+  }
+
   public render() {
     return (
       <div className="task-detail">
         <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { this.props.currentTask!.name }</h1>
+          <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
           <Form onSubmit={ this.props.handleSubmit }>
 
             <Form.Input

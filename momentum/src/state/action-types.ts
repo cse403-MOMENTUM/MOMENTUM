@@ -1,3 +1,5 @@
+import { Action } from 'redux';
+
 // see https://github.com/Automattic/wp-calypso/blob/master/client/state/action-types.js
 
 export const enum TodoTypes {
@@ -5,7 +7,7 @@ export const enum TodoTypes {
   TOGGLE_TODO = 'TOGGLE_TODO'
 }
 
-export interface AddTodoAction {
+export interface AddTodoAction extends Action {
   type: TodoTypes.ADD_TODO;
   payload: {
     todo: {
@@ -16,7 +18,7 @@ export interface AddTodoAction {
   };
 }
 
-export interface ToggleTodoAction {
+export interface ToggleTodoAction extends Action {
   type: TodoTypes.TOGGLE_TODO;
   payload: { todoId: number };
 }
@@ -30,7 +32,7 @@ export const enum TaskTypes {
   SET_CURRENT_TASK = 'SET_CURRENT_TASK'
 }
 
-export interface SetCurrTaskAction {
+export interface SetCurrTaskAction extends Action {
   type: TaskTypes.SET_CURRENT_TASK;
   payload: {
       taskName: string

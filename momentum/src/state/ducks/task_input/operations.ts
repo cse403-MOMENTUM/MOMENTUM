@@ -1,11 +1,12 @@
+import { SetCurrTaskAction } from '../../action-types';
 import ac from './action-creators';
 
-export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : void => {
+export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCurrTaskAction => {
   // NOTE: We may not need this action handler
   // https://reactjs.org/docs/forms.html#handling-multiple-inputs
   const target = event.target as HTMLInputElement;
   // TODO: currentTask.name = target.value (via action-creator)
-  ac.setCurrentTask(target.value);
+  return ac.setCurrentTask(target.value);
 };
 
 // TODO: this is not idiomatic redux. `alert` is a side effect.

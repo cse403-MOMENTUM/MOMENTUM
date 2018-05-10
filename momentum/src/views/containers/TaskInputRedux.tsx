@@ -1,11 +1,11 @@
 // TODO: give this file a better name
 import { connect } from 'react-redux';
 import { State } from 'src/models/_Store';
-import { taskInputOperations } from '../../state/ducks/task_input';
+import { taskInputOperations, taskInputSelectors } from '../../state/ducks/task_input';
 import TaskInput from '../presentationals/TaskInput';
 
 const mapStateToProps = (state: State) => ({
-  currentTask: state.currentTask
+  currentTask: taskInputSelectors.getCurrentTask(state)
 });
 
 const mapDispatchToProps = {
@@ -13,6 +13,7 @@ const mapDispatchToProps = {
   handleSubmit: taskInputOperations.handleSubmit
 };
 
-const TaskInputRedux = connect(mapStateToProps, mapDispatchToProps)(TaskInput);
+// tslint:disable-next-line:no-any
+const TaskInputRedux = connect<any, any, any>(mapStateToProps, mapDispatchToProps)(TaskInput);
 
 export default TaskInputRedux;
