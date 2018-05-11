@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Table } from 'semantic-ui-react';
+import { Form, Table } from 'semantic-ui-react';
 
 // import logo from '../data/logo.svg';
 
@@ -20,22 +20,28 @@ class ProjectTaskTable extends React.Component<{}, {}> {
 
           <Table.Body>
             <Table.Row>
-              <Table.Cell>todo</Table.Cell>
-              <Table.Cell>Name 1</Table.Cell>
-              <Table.Cell>John Lilki</Table.Cell>
-              <Table.Cell>- : - : -</Table.Cell>
-              <Table.Cell>todo</Table.Cell>
+                <Table.Cell>todo</Table.Cell>
+                <Form.Button color="yellow">
+                  <Table.Cell>Name 1</Table.Cell>
+                </Form.Button>
+                <Table.Cell>John Lilki</Table.Cell>
+                <Table.Cell>- : - : -</Table.Cell>
+                <Table.Cell>todo</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>todo</Table.Cell>
-              <Table.Cell>Name 2</Table.Cell>
+              <Form.Button color="yellow">
+                <Table.Cell>Name 2</Table.Cell>
+              </Form.Button>
               <Table.Cell>Jamie Harington</Table.Cell>
               <Table.Cell>- : - : -</Table.Cell>
               <Table.Cell>todo</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>todo</Table.Cell>
-              <Table.Cell>Name 3</Table.Cell>
+              <Form.Button color="yellow">
+                <Table.Cell>Name 3</Table.Cell>
+              </Form.Button>
               <Table.Cell>Jill Lewis</Table.Cell>
               <Table.Cell>- : - : -</Table.Cell>
               <Table.Cell>todo</Table.Cell>
