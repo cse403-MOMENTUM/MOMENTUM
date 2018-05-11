@@ -3,7 +3,7 @@ import * as React from 'react';
 import DotPlot from './DotPlot';
 import Graph from './Graph';
 
-interface IProps {
+interface Props {
   margin: {
     bottom: number,
     left: number,
@@ -15,21 +15,21 @@ interface IProps {
   height: number;
 }
 
-class NormalDistribution extends React.Component<IProps, {}> {
+class NormalDistribution extends React.Component<Props, {}> {
   // taken from Jason Davies science library
   // https://github.com/jasondavies/science.js/blob/master/src/stats/distribution/gaussian.js
   private static gaussian_pdf(x: number, mean: number, sigma: number) {
     const gaussianConstant = 1 / Math.sqrt(2 * Math.PI);
     const adjustedX = (x - mean) / sigma;
     return gaussianConstant * Math.exp(-.5 * adjustedX * adjustedX) / sigma;
-  };
+  }
 
   public ref: SVGElement;
 
   private xScale: d3.ScaleContinuousNumeric<number, number>;
-  private yScale: d3.ScaleContinuousNumeric<number, number>;;
+  private yScale: d3.ScaleContinuousNumeric<number, number>;
 
-  constructor(props: IProps) {
+  constructor(props: Props) {
     super(props);
     this.xScale = d3.scaleLinear()
                     .domain([0 - (this.props.z_limit * 1), 0 + (this.props.z_limit * 1)])
