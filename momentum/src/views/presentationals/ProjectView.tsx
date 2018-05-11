@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Button, Modal } from 'semantic-ui-react';
+import { Button, Header, Icon, Modal } from 'semantic-ui-react';
 import TaskInputRedux from '../containers/TaskInputRedux';
+import ProjectTaskTable from './ProjectTaskTable';
 
 // import logo from '../data/logo.svg';
 
@@ -19,6 +20,10 @@ class ProjectView extends React.Component<{}, {}> {
 
   public render() {
     return (
+      <div>
+        <Header as="h1" textAlign="center">Project Name (TODO)</Header>
+        <Header as="h3" textAlign="center">John Smith - Jane Doe (TODO)</Header>
+        <Header as="h2">Tasks</Header>
         <Modal
             closeIcon={true}
             trigger={<Button color="yellow">New Task</Button>}
@@ -28,6 +33,9 @@ class ProjectView extends React.Component<{}, {}> {
                 <TaskInputRedux />
             </Modal.Content>
         </Modal>
+        <Icon name="filter" />
+        <ProjectTaskTable />
+      </div>
     );
   }
 }
