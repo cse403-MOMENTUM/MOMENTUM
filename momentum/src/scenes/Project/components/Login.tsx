@@ -3,7 +3,7 @@ import { Button, Form, Grid} from 'semantic-ui-react';
 
 import '../../../styles/Login.css';
 
-class ProjectView extends React.Component<{}, {}> {
+class Login extends React.Component<{}, {}> {
 //   private inlineStyle = {
 //     sign_in: {
 //         backgroundColor: '#FDC02F',
@@ -19,11 +19,11 @@ class ProjectView extends React.Component<{}, {}> {
         <Grid columns="two" divided={true} relaxed={true} id="login-grid">
             <Grid.Row>
                 <Grid.Column textAlign="right" className="middle aligned">
-                    <div className="center align">
+                    {/* <div className="center align"> */}
                         <h1 id="login-title" className="ui center align"><span className="yellow-text">Moment</span>um</h1>
-                    </div>
+                    {/* </div> */}
                 </Grid.Column>
-                <Grid.Column width={4} className="middle align">
+                <Grid.Column width={4} className="center align">
                     <Form id="login-form">
                     <Form.Field>
                     <input placeholder="Email address" />
@@ -42,4 +42,4 @@ class ProjectView extends React.Component<{}, {}> {
   }
 }
 
-export default ProjectView;
+export default Login;

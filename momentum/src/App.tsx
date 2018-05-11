@@ -5,6 +5,7 @@ import logo from './data/momentum-logo.png';
 import NormalDistribution from './scenes/DotPlots/NormalDistribution';
 import Project from './scenes/Project';
 import Login from './scenes/Project/components/Login';
+import ProjectList from './scenes/Project/components/ProjectList';
 
 import './styles/App.css';
 
@@ -26,6 +27,9 @@ class App extends React.Component {
             onClick={this.handleItemClick}
           > <img src={logo} className="App-logo" alt="logo" /> </Menu.Item>
         </Menu>
+        <Container>
+          <ProjectList />
+        </Container>
         <Container>
           <Project taskName="smthing" />
           <NormalDistribution width={960} height={450}
