@@ -3,7 +3,7 @@ import * as React from 'react';
 import XAxis from './XAxis';
 import YAxis from './YAxis';
 
-interface IProps {
+interface Props {
   width: number;
   height: number;
   translate: {x: number, y: number};
@@ -13,7 +13,7 @@ interface IProps {
   fun(x: number): number;
 }
 
-class Graph extends React.Component<IProps, {}> {
+class Graph extends React.Component<Props, {}> {
   public ref: SVGPathElement;
 
   public render() {

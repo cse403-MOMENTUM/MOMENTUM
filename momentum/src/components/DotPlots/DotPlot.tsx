@@ -8,7 +8,7 @@ import * as React from 'react';
 import XAxis from './XAxis';
 import YAxis from './YAxis';
 
-interface IProps {
+interface Props {
   translate: {x: number, y: number};
   width: number;
   height: number;
@@ -18,12 +18,12 @@ interface IProps {
   bins: number;
 }
 
-class DotPlot extends React.Component<IProps, {}> {
+class DotPlot extends React.Component<Props, {}> {
   private static getSamples(numSamples: number): number[] {
     const start = 1/numSamples / 2;
     const stop = 1 - 1/numSamples / 2;
     const step = (stop - start) / (numSamples - 1);
-    return _.range(start, stop + step, step); 
+    return _.range(start, stop + step, step);
   }
 
   private static getQuantiles(numSamples: number): Array<[number, number]> {
@@ -54,7 +54,7 @@ class DotPlot extends React.Component<IProps, {}> {
             cx={0} // determined by bin
             cy={-iDot * 2 * radius - radius}
             />
-        )
+        );
       });
 
       // wrap dots in a group
