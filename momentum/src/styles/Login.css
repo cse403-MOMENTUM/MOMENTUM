@@ -1,0 +1,35 @@
+#login-grid {
+    background-color: #434343;
+    height: 720px;  /* temporary */
+}
+
+#login-title {
+    color: #FFFFFF;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+    #login-title span {
+        color: #FDC02F;
+    }
+
+#login-form {
+    margin-top: 22em;
+}
+
+#sign-in {
+    color: '#FEFEFE';
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+#forgot-password {
+    float: left;
+}
+
+#sign-up {
+    float: right;
+}
