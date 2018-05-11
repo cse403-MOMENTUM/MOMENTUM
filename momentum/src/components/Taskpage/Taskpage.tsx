@@ -2,20 +2,10 @@ import * as React from 'react';
 import { Container, Form, Header } from 'semantic-ui-react';
 // import '../styles/Task.css';
 
-// import logo from '../data/logo.svg';
-
-// interface IProps {
-//   taskName: string
-// }
-
-// interface IState {
-//   taskName: string
-// }
-
 class Taskpage extends React.Component<{}, {}> {
 //   constructor(props: IProps) {
 //     super(props);
-//     this.state = { 
+//     this.state = {
 //       taskName: this.props.taskName,
 //     };
 //   }
@@ -58,4 +48,4 @@ class Taskpage extends React.Component<{}, {}> {
   }
 }
 
-export default Taskpage; 
+export default Taskpage;
