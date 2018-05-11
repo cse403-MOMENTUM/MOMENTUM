@@ -1,0 +1,18 @@
+Josh Pollock
+CSE 403: Week 7 Individual Report
+
+5/1-5/7 Goals
+========================
+- Work with Austin to add EBS backend to Momentum
+- Ensure every part of our software stack is working smoothly.
+
+Actual Progress
+========================
+I synced with Austin on how Redux and React work.
+I clarified our architecture. We will use re-ducks with some type information.
+
+5/8-5/14 Goals
+========================
+- Port existing code to new Redux/React re-ducks style with types.
+- Implement EBS operations.
+- Hook up logic to website frontend.
