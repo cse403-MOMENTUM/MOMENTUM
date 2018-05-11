@@ -28,7 +28,8 @@ Info about Semantic UI React: https://react.semantic-ui.com/introduction
 1. Install HomeBrew
 2. Install Node: `brew install node`
 3. (This step may not be necessary. Try it without this!) Install TypeScript: `npm i -g typescript`
-4. Navigate to `momentum` and run `npm install`
+4. Clone this repo, navigate to `momentum/MOMENTUM` and run `npm install` 
+5. Lastly, run `npm start`
 
 The setup above is probably incomplete. Let Josh know about setup issues.
 
