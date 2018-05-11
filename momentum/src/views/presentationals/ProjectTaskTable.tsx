@@ -23,22 +23,22 @@ class ProjectTaskTable extends React.Component<{}, {}> {
               <Table.Cell>todo</Table.Cell>
               <Table.Cell>Name 1</Table.Cell>
               <Table.Cell>John Lilki</Table.Cell>
-              <Table.Cell>No</Table.Cell>
+              <Table.Cell>- : - : -</Table.Cell>
               <Table.Cell>todo</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>todo</Table.Cell>
-              <Table.Cell>Name 1</Table.Cell>
+              <Table.Cell>Name 2</Table.Cell>
               <Table.Cell>Jamie Harington</Table.Cell>
-              <Table.Cell>No</Table.Cell>
+              <Table.Cell>- : - : -</Table.Cell>
               <Table.Cell>todo</Table.Cell>
             </Table.Row>
             <Table.Row>
               <Table.Cell>todo</Table.Cell>
-              <Table.Cell>Name 1</Table.Cell>
+              <Table.Cell>Name 3</Table.Cell>
               <Table.Cell>Jill Lewis</Table.Cell>
+              <Table.Cell>- : - : -</Table.Cell>
               <Table.Cell>todo</Table.Cell>
-              <Table.Cell>No</Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>
