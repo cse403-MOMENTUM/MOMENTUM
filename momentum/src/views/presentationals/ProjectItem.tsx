@@ -14,7 +14,7 @@ class ProjectItem extends React.Component<{}, {}> {
   public render() {
     return (
       <Card
-        href="/project"
+        href={process.env.PUBLIC_URL + '/project'}
         padded={true}
         color="blue">
         <Card.Content>
