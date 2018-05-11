@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Container, Form, Header } from 'semantic-ui-react';
 // import '../styles/Task.css';
 
-class Taskpage extends React.Component<{}, {}> {
+class TaskPage extends React.Component<{}, {}> {
 //   constructor(props: IProps) {
 //     super(props);
 //     this.state = {
@@ -15,30 +15,30 @@ class Taskpage extends React.Component<{}, {}> {
       <div className="task-detail">
         <header className="task-detail-header">
           <Container textAlign="center">
-            <Header as="h2">Task Name</Header>
+            <Header as="h2">Task Name (TODO)</Header>
           </Container>
             <div className="ui two column grid">
                 <div className="column">
                     <div className="ui segment">
                         <div className="row">
-                            <div className="task-description">Task description</div>
+                            <div className="task-description">Task description (TODO)</div>
                         </div>
                     </div>
                     <div className="ui segment">
                         <div className="row">
                             <div className="estimated-time-label">Estimated Time:</div>
-                            <div className="estimated-time">45.3 Hours</div>
+                            <div className="estimated-time">--:-- Hours</div>
                             <div className="current-time-label">Current Time:</div>
-                            <div className="current-time">15.2 Hours</div>
+                            <div className="current-time">--:-- Hours</div>
                         </div>
                     </div>
                 </div>
                 <div className="column">
                     <div className="ui segment">
-                        <div className="status">You are currently working on this task</div>
-                        <Form.Button color="blue" type="submit">Stop working on this task</Form.Button>
+                        <div className="status">You are currently working (TODO) on this task</div>
+                        <Form.Button color="blue" type="submit">Stop working on this task (TODO)</Form.Button>
                         <div className="completion-status">This task is not complete</div>
-                        <Form.Button color="blue" type="submit">Mark this task as complete</Form.Button>
+                        <Form.Button color="blue" type="submit">Mark this task as complete (TODO)</Form.Button>
                     </div>
                 </div>
             </div>
@@ -48,4 +48,4 @@ class Taskpage extends React.Component<{}, {}> {
   }
 }
 
-export default Taskpage;
+export default TaskPage;

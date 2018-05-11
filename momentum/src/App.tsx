@@ -7,6 +7,7 @@ import './index.css';
 import Login from './views/presentationals/Login';
 import ProjectList from './views/presentationals/ProjectList';
 import ProjectView from './views/presentationals/ProjectView';
+import TaskPage from './views/presentationals/TaskPage';
 
 import './styles/App.css';
 
@@ -42,6 +43,9 @@ class App extends React.Component {
               right: 20,
               top: 20
             }} />
+        </Container>
+        <Container>
+          <TaskPage />
         </Container>
         <Menu
           secondary={true}
