@@ -13,7 +13,7 @@ class YAxis extends React.Component<IProps, {}> {
     const yAxis = d3.axisLeft(this.props.scale);
 
     return (
-      <g className="YAxis" ref={(ref: SVGGElement) => {this.ref = ref; d3.select(ref).call(yAxis)}} />
+      <g className="YAxis" ref={(ref: SVGGElement) => {this.ref = ref; d3.select(ref).call(yAxis);}} />
     );
   }
 }
