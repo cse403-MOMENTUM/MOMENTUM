@@ -17,7 +17,7 @@ class App extends React.Component {
 
   public render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact={true} path="/" component={Login}/>
           <Route path="/projectlist" component={ProjectList}/>
