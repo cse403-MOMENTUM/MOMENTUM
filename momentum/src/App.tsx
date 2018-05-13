@@ -44,9 +44,6 @@ class App extends React.Component {
               top: 20
             }} />
         </Container>
-        <Container>
-          <TaskPage />
-        </Container>
         <Menu
           secondary={true}
           id="footer">
