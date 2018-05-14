@@ -1,0 +1,27 @@
+Leon Pan
+CSE 403: Week 8 Individual Report
+
+
+Goals from last week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Help with initial project results report
+• Help make presentation slides
+
+Progress made this week
+=======================
+• Attended team and client meeting
+  o Discussed feedback from previous report
+• Helped address feedback on weekly report
+• Helped with implementation
+• Drafted a database to use
+• Started making presentation slides
+
+Goals for Following Week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Continue to help with implementation
+• Help with writing weekly report
+• Help finish presentation slides
