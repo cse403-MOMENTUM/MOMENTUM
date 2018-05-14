@@ -1,0 +1,21 @@
+Josh Pollock
+CSE 403: Week 8 Individual Report
+
+5/8-5/14 Goals
+========================
+- Port existing code to new Redux/React re-ducks style with types.
+- Implement EBS operations.
+- Hook up logic to website frontend.
+
+Actual Progress
+========================
+- I successfully refactored the relevant existing code to re-ducks style.
+- Visualization code remains unported, but this doesn't pose a huge issue.
+Austin handled the implementation of EBS operations.
+- The new code and logic is hooked up to the frontend. I feel much better about the backend situation.
+
+5/15-5/21 Goals
+========================
+- Flesh out backend implementation.
+  - Add and remove projects and tasks.
+  - Add teams
