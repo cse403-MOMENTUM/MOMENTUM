@@ -1,0 +1,27 @@
+Goals from Last Week
+=======================
+1:  Continue implementation
+1a: [Anita] Refactor existing code to separate presentation 
+            from logic, finish login, table, task view
+1b: [Leon] Work on drafting tables and commands for inserting,
+           updating, and deleting items from the database
+1c: [Austin] Ramp up on helping with implementation
+
+2: User Studies
+2a: [Haley] Complete more user studies on Momentum. Help with
+            refining our tool using the feedback on Manuscript.
+
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+
+
+Goals for Upcoming Week
+=======================
+
+
+Meeting Agenda
+==============
