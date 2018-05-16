@@ -2,15 +2,15 @@ import * as React from 'react';
 import { Container, Form, Header } from 'semantic-ui-react';
 // import '../styles/Task.css';
 
-interface Props {
-    isOn: false;
-    time: 0;
-}
+// interface Props {
+//     isOn: false;
+//     time: 0;
+// }
 
-class TaskPage extends React.Component<Props, {}> {
-    constructor(props: Props) {
-        super(props);
-      }
+class TaskPage extends React.Component<{}, {}> {
+    // constructor(props: Props) {
+    //   super(props);
+    // }
 
     public start() {
         // TODO
@@ -46,7 +46,8 @@ class TaskPage extends React.Component<Props, {}> {
                     <div className="column">
                         <div className="ui segment">
                             <div className="status">You are currently working (TODO) on this task</div>
-                            <Form.Button color="blue" onClick={this.props.isOn ? this.stop : this.start}>Start/Stop (TODO)</Form.Button>
+                            <Form.Button color="blue">Start/Stop (TODO)</Form.Button>
+                            {/* <Form.Button color="blue" onClick={this.props.isOn ? this.stop : this.start}>Start/Stop (TODO)</Form.Button> */}
                             <div className="completion-status">This task is not complete</div>
                             <Form.Button color="blue" type="submit">Mark this task as complete (TODO)</Form.Button>
                         </div>
