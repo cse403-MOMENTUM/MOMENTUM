@@ -1,0 +1,34 @@
++-----------------------------------+
+| Austin Ha                         |
+| CSE 403: Week 8 Individual Report |
++-----------------------------------+
+
+
+Goals from Last Week
+=======================
++-----------------------------------+
+| KEY:                              |
+| []  -- task was not completed     |
+| [x] -- task was completed.        |
+| [~] -- task is no longer relevant |
++-----------------------------------+
+
+[x] Help implement working model of EBS logic
+[] Help create tests for EBS model
+[~] Help run intial user testing for Momentum
+
+
+Updates this Week
+=======================
+(See checklist above for updates on goals from last week)
+
+Glad to be making progress this week -- I've been focusing on updating the internal structure of our data "Store" (as it is called in Redux), and making sure that we have a readable, understandable architecture.
+
+Things were a bit rocky this week in terms of team meetings, but we're still making progress.
+
+
+Goals for Upcoming Week
+=======================
+[] Continue creaing EBS logic
+[] Interface Redux logic with React.
+[] Help create tests for EBS model
