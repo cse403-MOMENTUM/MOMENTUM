@@ -13,8 +13,8 @@ const currentProject = (state: State | undefined = initialState, action: Action)
         currentProject: {
           id: 0,
           name: action.payload.projectName,
-          description: action.payload.projectDescription,
-          memberCount: action.payload.projectMemberCount
+          memberCount: action.payload.projectMemberCount,
+          description: action.payload.projectDescription
         }
       };
     default:
