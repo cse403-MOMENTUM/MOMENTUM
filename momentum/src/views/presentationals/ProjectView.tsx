@@ -30,8 +30,8 @@ class ProjectView extends React.Component<{}, {}> {
             <Link to="/projectlist">
               <Icon name="arrow left" size="large" color="grey" />
             </Link>
-            <Header as="h1" textAlign="center">Project Name (TODO)</Header>
-            <Header as="h3" textAlign="center">John Smith - Jane Doe (TODO)</Header>
+            <Header as="h1" textAlign="center">Momentum</Header>
+            <Header as="h3" textAlign="center">Anita Leung - Austin Ha - Haley Ruth - Josh Pollock - Leon Pan</Header>
             <Header as="h2">Tasks</Header>
             <Modal
                 closeIcon={true}
@@ -42,9 +42,11 @@ class ProjectView extends React.Component<{}, {}> {
                     <TaskInputRedux />
                 </Modal.Content>
             </Modal>
-            <Icon name="filter" />
+            <Icon name="filter"/>
             <ProjectTaskTable />
-            <NormalDistribution width={960} height={450}
+            <NormalDistribution
+                width={576} height={270}
+                // width={960} height={450}
                 z_limit={4}
                 margin={{
                   bottom: 30,

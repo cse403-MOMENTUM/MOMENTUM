@@ -1,15 +1,25 @@
 import * as React from 'react';
-// import { BrowserRouter, Link } from 'react-router-dom';
 import { Card, Icon } from 'semantic-ui-react';
+// import { Project } from 'src/models/Project';
 
-// import logo from '../data/logo.svg';
+interface Props {
+  // project: Project; // TODO
+  name: string;
+  memberCount: number;
+  description: string;
+  index: string; // TODO: figure out a way so that we don't have to manually input this
+}
 
-class ProjectItem extends React.Component<{}, {}> {
+class ProjectItem extends React.Component<Props, {}> {
   // private inlineStyle = {
   //   project_item : {
   //     background: '#d4d4d5'
   //   }
   // };
+
+  constructor(props: Props) {
+    super(props);
+  }
 
   public render() {
     return (
@@ -18,10 +28,10 @@ class ProjectItem extends React.Component<{}, {}> {
         padded={true}
         color="blue">
         <Card.Content>
-          <Card.Header>Project Name</Card.Header>
-          <Card.Meta>01</Card.Meta>
-          <Card.Meta><Icon name="user" color="grey"/> 10 members</Card.Meta>
-          <Card.Description>Possible project description here.</Card.Description>
+          <Card.Header>{this.props.name}</Card.Header>
+          <Card.Meta>{this.props.index}</Card.Meta>
+          <Card.Meta><Icon name="user" color="grey"/> {this.props.memberCount} members</Card.Meta>
+          <Card.Description>{this.props.description}</Card.Description>
         </Card.Content>
       </Card>
     );

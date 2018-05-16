@@ -27,7 +27,23 @@ export const enum Visibility {
   SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 }
 
-// ACTUAL TYPES
+// *** ACTUAL TYPES ***
+
+// Project
+export const enum TaskTypes {
+  SET_CURRENT_PROJECT = 'SET_CURRENT_TASK'
+}
+
+export interface SetCurrProjectAction extends Action {
+  type: TaskTypes.SET_CURRENT_PROJECT;
+  payload: {
+      projectName: string,
+      projectDescription: string,
+      projectMemberCount: number
+  };
+}
+
+// Task
 export const enum TaskTypes {
   SET_CURRENT_TASK = 'SET_CURRENT_TASK'
 }
@@ -38,3 +54,5 @@ export interface SetCurrTaskAction extends Action {
       taskName: string
   };
 }
+
+

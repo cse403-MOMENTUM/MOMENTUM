@@ -1,8 +1,11 @@
+import * as fromProject from './Project';
 import * as fromTasks from './Task';
 
 export interface State {
   currentTask: fromTasks.Task;
   tasks: fromTasks.State;
+  currentProject: fromProject.Project;
+  projects: fromProject.State;
 }
 
 export const initialState: State = {
@@ -10,5 +13,12 @@ export const initialState: State = {
     id: 0,
     name: ''
   },
-  tasks: fromTasks.initialState
+  tasks: fromTasks.initialState,
+  currentProject: {
+    id: 0,
+    name: '',
+    memberCount: 0,
+    description: ''
+  },
+  projects: fromProject.initialState
 };
