@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Form, Grid} from 'semantic-ui-react';
-
 import '../../styles/Login.css';
+// import ProjectList from './ProjectList';
 
 class Login extends React.Component<{}, {}> {
 //   private inlineStyle = {
@@ -31,7 +32,9 @@ class Login extends React.Component<{}, {}> {
                     <Form.Field>
                     <input placeholder="Password" />
                     </Form.Field>
-                    <Button type="submit" id="sign-in" className="yellow">Sign in</Button>
+                    <Link to="/projectlist">
+                        <Button type="submit" id="sign-in" className="yellow">Sign in</Button>
+                    </Link>
                     <div id="forgot-password"><a href="/" className="secondary-link">Forgot your password?</a></div>
                     <div id="sign-up"><a href="/" className="secondary-link">Sign up</a></div>
                     </Form>

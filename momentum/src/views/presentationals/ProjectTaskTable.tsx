@@ -28,47 +28,34 @@ class ProjectTaskTable extends React.Component<{}, {}> {
           </Table.Header>
 
           <Table.Body>
-            <Table.Row>
-                <Table.Cell>todo</Table.Cell>
-                <Modal
-                  closeIcon={true}
-                  trigger={<Button color="yellow"> <Table.Cell>Name 1</Table.Cell> </Button>}
-                  style={this.inlineStyle.modal}>
-                  <Modal.Content>
-                    <TaskPage />
-                  </Modal.Content>
-                </Modal>
-                <Table.Cell>John Lilki</Table.Cell>
-                <Table.Cell>- : - : -</Table.Cell>
-                <Table.Cell>todo</Table.Cell>
-            </Table.Row>
-            <Table.Row>
-              <Table.Cell>todo</Table.Cell>
-              <Modal
+            <Table.Row >
+            <Modal
                 closeIcon={true}
-                trigger={<Button color="yellow"> <Table.Cell>Name 2</Table.Cell> </Button>}
+                trigger={<Button color="yellow"> <Table.Cell>Name 1</Table.Cell> </Button>}
                 style={this.inlineStyle.modal}>
                 <Modal.Content>
                   <TaskPage />
                 </Modal.Content>
               </Modal>
-              <Table.Cell>Jamie Harington</Table.Cell>
-              <Table.Cell>- : - : -</Table.Cell>
-              <Table.Cell>todo</Table.Cell>
+              <Table.Cell>High</Table.Cell>
+              <Table.Cell>Create velocity calculator</Table.Cell>
+              <Table.Cell>Austin Ha</Table.Cell>
+              <Table.Cell>0 : 0 : 0</Table.Cell>
+              <Table.Cell>n/a</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>todo</Table.Cell>
-              <Modal
-                closeIcon={true}
-                trigger={<Button color="yellow"> <Table.Cell>Name 3</Table.Cell> </Button>}
-                style={this.inlineStyle.modal}>
-                <Modal.Content>
-                  <TaskPage />
-                </Modal.Content>
-              </Modal>
-              <Table.Cell>Jill Lewis</Table.Cell>
-              <Table.Cell>- : - : -</Table.Cell>
-              <Table.Cell>todo</Table.Cell>
+              <Table.Cell>Medium</Table.Cell>
+              <Table.Cell>Add routing features</Table.Cell>
+              <Table.Cell>Anita Leung</Table.Cell>
+              <Table.Cell>0 : 0 : 0</Table.Cell>
+              <Table.Cell>n/a</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Low</Table.Cell>
+              <Table.Cell>Upgrade dotpot visualization to D3 V5</Table.Cell>
+              <Table.Cell>Josh Pollock</Table.Cell>
+              <Table.Cell>0 : 0 : 0</Table.Cell>
+              <Table.Cell>n/a</Table.Cell>
             </Table.Row>
           </Table.Body>
         </Table>

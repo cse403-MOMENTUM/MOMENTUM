@@ -25,13 +25,13 @@ class TaskPage extends React.Component<{}, {}> {
         <div className="task-detail">
             <header className="task-detail-header">
             <Container textAlign="center">
-                <Header as="h2">Task Name (TODO)</Header>
+                <Header as="h2">Create velocity calculator</Header>
             </Container>
                 <div className="ui two column grid">
                     <div className="column">
                         <div className="ui segment">
                             <div className="row">
-                                <div className="task-description">Task description (TODO)</div>
+                                <div className="task-description">Create velocity calculator for our project</div>
                             </div>
                         </div>
                         <div className="ui segment">
