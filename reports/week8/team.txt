@@ -17,11 +17,19 @@ Updates This Week
 
 Updates on Goals
 ----------------
-
+- [Anita] Finished presentation of login, table view, project list
+- [Haley] Completed four Momentum studies
+- [Josh] Reorganized architecture of project
+- [Austin] Help start EBS skeleton
+- [Leon] Help research database
 
 Goals for Upcoming Week
 =======================
-
+- [Austin + Josh] Finish EBS
+- [Leon] Address feedback on weekly project reports
+- [Anita] Connect task input form to redux, add timer to task page
+- [Haley] Continue on user studies for Momentum
 
 Meeting Agenda
 ==============
+N/A
