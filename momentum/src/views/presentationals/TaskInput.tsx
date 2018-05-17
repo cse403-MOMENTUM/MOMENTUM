@@ -21,15 +21,29 @@ const teamMemberOptions = [
   { key: 'joshpollock', text: 'Josh Pollock', value: 'joshpollock'}
 ];
 
+const renderField = ({
+  // tslint:disable-next-line:variable-name
+  input,
+  // tslint:disable-next-line:variable-name
+  label
+}) => (
+  <div>
+    <label>{label}</label>
+    <div>
+      <input {...input} placeholder={label} />
+    </div>
+  </div>
+);
+
 // tslint:disable-next-line:no-any
 const TaskInput = (props: any) => {
     return (
       <div className="task-detail">
         <header className="task-detail-header">
           {/* <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1> */}
-          <Form onSubmit={ props.handleSubmit }>
+          <form onSubmit={ props.handleSubmit }>
 
-            <Field name="taskname" component={ rsrform.InputField }
+            <Field name="taskname" component={ renderField }
               label="Task Name"
               placeholder="Task name"
               onChange={ props.handleOnChange }/>
@@ -59,7 +73,7 @@ const TaskInput = (props: any) => {
               type="submit">
               Create task
               </Form.Field>
-          </Form>
+          </form>
         </header>
       </div>
     );
