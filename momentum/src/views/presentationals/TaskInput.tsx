@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Form } from 'semantic-ui-react';
+import { Control, Form } from 'react-redux-form';
+import { Field } from 'redux-form';
+import { Form as SemForm } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
-// import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
 
@@ -21,32 +22,35 @@ class TaskInput extends React.Component<Props, {}> {
       <div className="task-detail">
         <header className="task-detail-header">
           <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
-          <Form onSubmit={ this.props.handleSubmit }>
+          <Form onSubmit={this.props.handleSubmit} model="task">
 
-            <Form.Input
+            <Control.text model=".name" />
+
+            <Field
+              name="task-name"
               inline={true}
               fluid={true}
               label="Task Name"
               placeholder="Task name"
               onChange={ this.props.handleOnChange }/>
 
-            <Form.Group inline={true} id="task-priority">
+            <SemForm.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
 
-              <Form.Radio label="Low" value="l" />
-              <Form.Radio label="Medium" value="m" />
-              <Form.Radio label="High" value="h" />
-            </Form.Group>
+              <SemForm.Radio label="Low" value="l" />
+              <SemForm.Radio label="Medium" value="m" />
+              <SemForm.Radio label="High" value="h" />
+            </SemForm.Group>
 
-            <Form.Group inline={true}>
-              <Form.Input inline={true} label="Your task time estimate" /> hours
-            </Form.Group>
+            <SemForm.Group inline={true}>
+              <SemForm.Input inline={true} label="Your task time estimate" /> hours
+            </SemForm.Group>
 
-            <Form.TextArea
+            <SemForm.TextArea
               label="Task description"
               placeholder="Enter your task description" />
 
-            <Form.Button color="blue" type="submit">Create this task</Form.Button>
+            <SemForm.Button color="blue" type="submit">Create this task</SemForm.Button>
           </Form>
         </header>
       </div>
