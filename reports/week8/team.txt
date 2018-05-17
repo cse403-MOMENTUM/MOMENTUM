@@ -21,7 +21,7 @@ Updates on Goals
 - [Haley] Completed four Momentum studies
 - [Josh] Reorganized architecture of project
 - [Austin] Help start EBS skeleton
-- [Leon] Help research database
+- [Leon] Drafted tables and commands for database
 
 Goals for Upcoming Week
 =======================
@@ -32,4 +32,12 @@ Goals for Upcoming Week
 
 Meeting Agenda
 ==============
-N/A
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Clarifications
+  - Expectations for week 8 project assignment
