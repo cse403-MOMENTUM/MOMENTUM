@@ -3,17 +3,17 @@ import * as React from 'react';
 import * as rsrform from 'react-semantic-redux-form';
 import { Field, reduxForm } from 'redux-form';
 import { Button, Form } from 'semantic-ui-react';
-import { Task } from 'src/models/Task';
+// import { Task } from 'src/models/Task';
 
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
 
-interface Props {
-  currentTask: Task;
-  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
-  handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
-}
+// interface Props {
+//   currentTask: Task;
+//   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+//   handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
+// }
 
 const teamMemberOptions = [
   { key: 'anitaleung', text: 'Anita Leung', value: 'anitaleung'},
@@ -29,7 +29,7 @@ const TaskInput = (props: any) => {
           <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1>
           <Form onSubmit={ props.handleSubmit }>
 
-            <Field name="username" component={rsrform.InputField}
+            <Field name="username" component={ rsrform.InputField }
               label="Task Name"
               placeholder="Username"/>
 
