@@ -1,6 +1,9 @@
 import * as React from 'react';
-import { Form } from 'semantic-ui-react';
+import { Field, reduxForm } from 'redux-form';
+import { Button, Form } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
+import { InputField } from 'react-semantic-redux-form';
+
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
@@ -29,12 +32,16 @@ class TaskInput extends React.Component<Props, {}> {
           <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
           <Form onSubmit={ this.props.handleSubmit }>
 
-            <Form.Input
+            <Field name="username" component={InputField}
+              label="Task Name"
+              placeholder="Username"/>
+
+            {/* <Form.Input
               inline={true}
               fluid={true}
               label="Task Name"
               placeholder="Task name"
-              onChange={ this.props.handleOnChange }/>
+              onChange={ this.props.handleOnChange }/> */}
 
             <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
@@ -56,7 +63,11 @@ class TaskInput extends React.Component<Props, {}> {
               label="Task description"
               placeholder="Enter your task description" />
 
-            <Form.Button color="blue" type="submit">Create this task</Form.Button>
+            {/* <Form.Button color="blue" type="submit">Create this task</Form.Button> */}
+            <Form.Field control={Button} primary={true}
+              type="submit">
+              Login
+              </Form.Field>
           </Form>
         </header>
       </div>
