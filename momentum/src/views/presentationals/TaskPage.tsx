@@ -45,11 +45,11 @@ class TaskPage extends React.Component<{}, {}> {
                     </div>
                     <div className="column">
                         <div className="ui segment">
-                            <div className="status">You are currently working (TODO) on this task</div>
-                            <Form.Button color="blue">Start/Stop (TODO)</Form.Button>
+                            <div className="status">You are currently working on this task</div>
+                            <Form.Button color="blue">Start/Stop</Form.Button>
                             {/* <Form.Button color="blue" onClick={this.props.isOn ? this.stop : this.start}>Start/Stop (TODO)</Form.Button> */}
                             <div className="completion-status">This task is not complete</div>
-                            <Form.Button color="blue" type="submit">Mark this task as complete (TODO)</Form.Button>
+                            <Form.Button color="blue" type="submit">Mark this task as complete</Form.Button>
                         </div>
                     </div>
                 </div>
