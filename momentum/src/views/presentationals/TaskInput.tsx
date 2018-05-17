@@ -26,19 +26,13 @@ const TaskInput = (props: any) => {
     return (
       <div className="task-detail">
         <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1>
+          {/* <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1> */}
           <Form onSubmit={ props.handleSubmit }>
 
-            <Field name="username" component={ rsrform.InputField }
-              label="Task Name"
-              placeholder="Username"/>
-
-            {/* <Form.Input
-              inline={true}
-              fluid={true}
+            <Field name="taskname" component={ rsrform.InputField }
               label="Task Name"
               placeholder="Task name"
-              onChange={ this.props.handleOnChange }/> */}
+              onChange={ props.handleOnChange }/>
 
             <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
@@ -63,7 +57,7 @@ const TaskInput = (props: any) => {
             {/* <Form.Button color="blue" type="submit">Create this task</Form.Button> */}
             <Form.Field control={Button} primary={true}
               type="submit">
-              Login
+              Create task
               </Form.Field>
           </Form>
         </header>
