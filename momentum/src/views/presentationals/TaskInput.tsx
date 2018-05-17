@@ -1,8 +1,9 @@
 import * as React from 'react';
+// import { InputField } from 'react-semantic-redux-form';
+import * as rsrform from 'react-semantic-redux-form';
 import { Field, reduxForm } from 'redux-form';
 import { Button, Form } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
-import { InputField } from 'react-semantic-redux-form';
 
 // import '../styles/Task.css';
 
@@ -32,7 +33,7 @@ class TaskInput extends React.Component<Props, {}> {
           <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
           <Form onSubmit={ this.props.handleSubmit }>
 
-            <Field name="username" component={InputField}
+            <Field name="username" component={rsrform.InputField}
               label="Task Name"
               placeholder="Username"/>
 
@@ -75,4 +76,8 @@ class TaskInput extends React.Component<Props, {}> {
   }
 }
 
-export default TaskInput;
+// export default TaskInput;
+
+export default reduxForm({
+  form: 'taskInput',
+})(TaskInput);
