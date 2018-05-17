@@ -36,7 +36,7 @@ class ProjectTaskTable extends React.Component<{}, {}> {
             <Table.Row>
               <Table.Cell>Low</Table.Cell>
               <Table.Cell>Upgrade dotpot visualization to D3 V5</Table.Cell>
-              <Table.Cell>Josh Poll</Table.Cell>
+              <Table.Cell>Josh Pollock</Table.Cell>
               <Table.Cell>0 : 0 : 0</Table.Cell>
               <Table.Cell>n/a</Table.Cell>
             </Table.Row>

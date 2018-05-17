@@ -1,0 +1,43 @@
+Goals from Last Week
+=======================
+1:  Continue implementation
+1a: [Anita] Refactor existing code to separate presentation 
+            from logic, finish login, table, task view
+1b: [Leon] Work on drafting tables and commands for inserting,
+           updating, and deleting items from the database
+1c: [Austin] Ramp up on helping with implementation
+
+2: User Studies
+2a: [Haley] Complete more user studies on Momentum. Help with
+            refining our tool using the feedback on Manuscript.
+
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+- [Anita] Finished presentation of login, table view, project list
+- [Haley] Completed four Momentum studies
+- [Josh] Reorganized architecture of project
+- [Austin] Help start EBS skeleton
+- [Leon] Drafted tables and commands for database
+
+Goals for Upcoming Week
+=======================
+- [Austin + Josh] Finish EBS
+- [Leon] Address feedback on weekly project reports
+- [Anita] Connect task input form to redux, add timer to task page
+- [Haley] Continue on user studies for Momentum
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Clarifications
+  - Expectations for week 8 project assignment
