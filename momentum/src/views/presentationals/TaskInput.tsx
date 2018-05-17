@@ -21,17 +21,13 @@ const teamMemberOptions = [
   { key: 'joshpollock', text: 'Josh Pollock', value: 'joshpollock'}
 ];
 
-class TaskInput extends React.Component<Props, {}> {
-  constructor(props: Props) {
-    super(props);
-  }
-
-  public render() {
+// tslint:disable-next-line:no-any
+const TaskInput = (props: any) => {
     return (
       <div className="task-detail">
         <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
-          <Form onSubmit={ this.props.handleSubmit }>
+          <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1>
+          <Form onSubmit={ props.handleSubmit }>
 
             <Field name="username" component={rsrform.InputField}
               label="Task Name"
@@ -73,8 +69,7 @@ class TaskInput extends React.Component<Props, {}> {
         </header>
       </div>
     );
-  }
-}
+};
 
 // export default TaskInput;
 
