@@ -1,6 +1,6 @@
 import * as React from 'react';
 // import { InputField } from 'react-semantic-redux-form';
-import * as rsrform from 'react-semantic-redux-form';
+// import * as rsrform from 'react-semantic-redux-form';
 import { Field, reduxForm } from 'redux-form';
 import { Button, Form } from 'semantic-ui-react';
 // import { Task } from 'src/models/Task';
@@ -21,12 +21,7 @@ const teamMemberOptions = [
   { key: 'joshpollock', text: 'Josh Pollock', value: 'joshpollock'}
 ];
 
-const renderField = ({
-  // tslint:disable-next-line:variable-name
-  input,
-  // tslint:disable-next-line:variable-name
-  label
-}) => (
+const renderField = (label:string, input:string) => (
   <div>
     <label>{label}</label>
     <div>
