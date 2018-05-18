@@ -41,3 +41,6 @@ Concerns
   - Any new concerns?
 - Clarifications
   - Expectations for week 8 project assignment
+  - Project Report:
+    - Approach Diagram
+    - Challenges and Risk Section
