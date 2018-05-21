@@ -30,28 +30,38 @@ export const enum Visibility {
 // *** ACTUAL TYPES ***
 
 // Project
-export const enum TaskTypes {
+export const enum ProjectTypes {
   SET_CURRENT_PROJECT = 'SET_CURRENT_TASK'
 }
 
 export interface SetCurrProjectAction extends Action {
-  type: TaskTypes.SET_CURRENT_PROJECT;
+  type: ProjectTypes.SET_CURRENT_PROJECT;
   payload: {
-      projectName: string,
-      projectDescription: string,
-      projectMemberCount: number
+    projectName: string,
+    projectDescription: string,
+    projectMemberCount: number
   };
 }
 
 // Task
 export const enum TaskTypes {
-  SET_CURRENT_TASK = 'SET_CURRENT_TASK'
+  SET_CURRENT_TASK = 'SET_CURRENT_TASK',
+  ADD_TASK = 'ADD_TASK'
 }
 
 export interface SetCurrTaskAction extends Action {
   type: TaskTypes.SET_CURRENT_TASK;
   payload: {
-      taskName: string
+    taskId: number,
+    taskName: string
+  };
+}
+
+export interface AddTaskAction extends Action {
+  type: TaskTypes.ADD_TASK;
+  payload: {
+    taskId: number,
+    taskName: string
   };
 }
 

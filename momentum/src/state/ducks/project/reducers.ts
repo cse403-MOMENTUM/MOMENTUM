@@ -1,13 +1,13 @@
 // import { combineReducers } from 'redux';
 import { initialState, State } from '../../../models/_Store';
-import { SetCurrProjectAction, TaskTypes } from '../../action-types';
+import { ProjectTypes, SetCurrProjectAction } from '../../action-types';
 
 type Action = SetCurrProjectAction;
 
 // TODO: should not receive entire state. just a slice!
 const currentProject = (state: State | undefined = initialState, action: Action): State => {
   switch (action.type) {
-    case TaskTypes.SET_CURRENT_TASK:
+    case ProjectTypes.SET_CURRENT_PROJECT:
       return {
         ...state,
         currentProject: {

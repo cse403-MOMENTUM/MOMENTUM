@@ -1,12 +1,13 @@
 import { SetCurrTaskAction } from '../../action-types';
 import ac from './action-creators';
+import sel from './selectors';
 
 export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCurrTaskAction => {
   // NOTE: We may not need this action handler
   // https://reactjs.org/docs/forms.html#handling-multiple-inputs
   const target = event.target as HTMLInputElement;
   // TODO: currentTask.name = target.value (via action-creator)
-  return ac.setCurrentTask(target.value);
+  return ac.setCurrentTask(8, target.value);
 };
 
 // TODO: this is not idiomatic redux. `alert` is a side effect.
@@ -14,13 +15,15 @@ export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCu
 export const handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
   // TODO: handles what happens when the user saves a new task
   event.preventDefault();
-  const data = new FormData(event.target as HTMLFormElement);
-  alert('You made a new task ' + /* taskName */ 'FIXME' + '!');
+  // const data = new FormData(event.target as HTMLFormElement);
+  alert('You made a new task ' + /* taskName */ + 'FIXME' + '!');
 
-  fetch('/api/form-submit-url', {
-    body: data,
-    method: 'POST',
-  });
+  // fetch('/api/form-submit-url', {
+  //   body: data,
+  //   method: 'POST',
+  // });
+
+  console.log(sel.getCurrentTask);
 };
 
 export default {
