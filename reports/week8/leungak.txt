@@ -1,0 +1,22 @@
+Anita Leung
+CSE 403: Week 8 Individual Report
+
+
+Previous Goals 
+=======================
+- Finish the task start/stop page
+- Finish login view
+- Finish task view
+- Figure out how to represent user data in code
+
+
+Updates this Week
+=======================
+- Finished the front-end portion 
+- Gave team presentation
+
+
+Goals for Upcoming Week
+=======================
+- Work on representing task data
+- Connect task input form to task table
