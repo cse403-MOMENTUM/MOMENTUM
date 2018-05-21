@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/redux-form": "^7.2.5",
     "ajv": "^6.5.0",
     "body-parser": "^1.18.2",
     "d3": "^5.1.0",
@@ -19,6 +20,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "2.15.1",
     "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.79.1"
   },
