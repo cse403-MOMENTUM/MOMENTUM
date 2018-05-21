@@ -1,0 +1,19 @@
+Anita Leung
+CSE 403: Week 8 Individual Report
+
+
+Previous Goals 
+=======================
+- Work on representing task data
+- Connect task input form to task table
+
+
+Updates this Week
+=======================
+- Working on connecting task input form to task table
+
+
+Goals for Upcoming Week
+=======================
+- Connect task input form to task table
+- Allow user to view task information and edit it when clicking on the table row 
