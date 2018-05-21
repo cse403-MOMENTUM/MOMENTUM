@@ -12,6 +12,7 @@ const mapStateToProps = (state: State) => ({
 const mapDispatchToProps = (dispatch: Dispatch) => ({
   handleOnChange: (event: React.FormEvent<HTMLInputElement>) => dispatch(taskInputOperations.handleOnChange(event)),
   handleSubmit: taskInputOperations.handleSubmit
+  // handleSubmit: (event: React.FormEvent<HTMLInputElement>) => dispatch(taskInputOperations.handleSubmit(event))
 });
 
 // tslint:disable-next-line:no-any

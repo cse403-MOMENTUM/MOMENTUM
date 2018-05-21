@@ -1,16 +1,23 @@
-import { SetCurrTaskAction, TaskTypes } from '../../action-types';
+import { AddTaskAction, SetCurrTaskAction, TaskTypes } from '../../action-types';
 
-export const setCurrentTask = (taskId: number, taskName: string): SetCurrTaskAction => ({
+let nextTaskId:number = 0;
+
+export const setCurrentTask = (taskName: string): SetCurrTaskAction => ({
   type: TaskTypes.SET_CURRENT_TASK,
-  payload: { taskId, taskName }
+  payload: {
+    taskName
+  }
 });
 
-// export const addTask = (taskId: number, taskName: string): AddTaskAction => ({
-//   type: TaskTypes.ADD_TASK,
-//   payload: { taskId, taskName }
-// });
+export const addTask = (taskName: string): AddTaskAction => ({
+  type: TaskTypes.ADD_TASK,
+  payload: {
+    taskId: nextTaskId++,
+    taskName
+  }
+});
 
 export default {
-  setCurrentTask
-  // addTask
+  setCurrentTask,
+  addTask
 };

@@ -46,13 +46,13 @@ export interface SetCurrProjectAction extends Action {
 // Task
 export const enum TaskTypes {
   SET_CURRENT_TASK = 'SET_CURRENT_TASK',
-  ADD_TASK = 'ADD_TASK'
+  ADD_TASK = 'ADD_TASK',
+  // GET_TASK_LIST = 'GET_TASK_LIST'
 }
 
 export interface SetCurrTaskAction extends Action {
   type: TaskTypes.SET_CURRENT_TASK;
   payload: {
-    taskId: number,
     taskName: string
   };
 }

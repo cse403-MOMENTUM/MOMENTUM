@@ -19,7 +19,7 @@ const tasks = (state: State | undefined = initialState, action: Action): State =
       return {
         ...state,
         currentTask: {
-          id: 0,
+          id: action.payload.taskId,
           name: action.payload.taskName
         }
       };

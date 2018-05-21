@@ -1,7 +1,7 @@
 import { List } from 'immutable';
 
 export interface Task {
-  id: number;
+  id?: number;
   name: string;
 }
 

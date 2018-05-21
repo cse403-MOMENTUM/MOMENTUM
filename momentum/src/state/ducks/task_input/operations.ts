@@ -7,7 +7,7 @@ export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCu
   // https://reactjs.org/docs/forms.html#handling-multiple-inputs
   const target = event.target as HTMLInputElement;
   // TODO: currentTask.name = target.value (via action-creator)
-  return ac.setCurrentTask(8, target.value);
+  return ac.setCurrentTask(target.value);
 };
 
 // TODO: this is not idiomatic redux. `alert` is a side effect.
