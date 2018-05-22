@@ -11,19 +11,22 @@ export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCu
 
 // TODO: this is not idiomatic redux. `alert` is a side effect.
 // Look into ways of improving this
-export const handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
+// export const handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
+// tslint:disable-next-line:no-any
+export const taskInputs = (values: any) : void => {
   // TODO: handles what happens when the user saves a new task
-  event.preventDefault();
-  const data = new FormData(event.target as HTMLFormElement);
-  alert('You made a new task ' + /* taskName */ 'FIXME' + '!');
+  // event.preventDefault();
+  // const data = new FormData(event.target as HTMLFormElement);
+  // alert('You made a new task ' + /* taskName */ 'FIXME' + '!');
 
-  fetch('/api/form-submit-url', {
-    body: data,
-    method: 'POST',
-  });
+  // fetch('/api/form-submit-url', {
+  //   body: data,
+  //   method: 'POST',
+  // });
+  console.log(values);
 };
 
 export default {
   handleOnChange,
-  handleSubmit
+  taskInputs
 };

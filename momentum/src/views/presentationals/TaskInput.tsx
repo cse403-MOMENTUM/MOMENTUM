@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { InputField } from 'react-semantic-redux-form';
+import { Field } from 'redux-form';
 import { Form } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
 // import '../styles/Task.css';
@@ -7,7 +9,11 @@ import { Task } from 'src/models/Task';
 
 interface Props {
   currentTask: Task;
-  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  // handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+  // tslint:disable-next-line:no-any
+  handleSubmit: (event: any) => any;
+  // tslint:disable-next-line:no-any
+  taskInputs: (values: any) => void;
   handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
 }
 
@@ -21,16 +27,16 @@ class TaskInput extends React.Component<Props, {}> {
       <div className="task-detail">
         <header className="task-detail-header">
           <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
-          <Form onSubmit={ this.props.handleSubmit }>
+          <Form onSubmit={ this.props.handleSubmit(this.props.taskInputs) }>
 
-            <Form.Input
+            <Field name="taskName" component={InputField}
               inline={true}
               fluid={true}
               label="Task Name"
               placeholder="Task name"
               onChange={ this.props.handleOnChange }/>
 
-            <Form.Group inline={true} id="task-priority">
+            {/* <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
 
               <Form.Radio label="Low" value="l" />
@@ -46,7 +52,7 @@ class TaskInput extends React.Component<Props, {}> {
               label="Task description"
               placeholder="Enter your task description" />
 
-            <Form.Button color="blue" type="submit">Create this task</Form.Button>
+            <Form.Button color="blue" type="submit">Create this task</Form.Button> */}
           </Form>
         </header>
       </div>
