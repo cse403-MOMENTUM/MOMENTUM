@@ -17,10 +17,11 @@ class TaskInput extends React.Component<Props, {}> {
   }
 
   public render() {
+    const { currentTask } = this.props;
     return (
       <div className="task-detail">
         <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { this.props.currentTask.name } + {this.props.currentTask.id}</h1>
+          <h1 className="task-detail-title">This task name: { currentTask.name } + { currentTask.id } + { currentTask.description } </h1>
           <Form onSubmit={ this.props.handleSubmit }>
 
             <Form.Input
@@ -28,6 +29,7 @@ class TaskInput extends React.Component<Props, {}> {
               fluid={true}
               label="Task Name"
               placeholder="Task name"
+              name="taskName"
               onChange={ this.props.handleOnChange }/>
 
             <Form.Group inline={true} id="task-priority">
@@ -44,7 +46,8 @@ class TaskInput extends React.Component<Props, {}> {
 
             <Form.TextArea
               label="Task description"
-              placeholder="Enter your task description" />
+              placeholder="Enter your task description"
+              onchange={ this.props.handleOnChange } />
 
             <Form.Button color="blue" type="submit">Create this task</Form.Button>
           </Form>

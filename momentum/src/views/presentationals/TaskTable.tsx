@@ -1,11 +1,23 @@
+import { List } from 'immutable';
 import * as React from 'react';
 import { Table } from 'semantic-ui-react';
+import { Task } from 'src/models/Task';
 
-// import logo from '../data/logo.svg';
+interface Props {
+  taskList: List<Task>;
+}
 
-class ProjectTaskTable extends React.Component<{}, {}> {
+class ProjectTaskTable extends React.Component<Props, {}> {
 
   public render() {
+    // const {items, columns, sort} = this.props;
+
+    // const headers = columns.map(c =>
+    //   <Table.HeaderCell>
+    //       {c.name}
+    //   </Table.HeaderCell>
+    //   );
+
     return (
         <Table singleLine={true}>
           <Table.Header>

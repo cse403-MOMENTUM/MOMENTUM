@@ -32,6 +32,6 @@ const tasks = (state: State | undefined = initialState, action: Action): State =
   currentTask
 }); */
 
-const taskInputReducer = tasks;
+const taskTableReducer = tasks;
 
-export default taskInputReducer;
+export default taskTableReducer;

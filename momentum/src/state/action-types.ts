@@ -61,7 +61,8 @@ export interface AddTaskAction extends Action {
   type: TaskTypes.ADD_TASK;
   payload: {
     taskId: number,
-    taskName: string
+    taskName: string,
+    taskDescription: string
   };
 }
 

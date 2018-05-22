@@ -10,6 +10,7 @@ export interface State {
 
 export const initialState: State = {
   currentTask: {
+    id: 0,
     name: ''
   },
   tasks: fromTasks.initialState,
