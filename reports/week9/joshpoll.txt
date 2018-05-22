@@ -1,0 +1,18 @@
+Josh Pollock
+CSE 403: Week 9 Individual Report
+
+5/15-5/21 Goals
+========================
+- Flesh out backend implementation.
+  - Add and remove projects and tasks.
+  - Add teams
+
+Actual Progress
+========================
+I did not work as much on the backend as I would have liked. I helped Anita troubleshoot issues with our code. I performed a code review on TrackForever's codebase.
+
+5/22-5/28 Goals
+========================
+- Flesh out backend implementation.
+  - Add and remove projects and tasks.
+  - Add teams
