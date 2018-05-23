@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { InputField } from 'react-semantic-redux-form';
+import { InputField, TextAreaField } from 'react-semantic-redux-form';
 import { Field } from 'redux-form';
-import { Form } from 'semantic-ui-react';
+import { Button, Form } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
 // import '../styles/Task.css';
 
@@ -42,17 +42,18 @@ class TaskInput extends React.Component<Props, {}> {
               <Form.Radio label="Low" value="l" />
               <Form.Radio label="Medium" value="m" />
               <Form.Radio label="High" value="h" />
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group inline={true}>
-              <Form.Input inline={true} label="Your task time estimate" /> hours
+              <Field name="timeEstimate" component={InputField} inline={true} label="Your task time estimate" /> hours
             </Form.Group>
 
-            <Form.TextArea
+            <Field name="taskDescription"
+             component={TextAreaField}
               label="Task description"
               placeholder="Enter your task description" />
 
-            <Form.Button color="blue" type="submit">Create this task</Form.Button> */}
+            <Form.Field control={Button} color="blue" type="submit">Create this task</Form.Field>
           </Form>
         </header>
       </div>
