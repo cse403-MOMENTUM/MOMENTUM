@@ -1,0 +1,32 @@
+Goals from Last Week
+=======================
+- [Austin + Josh] Finish EBS
+- [Leon] Address feedback on weekly project reports
+- [Anita] Connect task input form to redux, add timer to task page
+- [Haley] Continue on user studies for Momentum
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+- Incorporated feedback from past weeks into our report
+- Completed initial Momentum user studies
+
+Goals for Upcoming Week
+=======================
+- [Anita + Haley] Modify user interface to closely match mockup screens
+- [Josh + Austin] Finish EBS API
+- [Leon] Make actions creaters to connect React and Redux
+- [Leon] Address feedback from staff and peers reviews
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Clarifications
