@@ -1,34 +1,47 @@
 import * as React from 'react';
-import { Form } from 'semantic-ui-react';
-import { Task } from 'src/models/Task';
+// import { InputField } from 'react-semantic-redux-form';
+// import * as rsrform from 'react-semantic-redux-form';
+import { Field, reduxForm } from 'redux-form';
+import { Button, Form } from 'semantic-ui-react';
+// import { Task } from 'src/models/Task';
+
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
 
-interface Props {
-  currentTask: Task;
-  handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
-  handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
-}
+// interface Props {
+//   currentTask: Task;
+//   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+//   handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
+// }
 
-class TaskInput extends React.Component<Props, {}> {
-  constructor(props: Props) {
-    super(props);
-  }
+const teamMemberOptions = [
+  { key: 'anitaleung', text: 'Anita Leung', value: 'anitaleung'},
+  { key: 'austinha', text: 'Austin Ha', value: 'austinha'},
+  { key: 'joshpollock', text: 'Josh Pollock', value: 'joshpollock'}
+];
 
-  public render() {
+const renderField = (label:string, input:string) => (
+  <div>
+    <label>{label}</label>
+    <div>
+      <input {...input} placeholder={label} />
+    </div>
+  </div>
+);
+
+// tslint:disable-next-line:no-any
+const TaskInput = (props: any) => {
     return (
       <div className="task-detail">
         <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
-          <Form onSubmit={ this.props.handleSubmit }>
+          {/* <h1 className="task-detail-title">This task name: { props.currentTask.name }</h1> */}
+          <form onSubmit={ props.handleSubmit }>
 
-            <Form.Input
-              inline={true}
-              fluid={true}
+            <Field name="taskname" component={ renderField }
               label="Task Name"
               placeholder="Task name"
-              onChange={ this.props.handleOnChange }/>
+              onChange={ props.handleOnChange }/>
 
             <Form.Group inline={true} id="task-priority">
               <label htmlFor="taskImportance">Priority level</label>
@@ -42,16 +55,27 @@ class TaskInput extends React.Component<Props, {}> {
               <Form.Input inline={true} label="Your task time estimate" /> hours
             </Form.Group>
 
+            <Form.Select label="Assign to"
+              options={teamMemberOptions}
+              placeholder="Team member" />
+
             <Form.TextArea
               label="Task description"
               placeholder="Enter your task description" />
 
-            <Form.Button color="blue" type="submit">Create this task</Form.Button>
-          </Form>
+            {/* <Form.Button color="blue" type="submit">Create this task</Form.Button> */}
+            <Form.Field control={Button} primary={true}
+              type="submit">
+              Create task
+              </Form.Field>
+          </form>
         </header>
       </div>
     );
-  }
-}
+};
 
-export default TaskInput;
+// export default TaskInput;
+
+export default reduxForm({
+  form: 'taskInput',
+})(TaskInput);

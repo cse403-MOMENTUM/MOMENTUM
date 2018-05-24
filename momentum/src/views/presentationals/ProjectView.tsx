@@ -42,7 +42,7 @@ class ProjectView extends React.Component<{}, {}> {
                     <TaskInputRedux />
                 </Modal.Content>
             </Modal>
-            <Icon name="filter"/>
+            {/* <Icon name="filter"/> */}
             <ProjectTaskTable />
             <NormalDistribution
                 width={576} height={270}
