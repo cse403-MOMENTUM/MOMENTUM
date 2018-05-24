@@ -1,3 +1,4 @@
+
 #login-grid {
     background-color: #434343;
     height: 720px;  /* temporary */
@@ -18,8 +19,18 @@
     margin-top: 22em;
 }
 
+    #login-form input {
+        background: none;
+        border: 2px solid #d1d1d1;
+        border-radius: 10px;
+        color: #FFFFFF;
+    }
+
+    #login-form input:focus {
+        border: 2px solid #ffd35c;
+    }
+
 #sign-in {
-    color: '#FEFEFE';
     font-weight: lighter;
     text-transform: uppercase;
     margin-bottom: 1.5em;
@@ -32,4 +43,8 @@
 
 #sign-up {
     float: right;
+}
+
+.secondary-link {
+    color: #d1d1d1;
 }
