@@ -56,8 +56,7 @@ You may sign up for a new account at [cse403-momentum.github.io/MOMENTUM/join](h
 
 If you already have an account, you may log in at [cse403-momentum.github.io/MOMENTUM/login](https://cse403-momentum.github.io/MOMENTUM/login).
 
-![Figure 2. Login page] 
-(resources/user-manual-imgs/mockup/login.png)
+![Figure 2. Login page](resources/user-manual-imgs/mockup/login.png)
 *Figure 2. Login page*
 
 ### Creating and Managing Projects
