@@ -94,7 +94,7 @@ Clicking on a Task from a Project's home page will bring you to a detailed view 
 
 ### Getting a Ship Date Distribution
 If you have:
-- Broken your entire Project into Tasks as described in the "Manuscript Manifesto" (above)
+- Broken your entire Project into Tasks as described in the "Momentum Manifesto" (above)
 - Assigned each Task to a User on the team
 - Made sure each User has faithfully entered their best effort estimate for each Task
 - Made sure each User has tracked their time spent on each Task
