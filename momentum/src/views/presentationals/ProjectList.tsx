@@ -23,7 +23,7 @@ class ProjectList extends React.Component<{}, {}> {
         <HeaderBar/>
         <Container id="project-list-container">
           <Header textAlign="center" id="project-list-title">
-            <Header.Content as="h1">PROJECTS</Header.Content>
+            <Header.Content as="h1" className="page-header">PROJECTS</Header.Content>
             <Header.Content className="right">
               <Modal
                 trigger={

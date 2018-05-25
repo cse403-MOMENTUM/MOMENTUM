@@ -3,9 +3,13 @@
 }
 
 #project-list-title {
- color: #5c5c5c;
  margin: 50px auto 80px auto;
 }
+
+ /* #project-list-title h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7em;
+ } */
 
  #project-list-title h1 {
   position: relative;

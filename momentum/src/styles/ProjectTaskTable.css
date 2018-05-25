@@ -1,0 +1,13 @@
+.ui.basic.task-table, .ui.basic.task-table th {
+ font-weight: normal;
+ color: #9B9B9B;
+ font-family: 'Fira Sans', sans-serif;  
+}
+
+.ui.basic.task-table th {
+ font-size: 1.1em;
+}
+
+.task-table .progress .bar {
+ background-color: #4DB2FA;
+}
