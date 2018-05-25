@@ -1,0 +1,39 @@
+.ui.card, .ui.cards>.card,  a.ui.card.project-card, a.ui.card.project-card:hover {
+ background: #5c5c5c;
+ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+ color: #FFF;
+ padding: 30px 0 0 0;
+ margin-bottom: 40px;
+}
+
+ a.ui.card.project-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+ color: #FFF;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.ui.card .meta.index, .ui.cards>.card .meta.index,
+.ui.card .meta.members, .ui.cards>.card .meta.members {
+ color: #FFF;
+}
+
+.ui.project-card .meta.index, .ui.project-card:first-child.meta.index  {
+ color: #FFF;
+ position: absolute;
+ text-align: middle;
+ padding: 12px 10px 10px 10px;
+ top: -20px;
+ float: middle;
+ left: 45%;
+ background: #5c5c5c;
+ border-radius: 100px;
+ font-size: 1.5em;
+ border-radius: 50% !important;
+ font-weight: 700;
+ border: #FFF 0.5px solid;
+ box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+}

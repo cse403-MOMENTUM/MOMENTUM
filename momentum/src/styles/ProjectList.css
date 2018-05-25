@@ -1,0 +1,17 @@
+#project-list-container {
+ margin-bottom: 100px;
+}
+
+#project-list-title {
+ color: #5c5c5c;
+ margin: 50px auto 80px auto;
+ position: relative;
+}
+
+ #project-list-title h1 {
+  left: 20px;
+ }
+
+#add-project-button {
+ margin-right: 20px;
+}

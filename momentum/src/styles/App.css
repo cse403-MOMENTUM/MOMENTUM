@@ -27,6 +27,10 @@
   background-color: #FDC02F;
 }
 
+.right {
+  float: right;
+}
+
 #menu-bar {
   background-color: #434343;
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Card, Container, Header } from 'semantic-ui-react';
+import { Card, Container, Header, Icon } from 'semantic-ui-react';
+import '../../styles/ProjectList.css';
 import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
 import ProjectItem from './ProjectItem';
@@ -7,19 +8,18 @@ import ProjectItem from './ProjectItem';
 // import logo from '../data/logo.svg';
 
 class ProjectList extends React.Component<{}, {}> {
-  private inlineStyle = {
-    project_list : {
-      margin: '100px auto'
-    }
-  };
-
   public render() {
     return (
       <div>
-        <HeaderBar />
-          <div style={this.inlineStyle.project_list}>
-            <Container>
-              <Header as="h1" textAlign="center">PROJECTS</Header>
+        <HeaderBar/>
+            <Container id="project-list-container">
+              <Header textAlign="center" id="project-list-title">
+                <Header.Content as="h1">PROJECTS</Header.Content>
+                <Header.Content className="right">
+                  <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-project-button" />
+                  <Icon name="close" inverted={true} circular={true} color="yellow" size="small" id="delete-project-button"/>
+                </Header.Content>
+              </Header>
               <Card.Group itemsPerRow={3}>
                 <ProjectItem name="Momentum" memberCount={5} index="01" description="A task estimation tool."/>
                 <ProjectItem name="Commit Min" memberCount={3} index="02" description="A tool that automatically minimizes bug fix commits."/>
@@ -32,7 +32,6 @@ class ProjectList extends React.Component<{}, {}> {
                 <ProjectItem name="Verigames" memberCount={6} index="09" description="A tool that verifies programs."/>
               </Card.Group>
             </Container>
-          </div>
         <FooterBar />
       </div>
     );

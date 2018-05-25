@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Card, Icon } from 'semantic-ui-react';
+import '../../styles/ProjectItem.css';
 // import { Project } from 'src/models/Project';
 
 interface Props {
@@ -11,12 +12,6 @@ interface Props {
 }
 
 class ProjectItem extends React.Component<Props, {}> {
-  // private inlineStyle = {
-  //   project_item : {
-  //     background: '#d4d4d5'
-  //   }
-  // };
-
   constructor(props: Props) {
     super(props);
   }
@@ -26,12 +21,12 @@ class ProjectItem extends React.Component<Props, {}> {
       <Card
         href={process.env.PUBLIC_URL + '/project'}
         padded={true}
-        color="blue">
+        className="project-card">
         <Card.Content>
+          <Card.Meta className="index">{this.props.index}</Card.Meta>
           <Card.Header>{this.props.name}</Card.Header>
-          <Card.Meta>{this.props.index}</Card.Meta>
-          <Card.Meta><Icon name="user" color="grey"/> {this.props.memberCount} members</Card.Meta>
-          <Card.Description>{this.props.description}</Card.Description>
+          <Card.Meta className="members" textAlign="right">{this.props.memberCount} <Icon name="user" inverted={true} /></Card.Meta>
+          {/* <Card.Description>{this.props.description}</Card.Description> */}
         </Card.Content>
       </Card>
     );
