@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Form } from 'semantic-ui-react';
 // import { Task } from 'src/models/Task';
-// import '../styles/Task.css';
+import '../../styles/ProjectInput.css';
 
 // import logo from '../data/logo.svg';
 
@@ -27,7 +27,7 @@ class ProjectInput extends React.Component<{}, {}> {
        placeholder="Enter your project name here..."/>
 
       <Form.Field>
-       <label>Project Team</label>
+       <label id="project-team-label">Project Team</label>
        <span className="input-description">Add everyone from your project by email</span>
        <Form.Input
         fluid={true}
@@ -38,7 +38,9 @@ class ProjectInput extends React.Component<{}, {}> {
        label="Project description"
        placeholder="Enter your project description here..." />
 
-      <Form.Button align="center" color="blue" type="submit">Create this project</Form.Button>
+      <div className="center">
+       <Form.Button align="center" color="blue" type="submit">Create this project</Form.Button>
+      </div>
      </Form>
     </div>
    );

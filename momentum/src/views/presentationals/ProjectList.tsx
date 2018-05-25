@@ -26,12 +26,11 @@ class ProjectList extends React.Component<{}, {}> {
             <Header.Content as="h1">PROJECTS</Header.Content>
             <Header.Content className="right">
               <Modal
-                closeIcon={true}
                 trigger={
                   <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-project-button"/>
                 }
                 style={this.inlineStyle.modal}>
-                <Modal.Header>New Project</Modal.Header>
+                <Modal.Header className="center">New Project</Modal.Header>
                 <Modal.Content>
                   <ProjectInput />
                 </Modal.Content>

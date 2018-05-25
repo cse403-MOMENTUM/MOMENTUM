@@ -34,7 +34,6 @@ class ProjectView extends React.Component<{}, {}> {
             <Header as="h3" textAlign="center">Anita Leung - Austin Ha - Haley Ruth - Josh Pollock - Leon Pan</Header>
             <Header as="h2">Tasks</Header>
             <Modal
-              closeIcon={true}
               trigger={<Button color="yellow">New Task</Button>}
               style={this.inlineStyle.modal}>
               <Modal.Header>Create new task</Modal.Header>

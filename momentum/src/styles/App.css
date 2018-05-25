@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oswald');
+
+@font-face {
+  font-family: 'Oswald Bold';
+  src: './fonts/oswald/Oswald-Bold.ttf' format('truetype');
+}
+
+.fira {
+  
+}
+
 .App {
   text-align: center;
 }
@@ -31,6 +42,10 @@
   float: right;
 }
 
+.center {
+  text-align: center;
+}
+
 #menu-bar {
   background-color: #434343;
 }
@@ -46,7 +61,26 @@
   #footer .item {
     color: #EEEEEE;
   }
+  
+/* Form headers */
+.ui.modal>.header:not(.ui) {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+}
 
+/* Form labels */
+.ui.form .field>label {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2em;
+  color: #434343;
+  text-transform: uppercase;
+}
+
+/* Form buttons */
+.ui.form .ui.button {
+  font-family: 'Fira Sans', sans-serif;  
+  text-transform: uppercase;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
