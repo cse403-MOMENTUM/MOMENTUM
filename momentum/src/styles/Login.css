@@ -9,6 +9,7 @@
     font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
+    margin-right: 2rem;
 } 
 
     #login-title span {
@@ -16,13 +17,13 @@
     }
 
 #login-form {
-    margin-top: 22em;
+    margin-top: 22rem;
+    margin-left: 2rem;
 }
 
-    #login-form input {
+    #login-form input{
         background: none;
         border: 2px solid #d1d1d1;
-        border-radius: 10px;
         color: #FFFFFF;
     }
 
@@ -30,11 +31,19 @@
         border: 2px solid #ffd35c;
     }
 
+    #login-form input::placeholder {
+        color: #989898;
+    }
+
 #sign-in {
     font-weight: lighter;
     text-transform: uppercase;
     margin-bottom: 1.5em;
     width: 100%;
+}
+
+#sign-in, #login-form input {
+    border-radius: 10px;
 }
 
 #forgot-password {
@@ -45,6 +54,6 @@
     float: right;
 }
 
-.secondary-link {
-    color: #d1d1d1;
+a.secondary-link {
+    color: #989898;
 }

@@ -27,10 +27,10 @@ class Login extends React.Component<{}, {}> {
                 <Grid.Column width={4} className="center align">
                     <Form id="login-form">
                     <Form.Field>
-                    <input placeholder="Email address" />
+                    <input placeholder="Email address" type="email" />
                     </Form.Field>
                     <Form.Field>
-                    <input placeholder="Password" />
+                    <input placeholder="Password" type="password" />
                     </Form.Field>
                     <Link to="/projectlist">
                         <Button type="submit" id="sign-in" className="yellow">Sign in</Button>
