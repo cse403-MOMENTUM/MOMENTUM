@@ -1,12 +1,10 @@
-// no actions done to projects yet.
+import { SetCurrProjectAction, TaskTypes } from '../../action-types';
 
-// import { SetCurrTaskAction, ProjectTypes } from '../../action-types';
-
-// export const setCurrent = (taskName: string): SetCurrTaskAction => ({
-//   type: TaskTypes.SET_CURRENT_TASK,
-//   payload: { taskName }
-// });
+export const setCurrentProject = (projectName: string, projectDescription: string, projectMemberCount: number): SetCurrProjectAction => ({
+  type: TaskTypes.SET_CURRENT_PROJECT,
+  payload: { projectName, projectDescription, projectMemberCount }
+});
 
 export default {
-  // setCurrentTask
+  setCurrentProject
 };
