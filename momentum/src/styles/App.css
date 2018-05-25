@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oswald');
 
-@font-face {
-  font-family: 'Oswald Bold';
-  src: './fonts/oswald/Oswald-Bold.ttf' format('truetype');
-}
-
-.fira {
-  
-}
-
 .App {
   text-align: center;
 }
