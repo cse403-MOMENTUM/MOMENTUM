@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button, Container, Header, Icon, Modal } from 'semantic-ui-react';
 import NormalDistribution from '../../components/DotPlots/NormalDistribution';
 import TaskInputRedux from '../containers/TaskInputRedux';
-import FooterBar from './FooterBar';
+// import FooterBar from './FooterBar';
 import HeaderBar from './HeaderBar';
 import ProjectTaskTable from './ProjectTaskTable';
 
