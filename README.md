@@ -44,12 +44,19 @@ Info about Semantic UI React: https://react.semantic-ui.com/introduction
 
 `momentum/components/App.tsx` contains an example component
 
-# How to get setup (assuming macOS).
+# How to get setup
+macOS
 1. Install HomeBrew
 2. Install Node: `brew install node`
 3. (This step may not be necessary. Try it without this!) Install TypeScript: `npm i -g typescript`
 4. Clone this repo, navigate to `momentum/MOMENTUM` and run `npm install` 
 5. Lastly, run `npm start`
+
+Windows
+1. Install Node: https://nodejs.org/en/
+2. (This step may not be necessary. Try it without this!) Install TypeScript: `npm i -g typescript`
+3. Clone this repo, navigate to `momentum/MOMENTUM` and run `npm install` 
+4. Lastly, run `npm start`
 
 The setup above is probably incomplete. Let Josh know about setup issues.
 
@@ -58,11 +65,18 @@ The project was tested using VSCode . YMMV with other tools.
 # Using VSCode
 VSCode is a useful, general-purpose IDE. There are lots of extensions available and linting, debugging, version control, etc. are all integrated. Once you've installed VSCode, familiarize yourself with the sidebar.
 
+macOS
 1. `brew tap caskroom/cask`
 2. `brew cask install visual-studio-code`
 3. Follow this to launch VSCode from terminal/command line: https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
 4. To open MOMENTUM run `code .` from this directory.
-5. Install these useful extensions (add more if you find other helpful ones):
+
+Windows
+1. Install VSCode: https://code.visualstudio.com/
+2. Follow this to run VSCode on Windows: https://code.visualstudio.com/docs/setup/windows
+
+
+Install these useful extensions (add more if you find other helpful ones):
 
 **Super Useful**
 - Bracket Pair Colorizer
