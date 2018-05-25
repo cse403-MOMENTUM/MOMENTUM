@@ -5,11 +5,11 @@
 #project-list-title {
  color: #5c5c5c;
  margin: 50px auto 80px auto;
- position: relative;
 }
 
  #project-list-title h1 {
-  left: 20px;
+  position: relative;
+  left: 40px;
  }
 
 #add-project-button {

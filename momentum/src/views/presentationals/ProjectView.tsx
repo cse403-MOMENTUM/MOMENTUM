@@ -26,36 +26,35 @@ class ProjectView extends React.Component<{}, {}> {
     return (
       <div>
         <HeaderBar/>
-          <Container>
-            <Link to="/projectlist">
-              <Icon name="arrow left" size="large" color="grey" />
-            </Link>
-            <Header as="h1" textAlign="center">Momentum</Header>
-            <Header as="h3" textAlign="center">Anita Leung - Austin Ha - Haley Ruth - Josh Pollock - Leon Pan</Header>
-            <Header as="h2">Tasks</Header>
-            <Modal
-                closeIcon={true}
-                trigger={<Button color="yellow">New Task</Button>}
-                style={this.inlineStyle.modal}>
-                <Modal.Header>Create new task</Modal.Header>
-                <Modal.Content>
-                    <TaskInputRedux />
-                </Modal.Content>
-            </Modal>
-            <Icon name="filter"/>
-            <ProjectTaskTable />
-            <NormalDistribution
-                width={576} height={270}
-                // width={960} height={450}
-                z_limit={4}
-                margin={{
-                  bottom: 30,
-                  left: 50,
-                  right: 20,
-                  top: 20
-                }} />
-          </Container>
-        <FooterBar />
+        <Container>
+          <Link to="/projectlist">
+            <Icon name="arrow left" size="large" color="grey" />
+          </Link>
+          <Header as="h1" textAlign="center">Momentum</Header>
+          <Header as="h3" textAlign="center">Anita Leung - Austin Ha - Haley Ruth - Josh Pollock - Leon Pan</Header>
+          <Header as="h2">Tasks</Header>
+          <Modal
+              closeIcon={true}
+              trigger={<Button color="yellow">New Task</Button>}
+              style={this.inlineStyle.modal}>
+              <Modal.Header>Create new task</Modal.Header>
+              <Modal.Content>
+                  <TaskInputRedux />
+              </Modal.Content>
+          </Modal>
+          <Icon name="filter"/>
+          <ProjectTaskTable />
+          <NormalDistribution
+              width={576} height={270}
+              // width={960} height={450}
+              z_limit={4}
+              margin={{
+                bottom: 30,
+                left: 50,
+                right: 20,
+                top: 20
+              }} />
+        </Container>
       </div>
     );
   }
