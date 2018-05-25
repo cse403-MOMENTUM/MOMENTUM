@@ -20,13 +20,11 @@ class ProjectItem extends React.Component<Props, {}> {
     return (
       <Card
         href={process.env.PUBLIC_URL + '/project'}
-        padded={true}
         className="project-card">
         <Card.Content>
           <Card.Meta className="index">{this.props.index}</Card.Meta>
           <Card.Header>{this.props.name}</Card.Header>
           <Card.Meta className="members" textAlign="right">{this.props.memberCount} <Icon name="user" inverted={true} /></Card.Meta>
-          {/* <Card.Description>{this.props.description}</Card.Description> */}
         </Card.Content>
       </Card>
     );

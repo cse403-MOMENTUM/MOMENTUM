@@ -1,5 +1,5 @@
 .ui.card, .ui.cards>.card,  a.ui.card.project-card, a.ui.card.project-card:hover {
- background: #5c5c5c;
+ background: #434343;
  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
  color: #FFF;
  padding: 30px 0 0 0;
@@ -29,7 +29,7 @@
  top: -20px;
  float: middle;
  left: 45%;
- background: #5c5c5c;
+ background: #434343;
  border-radius: 100px;
  font-size: 1.5em;
  border-radius: 50% !important;

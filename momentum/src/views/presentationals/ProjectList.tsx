@@ -1,12 +1,22 @@
 import * as React from 'react';
-import { Card, Container, Header, Icon } from 'semantic-ui-react';
+import { Card, Container, Header, Icon, Modal} from 'semantic-ui-react';
 import '../../styles/ProjectList.css';
 import HeaderBar from './HeaderBar';
+import ProjectInput from './ProjectInput';
 import ProjectItem from './ProjectItem';
 
 // import logo from '../data/logo.svg';
 
+
 class ProjectList extends React.Component<{}, {}> {
+  public inlineStyle = {
+    modal : {
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      marginTop: '0px !important'
+    }
+  };
+
   public render() {
     return (
       <div>
@@ -15,7 +25,17 @@ class ProjectList extends React.Component<{}, {}> {
           <Header textAlign="center" id="project-list-title">
             <Header.Content as="h1">PROJECTS</Header.Content>
             <Header.Content className="right">
-              <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-project-button" />
+              <Modal
+                closeIcon={true}
+                trigger={
+                  <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-project-button"/>
+                }
+                style={this.inlineStyle.modal}>
+                <Modal.Header>New Project</Modal.Header>
+                <Modal.Content>
+                  <ProjectInput />
+                </Modal.Content>
+              </Modal>
               <Icon name="close" inverted={true} circular={true} color="yellow" size="small" id="delete-project-button"/>
             </Header.Content>
           </Header>
