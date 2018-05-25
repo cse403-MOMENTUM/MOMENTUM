@@ -1,14 +1,6 @@
 # Momentum User Manual
 [_Manual version 0.1_]
 
-![Corollary to Hofstadter's Law: Every minute you spend thinking about Hofstadter's Law is a minute you're NOT WORKING AND WILL NEVER FINISH! PAAAAAANIIIIIIC!](https://imgs.xkcd.com/comics/estimating_time_2x.png)
-*[Estimating Time](https://xkcd.com/1658/) from xkcd licensed under [CC BY-NC 2.5](https://xkcd.com/license.html)*
-
-## Motivation
-Programmers have a reputation for being terrible at estimating how long it will take to complete a project [1] [2] [3]. This is because developing software is inherently uncertain: there is no way to forecast every detail of a design from the outset, understanding the full requirements of the project as well as the hurdles that an individual will encounter along the way. (If this were the case, developing software would be a trivial task). This is only exacerbated by the fact that a huge number of programming projects are not completed by a single person, but by teams — if an individual can’t predict how long something will take for themselves, what hope does a team have of estimating the completion time for an entire project? Ultimately, this is a problem that can have huge monetary, emotional, and interpersonal costs [4]. The reality is that programmers are usually much too optimistic [1] [2] [3] — they try to fit too many features into a release, and some have to be cut; they think that they can focus effort in one area of a project because it will be quick, but it ends up taking two, three, four times as long as they had thought initially. Having better time estimates lets us choose how we focus our efforts [4] [5].
-
-We’ve all heard the horror stories about impossible deadlines set by project managers and the botched releases that follow from developers: software development effort estimation is extremely important, but is sometimes not taken very seriously by software teams since it can be difficult to manually estimate how long it will take each person in the team to complete pieces of a project and how this will affect the team as a whole. In-depth project estimation takes significant time and resources as well as consistent participation from the whole team — in other words, it requires a common framework for teams to adhere to. **_Momentum_ is an accessible product that makes effort estimation accessible and accurate for projects with 1-10 people and little to no management.**
-
 ## What's Momentum?
 Momentum is a GUI tool that helps teams gain insight into the effort needed to complete a specified project. From a high level, there are two main stages that a user will go through when using _Momentum_:
 
@@ -102,14 +94,3 @@ If you have:
 - Made sure each User has tracked their time spent on each Task
 
 You should be able to view a projected effort distribution for a specific Project from that Project's home page. You may view distribution charts that display likely effort (in person-hours, for example), remaining User workload, potential product ship dates, and more.
-
-## Works Cited
-[1] M. Jørgensen, “What We Do and Don’t Know about Software Development Effort Estimation,” IEEE Software, vol. 31, no. 2, pp. 37–40, Mar. 2014.
-
-[2] M. Jørgensen, “The effect of the time unit on software development effort estimates,” in 2015 9th International Conference on Software, Knowledge, Information Management and Applications (SKIMA), 2015, pp. 1–5.
-
-[3] H. Barki, S. Rivard, and J. Talbot, “Toward an Assessment of Software Development Risk,” Journal of Management Information Systems, vol. 10, no. 2, pp. 203–225, Sep. 1993.
-
-[4] I. Benbasat and I. Vessey, “Programmer and Analyst Time/Cost Estimation,” MIS Quarterly, vol. 4, no. 2, pp. 31–43, 1980.
-
-[5] K. Srinivasan and D. Fisher, “Machine learning approaches to estimating software development effort,” IEEE Transactions on Software Engineering, vol. 21, no. 2, pp. 126–137, Feb. 1995.
