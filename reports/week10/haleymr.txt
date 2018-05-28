@@ -1,0 +1,23 @@
+Haley Ruth
+CSE 403: Week 10 Individual Report
+
+
+Previous Goals 
+=======================
+- Schedule and attend team meetings
+- Update GUI with user feedback
+- Finish Momentum v2 user research
+
+
+Updates this Week
+=======================
+- Attended team and client meetings
+- Updated GUI and provided all info for front end team
+- 2/4 Momentum v2 user research completed
+
+
+Goals for Upcoming Week
+=======================
+- Schedule and attend team meetings
+- Finish last two user tests
+- Revamp User Research section in report
