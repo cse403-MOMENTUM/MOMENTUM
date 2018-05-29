@@ -1,0 +1,28 @@
+.task-input .ui.form .field:last-child {
+ height: 100%;
+}
+
+.task-input .ui.form .column .field, .task-input .ui.form .column .fields {
+ margin-bottom: 20px;
+}
+
+#time-estimate-group input {
+  width: 120px;
+}
+
+#task-description {
+ height: 200px;
+}
+
+.task-input .ui.checkbox  input[type=checkbox] {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+}
+
+.task-input .priority-label {
+ position: relative;
+}

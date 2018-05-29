@@ -11,13 +11,6 @@ import ProjectTaskTable from './ProjectTaskTable';
 // import logo from '../data/logo.svg';
 
 class ProjectView extends React.Component<{}, {}> {
-  private inlineStyle = {
-    modal : {
-      marginLeft: 'auto',
-      marginRight: 'auto',
-      marginTop: '10% !important' // I think this is being overridden
-    }
-  };
 
   constructor(props: {}) {
     super(props);
@@ -37,9 +30,8 @@ class ProjectView extends React.Component<{}, {}> {
             <Modal
               trigger={
                 <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-task-button"/>
-              }
-              style={this.inlineStyle.modal}>
-              <Modal.Header>Create new task</Modal.Header>
+              }>
+              <Modal.Header className="center">Create new task</Modal.Header>
               <Modal.Content>
                 <TaskInputRedux />
               </Modal.Content>

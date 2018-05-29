@@ -67,7 +67,12 @@ h1.page-header, h1.ui.page-header {
 }
 
 /* Form labels */
-.ui.form .field>label {
+.ui.form .field>label, 
+.ui.form label, 
+.ui.form .inline.field>label, 
+.ui.form .inline.fields>label,
+.ui.form .inline.field>:first-child,
+.ui.form .inline.fields .field>:first-child {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.2em;
   color: #434343;
@@ -78,6 +83,13 @@ h1.page-header, h1.ui.page-header {
 .ui.form .ui.button {
   font-family: 'Fira Sans', sans-serif;  
   text-transform: uppercase;
+}
+
+/* Modals */
+.ui.active.modal {
+  margin-top: 10% !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes App-logo-spin {

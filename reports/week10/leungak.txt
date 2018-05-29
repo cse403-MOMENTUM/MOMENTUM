@@ -1,0 +1,17 @@
+Anita Leung
+
+Previous Goals 
+=======================
+- Connect task input form to task table
+- Allow user to view task information and edit it when clicking on the table row 
+
+
+Updates this Week
+=======================
+- 75% done with refining front end (login, project list, project task table, new project form, task input form)
+- Did peer codebase review
+
+
+Goals for Upcoming Week
+=======================
+- Finish 25% of front end (data visualization, task details form)
