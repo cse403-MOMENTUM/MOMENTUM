@@ -1,0 +1,25 @@
+Leon Pan
+CSE 403: Week 10 Individual Report
+
+
+Goals from last week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Continue to help with implementation or whereever help is needed
+• Help with writing the final report draft
+
+Progress made this week
+=======================
+• Attended team and client meeting
+  o Discussed feedback from previous reports
+• Helped address feedback on weekly report
+• Helped with implementation
+  o Finished action creaters
+
+Goals for Following Week
+=======================
+• Continue meeting and communicating with the team
+  o Discuss any new feedback with the team
+• Continue to help with implementation or whereever help is needed
+• Help with writing the final report
