@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import * as React from 'react';
+import '../../styles/DotPlots.css';
 import DotPlot from './DotPlot';
 import Graph from './Graph';
 

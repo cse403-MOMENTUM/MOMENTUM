@@ -53,6 +53,7 @@ class DotPlot extends React.Component<Props, {}> {
             r={radius}
             cx={0} // determined by bin
             cy={-iDot * 2 * radius - radius}
+            fill="#FFC107"
             />
         );
       });

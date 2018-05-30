@@ -1,6 +1,11 @@
+.project-view, .project-view .header {
+ color: #9B9B9B;
+}
+
 #project-title {
  font-family: 'Fira Sans', sans-serif;
  font-size: 2em;
+ color: #434343;
 }
 
 .project-subheader {

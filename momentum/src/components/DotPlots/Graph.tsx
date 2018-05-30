@@ -21,7 +21,7 @@ class Graph extends React.Component<Props, {}> {
       <g transform={'translate(' + this.props.translate.x + ',' + this.props.translate.y + ')'}>
         <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
         <YAxis height={this.props.height} scale={this.props.yScale} />
-        <path className="line" d={this.makeLine()(this.makeData())!} stroke="black" fill="none" />
+        <path className="line" d={this.makeLine()(this.makeData())!} stroke="#9B9B9B" fill="none" />
       </g>
     );
   }
