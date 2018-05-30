@@ -13,13 +13,14 @@ Updates on Goals
 - Incorporated feedback from past weeks into our report
 - Completed Momentum v2 user studies (Finished all user studies)
 - Made substantial progress on similarity of mockup and implemented screens
+- Implemented basic, untested EBS API
 
 Goals for Upcoming Week
 =======================
 - [Anita] Modify user interface to closely match mockup screens
 - [Haley] Finish user research report and refactor report with feedback
 - [Josh] Finish EBS API. Unblock stuck team members.
-- [Austin]
+- [Austin] Help connect backend work to frontend interface
 - [Leon] General implementation help, refactor report with feedback
 
 Meeting Agenda
