@@ -18,7 +18,7 @@ Goals for Upcoming Week
 =======================
 - [Anita] Modify user interface to closely match mockup screens
 - [Haley] Finish user research report and refactor report with feedback
-- [Josh]
+- [Josh] Finish EBS API. Unblock stuck team members.
 - [Austin]
 - [Leon] General implementation help, refactor report with feedback
 
