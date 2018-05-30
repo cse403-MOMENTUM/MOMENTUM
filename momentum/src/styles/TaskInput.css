@@ -2,7 +2,8 @@
  height: 100%;
 }
 
-.task-input .ui.form .column .field, .task-input .ui.form .column .fields {
+.task-input .ui.form .column .field, 
+.task-input .ui.form .column .fields {
  margin-bottom: 20px;
 }
 
@@ -14,15 +15,19 @@
  height: 200px;
 }
 
-.task-input .ui.checkbox  input[type=checkbox] {
-  -ms-transform: scale(2); /* IE */
-  -moz-transform: scale(2); /* FF */
-  -webkit-transform: scale(2); /* Safari and Chrome */
-  -o-transform: scale(2); /* Opera */
-  transform: scale(2);
-  padding: 10px;
+.task-input .ui.form .column .task-priority .field {
+  margin-bottom: 0;
 }
 
-.task-input .priority-label {
+/* .task-input .ui.checkbox  input[type=checkbox] {
+  -ms-transform: scale(2); 
+  -moz-transform: scale(2); 
+  -webkit-transform: scale(2); 
+  -o-transform: scale(2); 
+  transform: scale(2);
+  padding: 10px;
+} */
+
+/* .task-input .priority-label {
  position: relative;
-}
+} */

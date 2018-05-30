@@ -31,7 +31,7 @@ class ProjectView extends React.Component<{}, {}> {
             trigger={
               <Icon name="plus" inverted={true} circular={true} color="yellow" size="small" id="add-task-button"/>
             }>
-            <Modal.Header className="center">Create new task</Modal.Header>
+            <Modal.Header className="center">Create New Task</Modal.Header>
             <Modal.Content>
               <TaskInputRedux />
             </Modal.Content>

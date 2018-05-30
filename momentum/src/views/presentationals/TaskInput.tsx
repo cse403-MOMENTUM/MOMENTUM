@@ -43,6 +43,29 @@ class TaskInput extends React.Component<Props, {}> {
                   <Form.Radio value="5" /><span className="priority-label">5</span>
                 </Form.Group>
 
+                {/* <label>Priority level</label>
+                <Form.Group inline={true} id="task-priority">
+                  <label className="container">One
+                    <Checkbox />
+                    <span className="checkmark"></span>
+                  </label>
+
+                  <label className="container">Two
+                    <input type="checkbox">
+                    <span className="checkmark"></span>
+                  </label>
+
+                  <label className="container">Three
+                    <input type="checkbox">
+                    <span className="checkmark"></span>
+                  </label>
+
+                  <label className="container">Four
+                    <input type="checkbox">
+                    <span className="checkmark"></span>
+                  </label>
+                </Form.Group> */}
+
                 <Form.Group inline={true} id="time-estimate-group">
                   <label>Your task time estimate</label>
                   <Form.Input inline={true}/>

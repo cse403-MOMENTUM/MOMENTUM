@@ -6,7 +6,7 @@ import '../../index.css';
 import '../../styles/App.css';
 
 
-class App extends React.Component {
+class FooterBar extends React.Component {
   public state = {};
 
   public handleItemClick = (event: React.MouseEvent<HTMLElement>, {name } : { name : string }) => this.setState({ activeItem: name });
@@ -22,4 +22,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default FooterBar;

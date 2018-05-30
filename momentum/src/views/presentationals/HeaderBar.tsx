@@ -8,7 +8,7 @@ import '../../index.css';
 import '../../styles/App.css';
 
 
-class App extends React.Component {
+class HeaderBar extends React.Component {
 
   public render() {
     return (
@@ -23,4 +23,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default HeaderBar;
