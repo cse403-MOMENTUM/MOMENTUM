@@ -34,5 +34,7 @@ Concerns
 - Clarifications
   - Final Report / Final Report Resubmission
     - Are these final reports worth any more points than the other reports?
+    - Including "Future" section devoted to things we would do if we had more time
+    - What not to include (like schedule)
   - Repository Review
     - What will you be looking for in our project?
