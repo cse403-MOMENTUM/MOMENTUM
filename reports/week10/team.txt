@@ -1,0 +1,38 @@
+Goals from Last Week
+=======================
+- [Anita + Haley] Modify user interface to closely match mockup screens
+- [Josh + Austin] Finish EBS API
+- [Leon] Make actions creaters to connect React and Redux
+- [Leon] Address feedback from staff and peers reviews
+
+Updates This Week
+=======================
+
+Updates on Goals
+----------------
+- Incorporated feedback from past weeks into our report
+- Completed Momentum v2 user studies (Finished all user studies)
+- Made substantial progress on similarity of mockup and implemented screens
+
+Goals for Upcoming Week
+=======================
+- [Anita] Modify user interface to closely match mockup screens
+- [Haley] Finish user research report and refactor report with feedback
+- [Josh]
+- [Austin]
+- [Leon] General implementation help, refactor report with feedback
+
+Meeting Agenda
+==============
+Suggested Pre-Meeting Reading (in order of importance)
+- None
+
+Concerns
+- What are the staff’s concerns about the project at this point?
+  - Any concerns we have yet to address?
+  - Any new concerns?
+- Clarifications
+  - Final Report / Final Report Resubmission
+    - Are these final reports worth any more points than the other reports?
+  - Repository Review
+    - What will you be looking for in our project?
