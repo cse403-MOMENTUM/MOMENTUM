@@ -30,3 +30,5 @@ Concerns
   - Any concerns we have yet to address?
   - Any new concerns?
 - Clarifications
+  - Final Report Draft
+    - "... clearly indicating how someone who is not a member of your team can reproduce all the results in your paper."

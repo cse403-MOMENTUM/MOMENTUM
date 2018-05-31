@@ -1,14 +1,6 @@
 # Momentum User Manual
 [_Manual version 0.1_]
 
-![Corollary to Hofstadter's Law: Every minute you spend thinking about Hofstadter's Law is a minute you're NOT WORKING AND WILL NEVER FINISH! PAAAAAANIIIIIIC!](https://imgs.xkcd.com/comics/estimating_time_2x.png)
-*[Estimating Time](https://xkcd.com/1658/) from xkcd licensed under [CC BY-NC 2.5](https://xkcd.com/license.html)*
-
-## Motivation
-Programmers have a reputation for being terrible at estimating how long it will take to complete a project [1] [2] [3]. This is because developing software is inherently uncertain: there is no way to forecast every detail of a design from the outset, understanding the full requirements of the project as well as the hurdles that an individual will encounter along the way. (If this were the case, developing software would be a trivial task). This is only exacerbated by the fact that a huge number of programming projects are not completed by a single person, but by teams — if an individual can’t predict how long something will take for themselves, what hope does a team have of estimating the completion time for an entire project? Ultimately, this is a problem that can have huge monetary, emotional, and interpersonal costs [4]. The reality is that programmers are usually much too optimistic [1] [2] [3] — they try to fit too many features into a release, and some have to be cut; they think that they can focus effort in one area of a project because it will be quick, but it ends up taking two, three, four times as long as they had thought initially. Having better time estimates lets us choose how we focus our efforts [4] [5].
-
-We’ve all heard the horror stories about impossible deadlines set by project managers and the botched releases that follow from developers: software development effort estimation is extremely important, but is sometimes not taken very seriously by software teams since it can be difficult to manually estimate how long it will take each person in the team to complete pieces of a project and how this will affect the team as a whole. In-depth project estimation takes significant time and resources as well as consistent participation from the whole team — in other words, it requires a common framework for teams to adhere to. **_Momentum_ is an accessible product that makes effort estimation accessible and accurate for projects with 1-10 people and little to no management.**
-
 ## What's Momentum?
 Momentum is a GUI tool that helps teams gain insight into the effort needed to complete a specified project. From a high level, there are two main stages that a user will go through when using _Momentum_:
 
@@ -64,52 +56,47 @@ You may sign up for a new account at [cse403-momentum.github.io/MOMENTUM/join](h
 
 If you already have an account, you may log in at [cse403-momentum.github.io/MOMENTUM/login](https://cse403-momentum.github.io/MOMENTUM/login).
 
-### Creating and Managing Projects
-After you've signed in, the landing page is your _Projects_ page (Figure 2). Here, you have the option to enter a specific Project or create a new Project. Project titles and number of team members are displayed.
+![Figure 2. Login page](resources/user-manual-imgs/mockup/login.png)
+*Figure 2. Login page*
 
-![Figure 2. _Projects_ overview page](resources/user-manual-imgs/mockup/projects-page.png)
-*Figure 2. Projects overview page*
+### Creating and Managing Projects
+After you've signed in, the landing page is your _Projects_ page (Figure 3). Here, you have the option to enter a specific Project or create a new Project. Project titles and number of team members are displayed.
+
+![Figure 3. _Projects_ overview page](resources/user-manual-imgs/mockup/projectlist.png)
+*Figure 3. Projects overview page*
 
 #### Making a new Project
 From the _Projects_ page, you can create a new Project by clicking the "+" button at the top of the page.
 
 You will then be prompted to invite other Users to work on your project and will be asked to begin a Project breakdown (See "Momentum Manifesto" above).
 
+![Figure 4. _Projects_ overview page](resources/user-manual-imgs/mockup/newproject.png)
+*Figure 4. New project form*
+
 #### Working on an existing Project
-To enter a specific project, click on its card. You will be brought to your Project's home page, where a list of Tasks and their information are displayed (Figure 3). Additionally, statistics and projected ship dates are displayed so that the team has context on its progress.
+To enter a specific project, click on its card. You will be brought to your Project's home page, where a list of Tasks and their information are displayed (Figure 5). Additionally, statistics and projected ship dates are displayed so that the team has context on its progress.
 
-![Figure 3. Specific Project home page](resources/user-manual-imgs/mockup/project-homepage.png)
-*Figure 3. Specific Project home page*
+![Figure 5. Specific Project home page](resources/user-manual-imgs/mockup/projectview.png)
+*Figure 5. Specific Project home page*
 
-You may create new Tasks from this page as well. This is done by clicking the "+" button near the top of the page. Figure 4 shows the Task creation screen, where you will enter a Task name, description, priority, and assignee (who will, in turn, enter an effort estimate in hours).
+You may create new Tasks from this page as well. This is done by clicking the "+" button near the top of the page. Figure 6 shows the Task creation screen, where you will enter a Task name, description, priority, and assignee (who will, in turn, enter an effort estimate in hours).
 
-![Figure 4. Task creation view](resources/user-manual-imgs/mockup/task-entry.png)
-*Figure 4. Task creation view*
+![Figure 6. Task creation view](resources/user-manual-imgs/mockup/taskinput.png)
+*Figure 6. Task creation view*
 
 To view more information about a Task, and to perform certain actions on that Task, you can click on it in the Task list. (See "Tracking Effort" section below for more information on Task manipulation.)
 
 ### Tracking Effort
-Clicking on a Task from a Project's home page will bring you to a detailed view of that Task (Figure 5), and will allow you track time spent on the Task or mark that Task as completed. **It is crucial that an estimate has been made _before_ a User begins working on a Task, and it is equally crucial that the User begins and ends time tracking for that task appropriately.**
+Clicking on a Task from a Project's home page will bring you to a detailed view of that Task (Figure 7), and will allow you track time spent on the Task or mark that Task as completed. **It is crucial that an estimate has been made _before_ a User begins working on a Task, and it is equally crucial that the User begins and ends time tracking for that task appropriately.**
 
-![Figure 5. Task detail view](resources/user-manual-imgs/mockup/task-detail-view.png)
-*Figure 5. Task detail view*
+![Figure 7. Task detail view](resources/user-manual-imgs/mockup/taskdetails.png)
+*Figure 7. Task detail view*
 
 ### Getting a Ship Date Distribution
 If you have:
-- Broken your entire Project into Tasks as described in the "Manuscript Manifesto" (above)
+- Broken your entire Project into Tasks as described in the "Momentum Manifesto" (above)
 - Assigned each Task to a User on the team
 - Made sure each User has faithfully entered their best effort estimate for each Task
 - Made sure each User has tracked their time spent on each Task
 
 You should be able to view a projected effort distribution for a specific Project from that Project's home page. You may view distribution charts that display likely effort (in person-hours, for example), remaining User workload, potential product ship dates, and more.
-
-## Works Cited
-[1] M. Jørgensen, “What We Do and Don’t Know about Software Development Effort Estimation,” IEEE Software, vol. 31, no. 2, pp. 37–40, Mar. 2014.
-
-[2] M. Jørgensen, “The effect of the time unit on software development effort estimates,” in 2015 9th International Conference on Software, Knowledge, Information Management and Applications (SKIMA), 2015, pp. 1–5.
-
-[3] H. Barki, S. Rivard, and J. Talbot, “Toward an Assessment of Software Development Risk,” Journal of Management Information Systems, vol. 10, no. 2, pp. 203–225, Sep. 1993.
-
-[4] I. Benbasat and I. Vessey, “Programmer and Analyst Time/Cost Estimation,” MIS Quarterly, vol. 4, no. 2, pp. 31–43, 1980.
-
-[5] K. Srinivasan and D. Fisher, “Machine learning approaches to estimating software development effort,” IEEE Transactions on Software Engineering, vol. 21, no. 2, pp. 126–137, Feb. 1995.
