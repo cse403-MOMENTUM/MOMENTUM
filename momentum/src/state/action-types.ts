@@ -79,10 +79,7 @@ export interface AddTaskAction extends Action {
 export interface SetCurrTaskAction extends Action {
   type: TaskTypes.SET_CURRENT_TASK;
   payload: {
-      taskName: string,
-      priority: string,
-      estimation: number,
-      description: string
+      taskName: string
   };
 }
 
