@@ -1,4 +1,5 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
 import { initialState, State } from '../../../models/_Store';
 import { SetCurrTaskAction, TaskTypes } from '../../action-types';
 
@@ -24,6 +25,9 @@ const currentTask = (state: State | undefined = initialState, action: Action): S
   currentTask
 }); */
 
-const taskInputReducer = currentTask;
+const taskInputReducer = combineReducers({
+  currentTask,
+  form: formReducer
+});
 
 export default taskInputReducer;

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Oswald');
+
+body {
+  font-family: 'Fira Sans', sans-serif;  
+}
+
 .App {
   text-align: center;
 }
@@ -27,8 +33,12 @@
   background-color: #FDC02F;
 }
 
-a.secondary-link {
-  color: #5F5F5F;
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
 }
 
 #menu-bar {
@@ -47,6 +57,48 @@ a.secondary-link {
     color: #EEEEEE;
   }
 
+.ui.page.dimmer {
+  background-color: rgba(0,0,0,.45);
+}
+  
+/* Page headers */
+h1.page-header, h1.ui.page-header {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7em;
+  text-transform: uppercase;  
+}
+
+/* Form headers */
+.ui.modal>.header:not(.ui) {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7em;
+}
+
+/* Form labels */
+.ui.form .field>label, 
+.ui.form label, 
+.ui.form .inline.field>label, 
+.ui.form .inline.fields>label,
+.ui.form .inline.field>:first-child,
+.ui.form .inline.fields .field>:first-child {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2em;
+  color: #434343;
+  text-transform: uppercase;
+}
+
+/* Form buttons */
+.ui.form .ui.button {
+  font-family: 'Fira Sans', sans-serif;  
+  text-transform: uppercase;
+}
+
+/* Modals */
+.ui.active.modal {
+  margin-top: 10% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

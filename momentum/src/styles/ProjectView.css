@@ -1,0 +1,34 @@
+.project-view, .project-view .header {
+ color: #9B9B9B;
+}
+
+#project-title {
+ font-family: 'Fira Sans', sans-serif;
+ font-size: 2em;
+ color: #434343;
+}
+
+.project-subheader {
+ color: #9B9B9B;
+ font-size: 1.2em;
+ text-align: center;
+ font-weight: normal;
+}
+
+#task-table-title {
+ color: #434343;
+ font-family: 'Fira Sans', sans-serif;
+ text-transform: uppercase;
+}
+
+#add-task-button, #delete-task-button {
+ margin-top: 5px;
+}
+
+#add-task-button {
+ margin-right: 5px;
+}
+
+ #add-task-button:hover {
+  cursor: pointer;
+ }

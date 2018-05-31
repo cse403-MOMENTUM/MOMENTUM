@@ -1,3 +1,4 @@
+
 #login-grid {
     background-color: #434343;
     height: 720px;  /* temporary */
@@ -5,9 +6,11 @@
 
 #login-title {
     color: #FFFFFF;
-    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
+    margin-right: 2rem;
 } 
 
     #login-title span {
@@ -15,15 +18,33 @@
     }
 
 #login-form {
-    margin-top: 22em;
+    margin-top: 22rem;
+    margin-left: 2rem;
 }
 
+    #login-form input{
+        background: none;
+        border: 2px solid #d1d1d1;
+        color: #FFFFFF;
+    }
+
+    #login-form input:focus {
+        border: 2px solid #ffd35c;
+    }
+
+    #login-form input::placeholder {
+        color: #989898;
+    }
+
 #sign-in {
-    color: '#FEFEFE';
     font-weight: lighter;
     text-transform: uppercase;
     margin-bottom: 1.5em;
     width: 100%;
+}
+
+#sign-in, #login-form input {
+    border-radius: 10px;
 }
 
 #forgot-password {
@@ -32,4 +53,8 @@
 
 #sign-up {
     float: right;
+}
+
+a.secondary-link {
+    color: #989898;
 }

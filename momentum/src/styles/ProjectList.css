@@ -1,0 +1,25 @@
+#project-list-container {
+ margin-bottom: 100px;
+}
+
+#project-list-title {
+ margin: 50px auto 80px auto;
+}
+
+ /* #project-list-title h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.7em;
+ } */
+
+ #project-list-title h1 {
+  position: relative;
+  left: 40px;
+ }
+
+#add-project-button {
+ margin-right: 20px;
+}
+
+ #add-project-button:hover {
+  cursor: pointer;
+ }

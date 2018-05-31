@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { Form } from 'semantic-ui-react';
+import { Form, Grid } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
+import RadioButton from '../../components/RadioButton';
+import '../../styles/TaskInput.css';
 // import '../styles/Task.css';
 
 // import logo from '../data/logo.svg';
@@ -14,39 +16,92 @@ interface Props {
 class TaskInput extends React.Component<Props, {}> {
   constructor(props: Props) {
     super(props);
+    this.state = { selectedValue: [] };
+  }
+
+  // tslint:disable-next-line:no-any
+  public reactToChange = (event:any) => {
+    this.setState({
+      selectedValue: event.target.value
+    });
   }
 
   public render() {
     return (
-      <div className="task-detail">
-        <header className="task-detail-header">
-          <h1 className="task-detail-title">This task name: { this.props.currentTask.name }</h1>
+      <div className="task-input">
+        <header className="task-input-header">
           <Form onSubmit={ this.props.handleSubmit }>
 
-            <Form.Input
-              inline={true}
-              fluid={true}
-              label="Task Name"
-              placeholder="Task name"
-              onChange={ this.props.handleOnChange }/>
+          <Grid>
+            <Grid.Row columns={2}>
+              <Grid.Column>
+                <Form.Input
+                  inline={true}
+                  fluid={true}
+                  label="Task Name"
+                  placeholder="Enter your task name here..."
+                  id="task-name-input"
+                  onChange={ this.props.handleOnChange }/>
 
-            <Form.Group inline={true} id="task-priority">
-              <label htmlFor="taskImportance">Priority level</label>
+                <label id="priority-level-title">Priority level</label>
+                <Form.Group inline={true} id="task-priority">
+                  <RadioButton
+                    name="value"
+                    label="1"
+                    value="1"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="2"
+                    value="2"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="3"
+                    value="3"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="4"
+                    value="4"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="5"
+                    value="5"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                </Form.Group>
+                <span id="lowest">lowest</span>
+                <span id="highest">highest</span>
 
-              <Form.Radio label="Low" value="l" />
-              <Form.Radio label="Medium" value="m" />
-              <Form.Radio label="High" value="h" />
-            </Form.Group>
+                <Form.Group inline={true} id="time-estimate-group">
+                  <label>Your task time estimate</label>
+                  <Form.Input inline={true}/>
+                  <span id="hours">HOURS</span>
+                </Form.Group>
+              </Grid.Column>
+              <Grid.Column>
+                <Form.TextArea
+                  label="Task description"
+                  placeholder="Enter your task description here..."
+                  id="task-description"/>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
 
-            <Form.Group inline={true}>
-              <Form.Input inline={true} label="Your task time estimate" /> hours
-            </Form.Group>
-
-            <Form.TextArea
-              label="Task description"
-              placeholder="Enter your task description" />
-
+          <div className="center">
             <Form.Button color="blue" type="submit">Create this task</Form.Button>
+          </div>
           </Form>
         </header>
       </div>

@@ -1,0 +1,38 @@
+.ui.basic.task-table, .ui.basic.task-table th {
+ font-weight: normal;
+ color: #9B9B9B;
+ font-family: 'Fira Sans', sans-serif;  
+}
+
+.ui.basic.task-table th {
+ font-size: 1.1em;
+}
+
+.task-table .progress .bar {
+ background-color: #4DB2FA;
+}
+
+/* Task detail */
+#task-detail-priority {
+ font-family: 'Fira Sans', sans-serif;  
+ margin-bottom: 5px;
+ color: #9B9B9B;
+ font-size: 0.7em;
+ text-transform: uppercase;
+ font-weight: 100;
+}
+
+#task-detail-name {
+ color: #434343;
+ font-family: 'Fira Sans', sans-serif;  
+ margin: 0;
+ text-transform: uppercase;
+}
+
+#task-detail-assignee {
+ font-family: 'Fira Sans', sans-serif;  
+ color: #9B9B9B;
+ font-size: 0.8em;
+ margin-top: 10px;
+ font-weight: 100;
+}

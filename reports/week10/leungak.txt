@@ -15,4 +15,3 @@ Updates this Week
 Goals for Upcoming Week
 =======================
 - Finish 25% of front end (data visualization, task details form)
-
