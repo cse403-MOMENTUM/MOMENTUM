@@ -20,9 +20,9 @@ class TaskView extends React.Component<Props, {}> {
 
     return (
       <div className="task-detail">
-        <Grid>
+        <Grid divided={true}>
             <Grid.Row columns={2} className="aligned center">
-                <Grid.Column className="aligned" divider={true}>
+                <Grid.Column className="aligned">
                     <h3 className="estimated-time-label">ESTIMATED TIME</h3>
                     <span className="estimated-time">{row.estimate} HOURS</span>
                     <h3 className="current-time-label">CURRENT TIME</h3>
@@ -31,7 +31,8 @@ class TaskView extends React.Component<Props, {}> {
                 <Grid.Column>
                     <div className="status">
                         <p>You are currently <span className="working">NOT WORKING</span> on this task</p>
-                        <Button color="blue">Stop working on this task</Button>
+                        <Button color="blue">Start working on this task</Button>
+                        {/* <Button color="blue">Stop working on this task</Button> */}
                     </div>
                     <div className="completion">
                         <p>This task is not complete</p>

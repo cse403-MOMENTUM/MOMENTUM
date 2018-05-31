@@ -8,13 +8,13 @@ import TaskView from './TaskView';
 const TASK_TABLE_DATA = [
   {priority: 4, name: 'Create velocity calculator', assignee: 'Austin Ha', description: 'Creating the velocity calculator for EBS.', hours_spent: 5, minutes_spent: 10, seconds_spent: 3, progress: 50, estimate: 8},
   {priority: 5, name: 'Add routing features', assignee: 'Anita Leung', description: 'Allow routing in order to navigate between pages.', hours_spent: 13, minutes_spent: 2, seconds_spent: 10, progress: 20, estimate: 3},
-  {priority: 2, name: 'Upgrade dotpot visualization to D3 V5', assignee: 'Josh Ha', description: 'Add visualization graphs representing project time estimations.', hours_spent: 17, minutes_spent: 40, seconds_spent: 45, progress: 80, estimate: 3}
+  {priority: 2, name: 'Upgrade dotpot visualization to D3 V5', assignee: 'Josh Pollock', description: 'Add visualization graphs representing project time estimations.', hours_spent: 17, minutes_spent: 40, seconds_spent: 45, progress: 80, estimate: 3}
 ];
 
 // tslint:disable-next-line:no-any
 const TaskViewModal = ({row}:any) => (
   <Modal trigger={
-    <Icon name="info" inverted={true} circular={true} color="yellow" size="small" id="add-task-button"/>
+    <Icon name="unhide" inverted={true} circular={true} color="yellow" size="small" id="add-task-button"/>
   }>
     <Modal.Header className="center">
       <h3 id="task-detail-priority">PRIORITY {row.priority}</h3>
