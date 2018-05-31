@@ -40,6 +40,10 @@
   float: right;
 }
 
+#highest, #lowest {
+  color: #9B9B9B;
+}
+
 /* .task-input .ui.checkbox  input[type=checkbox] {
   -ms-transform: scale(2); 
   -moz-transform: scale(2); 
