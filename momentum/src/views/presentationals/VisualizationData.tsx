@@ -8,9 +8,9 @@ class VisualizationData extends React.Component {
    return (
     <Grid className="datavis">
      <Grid.Row>
-      <Grid.Column width={10}>
+      <Grid.Column width={7}>
       <NormalDistribution
-      width={519} height={243}
+      width={374} height={194}
       // width={960} height={450}
       z_limit={4}
       margin={{
@@ -20,7 +20,7 @@ class VisualizationData extends React.Component {
         top: 20
       }} />
       </Grid.Column>
-      <Grid.Column width={6} className="description middle aligned">
+      <Grid.Column width={9} className="description middle aligned">
        <div className="ui align">
         <Header as="h4">Project Data Visualization</Header>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong.
