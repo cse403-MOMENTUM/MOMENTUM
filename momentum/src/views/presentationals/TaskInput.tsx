@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Form, Grid } from 'semantic-ui-react';
 import { Task } from 'src/models/Task';
+import RadioButton from '../../components/RadioButton';
 import '../../styles/TaskInput.css';
 // import '../styles/Task.css';
 
@@ -15,6 +16,14 @@ interface Props {
 class TaskInput extends React.Component<Props, {}> {
   constructor(props: Props) {
     super(props);
+    this.state = { selectedValue: [] };
+  }
+
+  // tslint:disable-next-line:no-any
+  public reactToChange = (event:any) => {
+    this.setState({
+      selectedValue: event.target.value
+    });
   }
 
   public render() {
@@ -30,46 +39,55 @@ class TaskInput extends React.Component<Props, {}> {
                   inline={true}
                   fluid={true}
                   label="Task Name"
-                  placeholder="Task name"
+                  placeholder="Enter your task name here..."
+                  id="task-name-input"
                   onChange={ this.props.handleOnChange }/>
 
-                <label>Priority level</label>
+                <label id="priority-level-title">Priority level</label>
                 <Form.Group inline={true} id="task-priority">
-
-                  <Form.Radio value="1" /><span className="priority-label">1</span>
-                  <Form.Radio value="2" /><span className="priority-label">2</span>
-                  <Form.Radio value="3" /><span className="priority-label">3</span>
-                  <Form.Radio value="4" /><span className="priority-label">4</span>
-                  <Form.Radio value="5" /><span className="priority-label">5</span>
+                  <RadioButton
+                    name="value"
+                    label="1"
+                    value="1"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="2"
+                    value="2"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="3"
+                    value="3"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="4"
+                    value="4"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
+                  <RadioButton
+                    name="value"
+                    label="5"
+                    value="5"
+                    checked={false}
+                    handleChange={this.reactToChange}
+                  />
                 </Form.Group>
-
-                {/* <label>Priority level</label>
-                <Form.Group inline={true} id="task-priority">
-                  <label className="container">One
-                    <Checkbox />
-                    <span className="checkmark"></span>
-                  </label>
-
-                  <label className="container">Two
-                    <input type="checkbox">
-                    <span className="checkmark"></span>
-                  </label>
-
-                  <label className="container">Three
-                    <input type="checkbox">
-                    <span className="checkmark"></span>
-                  </label>
-
-                  <label className="container">Four
-                    <input type="checkbox">
-                    <span className="checkmark"></span>
-                  </label>
-                </Form.Group> */}
+                <span id="lowest">lowest</span>
+                <span id="highest">highest</span>
 
                 <Form.Group inline={true} id="time-estimate-group">
                   <label>Your task time estimate</label>
                   <Form.Input inline={true}/>
-                  HOURS
+                  <span id="hours">HOURS</span>
                 </Form.Group>
               </Grid.Column>
               <Grid.Column>

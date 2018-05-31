@@ -1,0 +1,38 @@
+.task-detail p, .task-detail h3, .task-detail span {
+ font-family: 'Fira Sans', sans-serif;  
+}
+
+.task-detail h3 {
+ margin-bottom: 0; 
+}
+
+.task-detail .estimated-time, 
+.task-detail .current-time {
+ font-family: 'Oswald', sans-serif;
+ font-size: 3em;
+ font-weight: 800;
+ color: #FFC107; 
+}
+
+.status {
+ margin-bottom: 20px;
+}
+
+.task-description {
+ color: #9B9B9B;
+}
+
+.task-description h4 {
+ border-bottom: 1px solid #9B9B9B;
+ padding-bottom: 5px;
+ font-weight: 100;
+}
+
+.working {
+ color: #4DB2FA;
+}
+
+.task-detail .ui.blue.button {
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+}
