@@ -6,7 +6,7 @@ class VisualizationData extends React.Component {
 
  public render() {
    return (
-    <Grid className="datavis">
+    <Grid className="VisualizationData">
      <Grid.Row>
       <Grid.Column width={7}>
       <NormalDistribution
