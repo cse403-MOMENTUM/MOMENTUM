@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, Grid} from 'semantic-ui-react';
-import Stopwatch from '../../components/Stopwatch';
 import '../../styles/TaskView.css';
+import Stopwatch from './Stopwatch';
 
 interface Props {
     // tslint:disable-next-line:no-any
@@ -30,7 +30,7 @@ class TaskView extends React.Component<Props, {}> {
                     <span className="current-time">{row.hours_spent}.{Math.ceil(row.minutes_spent / 60.0 * 10)} HOURS</span>
                 </Grid.Column>
                 <Grid.Column>
-                    <Stopwatch status={false} runningTime={0} />
+                    <Stopwatch />
                     <div className="completion">
                         <p>This task is not complete</p>
                         <Button color="blue">Mark this task as complete</Button>
