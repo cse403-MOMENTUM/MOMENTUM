@@ -34,7 +34,6 @@ class ProjectView extends React.Component<Props, {}> {
   }
 
   public render() {
-    console.log(this.props.tasks);
     return (
       <div>
         <HeaderBar/>

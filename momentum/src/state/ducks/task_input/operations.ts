@@ -24,7 +24,6 @@ export const taskInputs = (values: any) : AddTaskAction => {
   //   body: data,
   //   method: 'POST',
   // });
-  console.log(values);
   return ac.addTask(0, values.name, 'Mike Ernst', values.estimate, values.description);
 };
 
