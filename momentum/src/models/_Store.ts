@@ -25,7 +25,8 @@ export const initialState: State = {
     description: '',
     seconds_spent: 0,
     progress: 0,
-    estimate: 0
+    estimate: 0,
+    isComplete: false
   },
   tasks: fromTasks.initialState,
   currentProject: {

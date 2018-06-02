@@ -20,6 +20,7 @@ interface ReactTask {
   seconds_spent: number;
   progress: number;
   estimate: number;
+  isComplete: boolean;
 }
 
 interface Props {

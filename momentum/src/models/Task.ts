@@ -8,6 +8,7 @@ export interface Task {
   seconds_spent: number;
   progress: number; // out of 100
   estimate: number; // in seconds
+  isComplete: boolean;
 }
 
 export interface State {
@@ -24,7 +25,8 @@ export const initialState: State = {
       description: 'Creating the velocity calculator for EBS.',
       seconds_spent: 18603,
       progress: 50,
-      estimate: 8
+      estimate: 8,
+      isComplete: false
     },
     {
       priority: 5,
@@ -33,7 +35,8 @@ export const initialState: State = {
       description: 'Allow routing in order to navigate between pages.',
       seconds_spent: 46930,
       progress: 20,
-      estimate: 3
+      estimate: 3,
+      isComplete: false
     },
     {
       priority: 2,
@@ -42,7 +45,8 @@ export const initialState: State = {
       description: 'Add visualization graphs representing project time estimations.',
       seconds_spent: 63645,
       progress: 80,
-      estimate: 3
+      estimate: 3,
+      isComplete: false
     }
   ]
 };
