@@ -5,7 +5,6 @@ const getCurrentTask = ((state: State) => state.currentTask);
 
 // tslint:disable-next-line:no-any
 const getTasks = ((state: any) => {
-  console.log(state);
   return tasksToReactTasks(state.tasks.tasks.tasks);
 });
 

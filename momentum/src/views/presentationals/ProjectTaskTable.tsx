@@ -34,7 +34,7 @@ const TaskViewModal = ({row}:any) => (
 
 // tslint:disable-next-line:no-any
 const TaskTableRow = ({row}:any) => (
-  <Table.Row className="row" onClick={console.log('hi')}>
+  <Table.Row className="row">
     <Table.Cell><TaskViewModal row={row} /></Table.Cell>
     <Table.Cell>{row.priority}</Table.Cell>
     <Table.Cell>{row.name}</Table.Cell>
@@ -46,7 +46,6 @@ const TaskTableRow = ({row}:any) => (
 
 // tslint:disable-next-line:no-any
 const TaskTable = ({data}:any) => {
-  console.log(data);
   return (
   <Table singleLine={true} basic="very" className="task-table">
     <Table.Header>

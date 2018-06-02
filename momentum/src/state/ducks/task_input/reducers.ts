@@ -23,8 +23,6 @@ const tasks = (state: any | undefined = initialState, action: Action): any => {
         }
       };
     case TaskTypes.ADD_TASK:
-      console.log('state looks like:');
-      console.log(state);
       return {
         ...state,
         tasks: {
