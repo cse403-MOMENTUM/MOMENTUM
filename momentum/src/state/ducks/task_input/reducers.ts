@@ -1,32 +1,30 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import { initialState, State } from '../../../models/_Store';
+import { initialState, /* State */ } from '../../../models/_Store';
 import { AddTaskAction, SetCurrTaskAction, TaskTypes } from '../../action-types';
 
+type Action = SetCurrTaskAction | AddTaskAction;
+
 // TODO: should not receive entire state. just a slice!
-const currentTask = (state: State | undefined = initialState, action: SetCurrTaskAction): State => {
+// tslint:disable-next-line:no-any
+const tasks = (state: any | undefined = initialState, action: Action): any => {
   switch (action.type) {
     case TaskTypes.SET_CURRENT_TASK:
       return {
         ...state,
         currentTask: {
-          priority: 0,
-          name: action.payload.taskName,
           assignee: '',
           description: '',
-          seconds_spent: 0,
+          estimate: 0,
+          name: action.payload.taskName,
+          priority: 0,
           progress: 0,
-          estimate: 0
+          seconds_spent: 0,
         }
       };
-    default:
-      return state;
-  }
-};
-
-const addTask = (state: State | undefined = initialState, action: AddTaskAction): State => {
-  switch (action.type) {
     case TaskTypes.ADD_TASK:
+      console.log('state looks like:');
+      console.log(state);
       return {
         ...state,
         tasks: {
@@ -34,13 +32,13 @@ const addTask = (state: State | undefined = initialState, action: AddTaskAction)
           [
             ...state.tasks.tasks,
             {
-              priority: action.payload.priority,
-              name: action.payload.name,
               assignee: action.payload.assignee,
               description: action.payload.description,
-              seconds_spent: 0,
+              estimate: action.payload.estimate,
+              name: action.payload.name,
+              priority: action.payload.priority,
               progress: 0,
-              estimate: action.payload.estimate
+              seconds_spent: 0,
             }
           ]
         }
@@ -51,9 +49,8 @@ const addTask = (state: State | undefined = initialState, action: AddTaskAction)
 };
 
 const taskInputReducer = combineReducers({
-  addTask,
-  currentTask,
-  form: formReducer
+  form: formReducer,
+  tasks
 });
 
 export default taskInputReducer;

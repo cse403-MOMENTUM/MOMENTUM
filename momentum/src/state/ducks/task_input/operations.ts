@@ -1,3 +1,4 @@
+import { Task } from '../../../models/Task';
 import { AddTaskAction, SetCurrTaskAction } from '../../action-types';
 import ac from './action-creators';
 
@@ -27,7 +28,53 @@ export const taskInputs = (values: any) : AddTaskAction => {
   return ac.addTask(0, values.name, 'assignee_todo', values.estimate, values.description);
 };
 
+const secondsToHMS = (numSeconds : number) : { hours: number, minutes: number, seconds: number } => {
+  const seconds = numSeconds % 60;
+  numSeconds = Math.floor(numSeconds / 60);
+  const minutes = numSeconds % 60;
+  numSeconds = Math.floor(numSeconds / 60);
+  const hours = numSeconds % 60;
+
+  return { hours, minutes, seconds };
+};
+
+interface ReactTask {
+  priority: number;
+  name: string;
+  assignee: string;
+  description: string;
+  hours_spent: number;
+  minutes_spent: number;
+  seconds_spent: number;
+  progress: number;
+  estimate: number;
+}
+
+const taskToReactTask = (task: Task) : ReactTask => {
+  const hmsTime = secondsToHMS(task.seconds_spent);
+  const hoursSpent = hmsTime.hours;
+  const minutesSpent = hmsTime.minutes;
+  const secondsSpent = hmsTime.seconds;
+
+  return {
+    priority: task.priority,
+    name: task.name,
+    assignee: task.assignee,
+    description: task.description,
+    hours_spent: hoursSpent,
+    minutes_spent: minutesSpent,
+    seconds_spent: secondsSpent,
+    progress: task.progress,
+    estimate: task.estimate
+  };
+};
+
+export const tasksToReactTasks = (tasks : Task[]) : ReactTask[] => {
+  return tasks.map(taskToReactTask);
+};
+
 export default {
   handleOnChange,
-  taskInputs
+  taskInputs,
+  tasksToReactTasks
 };
