@@ -25,7 +25,7 @@ export const taskInputs = (values: any) : AddTaskAction => {
   //   method: 'POST',
   // });
   console.log(values);
-  return ac.addTask(0, values.name, 'assignee_todo', values.estimate, values.description);
+  return ac.addTask(0, values.name, 'Mike Ernst', values.estimate, values.description);
 };
 
 const secondsToHMS = (numSeconds : number) : { hours: number, minutes: number, seconds: number } => {
