@@ -1,18 +1,18 @@
-import { SetCurrProjectAction, TaskTypes } from '../../action-types';
+import { AddProjectAction, RemoveProjectAction, SetCurrProjectAction, TaskTypes } from '../../action-types';
 
 export const setCurrentProject = (projectName: string, projectDescription: string, projectMemberCount: number): SetCurrProjectAction => ({
   type: TaskTypes.SET_CURRENT_PROJECT,
   payload: { projectName, projectDescription, projectMemberCount }
 });
 
-export function addProject(projectName: string, projectDescription: string, projectMemberCount: number) {
+export function addProject(projectName: string, projectDescription: string, projectMemberCount: number): AddProjectAction {
   return {
     type: TaskTypes.ADD_PROJECT,
     payload: { projectName, projectDescription, projectMemberCount }
   };
 }
 
-export function removeProject(projectName: string) {
+export function removeProject(projectName: string): RemoveProjectAction {
   return {
     type: TaskTypes.REMOVE_PROJECT,
     payload: { projectName }
