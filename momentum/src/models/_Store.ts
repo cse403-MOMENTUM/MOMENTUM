@@ -34,5 +34,5 @@ export const initialState: State = {
     memberCount: 0,
     description: ''
   },
-  projects: fromProject.initialState
+  projects: fromProject.initialState,
 };

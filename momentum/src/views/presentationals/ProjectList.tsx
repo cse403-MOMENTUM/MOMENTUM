@@ -1,11 +1,14 @@
 import * as React from 'react';
-import { Card, Container, Header, Icon, Modal} from 'semantic-ui-react';
+import { Container, Header, Icon, Modal} from 'semantic-ui-react';
 import '../../styles/ProjectList.css';
+// import ProjectItem from './ProjectItem';
+// import ProjectListRedux from '../containers/ProjectListRedux';
 import HeaderBar from './HeaderBar';
 import ProjectInput from './ProjectInput';
-import ProjectItem from './ProjectItem';
+import ProjectItemList from './ProjectItemList';
 
 // import logo from '../data/logo.svg';
+
 
 
 class ProjectList extends React.Component<{}, {}> {
@@ -38,7 +41,7 @@ class ProjectList extends React.Component<{}, {}> {
               <Icon name="close" inverted={true} circular={true} color="yellow" size="small" id="delete-project-button"/>
             </Header.Content>
           </Header>
-          <Card.Group itemsPerRow={3}>
+          {/* <Card.Group itemsPerRow={3}>
             <ProjectItem name="Momentum" memberCount={5} index="01" description="A task estimation tool."/>
             <ProjectItem name="Commit Min" memberCount={3} index="02" description="A tool that automatically minimizes bug fix commits."/>
             <ProjectItem name="DeMark" memberCount={5} index="03" description="A plugin for the IntelliJ IDEA that is used to keep track of temporary debug code."/>
@@ -48,7 +51,8 @@ class ProjectList extends React.Component<{}, {}> {
             <ProjectItem name="Test Bayes" memberCount={5} index="07" description="A tool designed to speed up the testing process of development significantly."/>
             <ProjectItem name="Track Forever" memberCount={4} index="08" description="A tool designed to help developers maintain their issues and bug reports across various popular industry issue trackers."/>
             <ProjectItem name="Verigames" memberCount={6} index="09" description="A tool that verifies programs."/>
-          </Card.Group>
+          </Card.Group> */}
+          <ProjectItemList />
         </Container>
       </div>
     );

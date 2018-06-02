@@ -12,6 +12,7 @@ export function addTask(priority: number, name: string, assignee: string, estima
   };
 }
 
+// Creates an action to remove a task
 export function removeTask(taskName: string): RemoveTaskAction {
   return {
     type: TaskTypes.REMOVE_TASK,
@@ -19,6 +20,7 @@ export function removeTask(taskName: string): RemoveTaskAction {
   };
 }
 
+// Creates an action to add a task time
 export function addTaskTime(taskName: string, time: number): AddTaskTimeAction {
   return {
     type: TaskTypes.ADD_TASK_TIME,
