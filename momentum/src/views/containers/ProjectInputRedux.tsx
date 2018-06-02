@@ -3,7 +3,7 @@ import { Dispatch } from 'redux';
 import { reduxForm } from 'redux-form';
 import { State } from 'src/models/_Store';
 import { projectOperations, projectSelectors } from '../../state/ducks/project';
-import ProjectItemList from '../presentationals/ProjectItemList';
+import ProjectInput from '../presentationals/ProjectInput';
 
 const mapStateToProps = (state: State) => ({
     currentProject: projectSelectors.getCurrentProject(state),
@@ -11,12 +11,13 @@ const mapStateToProps = (state: State) => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch) => ({
-    projectInputs: projectOperations.projectInputs
+    // tslint:disable-next-line:no-any
+    projectInputs: (values: any) => dispatch(projectOperations.projectInputs(values))
 });
 
 // tslint:disable-next-line:no-any
-const ProjectListRedux = connect<any, any, any>(mapStateToProps, mapDispatchToProps)(ProjectItemList);
+const ProjectInputRedux = connect<any, any, any>(mapStateToProps, mapDispatchToProps)(ProjectInput);
 
 export default reduxForm({
   form: 'TaskInputRedux'
-})(ProjectListRedux);
+})(ProjectInputRedux);

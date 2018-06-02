@@ -1,40 +1,34 @@
-// import { combineReducers } from 'redux';
-import { initialState, State } from '../../../models/_Store';
+import { combineReducers } from 'redux';
+import { reducer as formReducer } from 'redux-form';
+import { initialState } from '../../../models/_Store';
 import { AddProjectAction, SetCurrProjectAction, TaskTypes } from '../../action-types';
 
 type Action = SetCurrProjectAction | AddProjectAction;
 
-// TODO: should not receive entire state. just a slice!
-const currentProject = (state: State | undefined = initialState, action: Action): State => {
+// tslint:disable-next-line:no-any
+const project = (state: any | undefined = initialState, action: Action): any => {
   switch (action.type) {
     case TaskTypes.SET_CURRENT_PROJECT:
       return {
         ...state,
         currentProject: {
+          description: action.payload.projectDescription,
           id: 0,
-          name: action.payload.projectName,
           memberCount: action.payload.projectMemberCount,
-          description: action.payload.projectDescription
+          name: action.payload.projectName
         }
       };
-    default:
-      return state;
-  }
-};
-
-const addProject = (state: State | undefined = initialState, action: Action): State => {
-  switch (action.type) {
-    case TaskTypes.ADD_PROJECT:
+      case TaskTypes.ADD_PROJECT:
       return {
         ...state,
         projects: {
           projects: [
             ...state.projects.projects,
             {
+              description: action.payload.projectDescription,
               id: action.payload.id,
-              name: action.payload.projectName,
               memberCount: action.payload.projectMemberCount,
-              description: action.payload.projectDescription
+              name: action.payload.projectName
             }
           ]
         }
@@ -44,13 +38,9 @@ const addProject = (state: State | undefined = initialState, action: Action): St
   }
 };
 
-/* const taskInputReducer = combineReducers({
-  currentTask
-}); */
+const projectReducer = combineReducers({
+  form: formReducer,
+  project
+});
 
-// const projectReducer = currentProject;
-
-export default {
-  addProject,
-  currentProject
-};
+export default projectReducer;
