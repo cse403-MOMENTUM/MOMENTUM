@@ -24,7 +24,7 @@ export const initialState: State = {
       description: 'Creating the velocity calculator for EBS.',
       seconds_spent: 18603,
       progress: 50,
-      estimate: 28800
+      estimate: 8
     },
     {
       priority: 5,
@@ -33,7 +33,7 @@ export const initialState: State = {
       description: 'Allow routing in order to navigate between pages.',
       seconds_spent: 46930,
       progress: 20,
-      estimate: 10800
+      estimate: 3
     },
     {
       priority: 2,
@@ -42,7 +42,7 @@ export const initialState: State = {
       description: 'Add visualization graphs representing project time estimations.',
       seconds_spent: 63645,
       progress: 80,
-      estimate: 10800
+      estimate: 3
     }
   ]
 };
