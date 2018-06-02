@@ -1,4 +1,4 @@
-import { SetCurrTaskAction } from '../../action-types';
+import { AddTaskAction, SetCurrTaskAction } from '../../action-types';
 import ac from './action-creators';
 
 export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCurrTaskAction => {
@@ -13,7 +13,7 @@ export const handleOnChange = (event: React.FormEvent<HTMLInputElement>) : SetCu
 // Look into ways of improving this
 // export const handleSubmit = (event: React.FormEvent<HTMLFormElement>) : void => {
 // tslint:disable-next-line:no-any
-export const taskInputs = (values: any) : void => {
+export const taskInputs = (values: any) : AddTaskAction => {
   // TODO: handles what happens when the user saves a new task
   // event.preventDefault();
   // const data = new FormData(event.target as HTMLFormElement);
@@ -24,6 +24,7 @@ export const taskInputs = (values: any) : void => {
   //   method: 'POST',
   // });
   console.log(values);
+  return ac.addTask(0, values.name, 'assignee_todo', values.estimate, values.description);
 };
 
 export default {

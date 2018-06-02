@@ -6,6 +6,15 @@ export interface State {
   tasks: fromTasks.State;
   currentProject: fromProject.Project;
   projects: fromProject.State;
+  // TODO: switch to this
+  /* tasks: {
+    currentTask: fromTasks.Task;
+    tasks: fromTasks.Task[];
+  };
+  projects: {
+    currentProject: fromTasks.Task;
+    projects: fromTasks.Task[];
+  }; */
 }
 
 export const initialState: State = {

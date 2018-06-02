@@ -5,7 +5,7 @@ export const setCurrentTask = (taskName: string): SetCurrTaskAction => ({
   payload: { taskName }
 });
 
-export function addTask(priority: string, name: string, assignee: string, estimate: number, description: string): AddTaskAction {
+export function addTask(priority: number, name: string, assignee: string, estimate: number, description: string): AddTaskAction {
   return {
     type: TaskTypes.ADD_TASK,
     payload: { priority, name, assignee, description, estimate }
@@ -42,5 +42,8 @@ export function addTaskTime(taskName: string, time: number): AddTaskTimeAction {
 // });
 
 export default {
-  setCurrentTask
+  addTask,
+  addTaskTime,
+  removeTask,
+  setCurrentTask,
 };

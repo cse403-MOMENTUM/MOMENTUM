@@ -69,7 +69,7 @@ export interface RemoveProjectAction extends Action {
 export interface AddTaskAction extends Action {
   type: TaskTypes.ADD_TASK;
   payload: {
-      priority: string,
+      priority: number,
       name: string,
       assignee: string,
       description: string,
