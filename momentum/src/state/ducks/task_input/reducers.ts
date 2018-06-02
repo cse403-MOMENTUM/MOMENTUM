@@ -12,8 +12,13 @@ const currentTask = (state: State | undefined = initialState, action: Action): S
       return {
         ...state,
         currentTask: {
-          id: 0,
-          name: action.payload.taskName
+          priority: 0,
+          name: action.payload.taskName,
+          assignee: '',
+          description: '',
+          seconds_spent: 0,
+          progress: 0,
+          estimate: 0
         }
       };
     default:

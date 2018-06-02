@@ -10,8 +10,13 @@ export interface State {
 
 export const initialState: State = {
   currentTask: {
-    id: 0,
-    name: ''
+    priority: 0,
+    name: '',
+    assignee: '',
+    description: '',
+    seconds_spent: 0,
+    progress: 0,
+    estimate: 0
   },
   tasks: fromTasks.initialState,
   currentProject: {
