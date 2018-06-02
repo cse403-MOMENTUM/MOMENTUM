@@ -5,10 +5,10 @@ export const setCurrentTask = (taskName: string): SetCurrTaskAction => ({
   payload: { taskName }
 });
 
-export function addTask(taskName: string, priority: string, estimation: number, description: string): AddTaskAction {
+export function addTask(priority: string, name: string, assignee: string, estimate: number, description: string): AddTaskAction {
   return {
     type: TaskTypes.ADD_TASK,
-    payload: { taskName, priority, estimation, description }
+    payload: { priority, name, assignee, description, estimate }
   };
 }
 
