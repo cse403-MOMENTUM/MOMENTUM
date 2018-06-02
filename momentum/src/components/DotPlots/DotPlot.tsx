@@ -6,6 +6,7 @@ import * as jStat from 'jstat';
 import * as _ from 'lodash';
 import * as React from 'react';
 import XAxis from './XAxis';
+import XAxisLabel from './XAxisLabel';
 import YAxis from './YAxis';
 
 interface Props {
@@ -33,6 +34,7 @@ class DotPlot extends React.Component<Props, {}> {
   public render() {
     return (
       <g transform={'translate(' + this.props.translate.x + ',' + this.props.translate.y + ')'}>
+        <XAxisLabel width={this.props.width} height={this.props.height}/>
         <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
         <YAxis height={this.props.height} scale={this.props.yScale} />
         {this.plotHistogram()}

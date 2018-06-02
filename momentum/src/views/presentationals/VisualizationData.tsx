@@ -14,7 +14,7 @@ class VisualizationData extends React.Component {
       // width={960} height={450}
       z_limit={4}
       margin={{
-        bottom: 30,
+        bottom: 50,
         left: 50,
         right: 20,
         top: 20
