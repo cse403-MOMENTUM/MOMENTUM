@@ -1,14 +1,52 @@
-import { List } from 'immutable';
+// import { List } from 'immutable';
 
 export interface Task {
-  id: number;
+  priority: number;
   name: string;
+  assignee: string;
+  description: string;
+  seconds_spent: number;
+  progress: number; // out of 100
+  estimate: number; // in seconds
+  isComplete: boolean;
 }
 
 export interface State {
-  tasks: List<Task>;
+  // tasks: List<Task>;
+  tasks: Task[];
 }
 
 export const initialState: State = {
-  tasks: List()
+  tasks: [
+    {
+      priority: 4,
+      name: 'Create velocity calculator',
+      assignee: 'Austin Ha',
+      description: 'Creating the velocity calculator for EBS.',
+      seconds_spent: 18603,
+      progress: 50,
+      estimate: 8,
+      isComplete: false
+    },
+    {
+      priority: 5,
+      name: 'Add routing features',
+      assignee: 'Anita Leung',
+      description: 'Allow routing in order to navigate between pages.',
+      seconds_spent: 46930,
+      progress: 20,
+      estimate: 3,
+      isComplete: false
+    },
+    {
+      priority: 2,
+      name: 'Upgrade dotpot visualization to D3 V5',
+      assignee: 'Josh Pollock',
+      description: 'Add visualization graphs representing project time estimations.',
+      seconds_spent: 63645,
+      progress: 80,
+      estimate: 3,
+      isComplete: false
+    }
+  ]
 };

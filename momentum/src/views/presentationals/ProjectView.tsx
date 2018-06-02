@@ -10,9 +10,26 @@ import VisualizationData from './VisualizationData';
 
 // import logo from '../data/logo.svg';
 
-class ProjectView extends React.Component<{}, {}> {
+interface ReactTask {
+  priority: number;
+  name: string;
+  assignee: string;
+  description: string;
+  hours_spent: number;
+  minutes_spent: number;
+  seconds_spent: number;
+  progress: number;
+  estimate: number;
+  isComplete: boolean;
+}
 
-  constructor(props: {}) {
+interface Props {
+  tasks: ReactTask[];
+}
+
+class ProjectView extends React.Component<Props, {}> {
+
+  constructor(props: Props) {
     super(props);
   }
 
@@ -37,7 +54,7 @@ class ProjectView extends React.Component<{}, {}> {
             </Modal.Content>
           </Modal>
           <Icon name="close" inverted={true} circular={true} color="yellow" size="small" id="delete-task-button"/>
-          <ProjectTaskTable />
+          <ProjectTaskTable tasks={this.props.tasks} />
           <VisualizationData />
         </Container>
       </div>

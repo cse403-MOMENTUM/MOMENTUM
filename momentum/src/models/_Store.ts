@@ -6,12 +6,27 @@ export interface State {
   tasks: fromTasks.State;
   currentProject: fromProject.Project;
   projects: fromProject.State;
+  // TODO: switch to this
+  /* tasks: {
+    currentTask: fromTasks.Task;
+    tasks: fromTasks.Task[];
+  };
+  projects: {
+    currentProject: fromTasks.Task;
+    projects: fromTasks.Task[];
+  }; */
 }
 
 export const initialState: State = {
   currentTask: {
-    id: 0,
-    name: ''
+    priority: 0,
+    name: '',
+    assignee: '',
+    description: '',
+    seconds_spent: 0,
+    progress: 0,
+    estimate: 0,
+    isComplete: false
   },
   tasks: fromTasks.initialState,
   currentProject: {
@@ -20,5 +35,5 @@ export const initialState: State = {
     memberCount: 0,
     description: ''
   },
-  projects: fromProject.initialState
+  projects: fromProject.initialState,
 };

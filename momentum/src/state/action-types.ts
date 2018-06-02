@@ -43,6 +43,7 @@ export const enum TaskTypes {
 export interface AddProjectAction extends Action {
   type: TaskTypes.ADD_PROJECT;
   payload: {
+      id: number,
       projectName: string,
       projectDescription: string,
       projectMemberCount: number
@@ -69,10 +70,11 @@ export interface RemoveProjectAction extends Action {
 export interface AddTaskAction extends Action {
   type: TaskTypes.ADD_TASK;
   payload: {
-      taskName: string,
-      priority: string,
-      estimation: number,
-      description: string
+      priority: number,
+      name: string,
+      assignee: string,
+      description: string,
+      estimate: number
   };
 }
 
