@@ -5,10 +5,10 @@ export const setCurrentProject = (projectName: string, projectDescription: strin
   payload: { projectName, projectDescription, projectMemberCount }
 });
 
-export function addProject(projectName: string, projectDescription: string, projectMemberCount: number): AddProjectAction {
+export function addProject(id: number, projectName: string, projectDescription: string, projectMemberCount: number): AddProjectAction {
   return {
     type: TaskTypes.ADD_PROJECT,
-    payload: { projectName, projectDescription, projectMemberCount }
+    payload: { id, projectName, projectDescription, projectMemberCount }
   };
 }
 
@@ -30,5 +30,7 @@ export function removeProject(projectName: string): RemoveProjectAction {
 // });
 
 export default {
+  addProject,
+  removeProject,
   setCurrentProject
 };

@@ -1,26 +1,32 @@
 import * as React from 'react';
+// import { InjectedFormProps } from 'redux-form';
 import { Form } from 'semantic-ui-react';
-// import { Task } from 'src/models/Task';
 import '../../styles/ProjectInput.css';
 
-// import logo from '../data/logo.svg';
-
 // interface Props {
-//   // currentTask: Task;
+//   // tslint:disable-next-line:no-any
+//   projectInputs: (values: any) => void;
 //   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
-//   handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
+//   // handleOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
 // }
 
+// interface ProjectInputs {
+//   name: string;
+// }
+
+// class ProjectInput extends React.Component<InjectedFormProps<ProjectInputs> & Props, {}> {
 class ProjectInput extends React.Component<{}, {}> {
   // constructor(props: Props) {
   //   super(props);
   // }
 
   public render() {
+    // const { handleSubmit } = this.props;
+
    return (
     <div className="project-input">
+     {/* <Form onSubmit={ handleSubmit(this.props.projectInputs) }> */}
      <Form>
-
       <Form.Input
        fluid={true}
        label="Project Name"
