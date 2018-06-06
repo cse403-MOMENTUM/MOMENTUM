@@ -7,7 +7,7 @@ import * as _ from 'lodash';
 import * as React from 'react';
 import XAxis from './XAxis';
 import XAxisLabel from './XAxisLabel';
-import YAxis from './YAxis';
+// import YAxis from './YAxis';
 
 interface Props {
   translate: {x: number, y: number};
@@ -28,7 +28,7 @@ class DotPlot extends React.Component<Props, {}> {
   }
 
   private static getQuantiles(numSamples: number): Array<[number, number]> {
-    return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 0, 1)] as [number, number]);
+    return DotPlot.getSamples(numSamples).map(s => [s, jStat.normal.inv(s, 10, 1)] as [number, number]);
   }
 
   public render() {
@@ -36,7 +36,7 @@ class DotPlot extends React.Component<Props, {}> {
       <g transform={'translate(' + this.props.translate.x + ',' + this.props.translate.y + ')'}>
         <XAxisLabel width={this.props.width} height={this.props.height}/>
         <XAxis width={this.props.width} height={this.props.height} scale={this.props.xScale}/>
-        <YAxis height={this.props.height} scale={this.props.yScale} />
+        {/* <YAxis height={this.props.height} scale={this.props.yScale} /> */}
         {this.plotHistogram()}
       </g>
     );
