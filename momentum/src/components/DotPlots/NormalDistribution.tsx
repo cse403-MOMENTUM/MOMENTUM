@@ -56,7 +56,7 @@ class NormalDistribution extends React.Component<Props, {}> {
 
     return (
       <svg width={paddedWidth} height={paddedHeight}>
-        <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} width={width} height={height} translate={{x: margin.left, y: margin.top}} />
+        {/* <Graph xScale={this.xScale} yScale={this.yScale} numPoints={width} fun={graphFun} width={width} height={height} translate={{x: margin.left, y: margin.top}} /> */}
         <DotPlot
           xScale={this.xScale} yScale={this.yScale}
           samples={20}
