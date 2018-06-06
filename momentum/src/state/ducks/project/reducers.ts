@@ -1,8 +1,8 @@
 // import { combineReducers } from 'redux';
 import { initialState, State } from '../../../models/_Store';
-import { SetCurrProjectAction, TaskTypes } from '../../action-types';
+import { AddProjectAction, SetCurrProjectAction, TaskTypes } from '../../action-types';
 
-type Action = SetCurrProjectAction;
+type Action = SetCurrProjectAction | AddProjectAction;
 
 // TODO: should not receive entire state. just a slice!
 const currentProject = (state: State | undefined = initialState, action: Action): State => {
@@ -22,10 +22,35 @@ const currentProject = (state: State | undefined = initialState, action: Action)
   }
 };
 
+const addProject = (state: State | undefined = initialState, action: Action): State => {
+  switch (action.type) {
+    case TaskTypes.ADD_PROJECT:
+      return {
+        ...state,
+        projects: {
+          projects: [
+            ...state.projects.projects,
+            {
+              id: action.payload.id,
+              name: action.payload.projectName,
+              memberCount: action.payload.projectMemberCount,
+              description: action.payload.projectDescription
+            }
+          ]
+        }
+      };
+    default:
+      return state;
+  }
+};
+
 /* const taskInputReducer = combineReducers({
   currentTask
 }); */
 
-const projectReducer = currentProject;
+// const projectReducer = currentProject;
 
-export default projectReducer;
+export default {
+  addProject,
+  currentProject
+};

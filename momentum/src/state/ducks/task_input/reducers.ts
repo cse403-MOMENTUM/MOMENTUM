@@ -1,19 +1,44 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import { initialState, State } from '../../../models/_Store';
-import { SetCurrTaskAction, TaskTypes } from '../../action-types';
+import { initialState, /* State */ } from '../../../models/_Store';
+import { AddTaskAction, SetCurrTaskAction, TaskTypes } from '../../action-types';
 
-type Action = SetCurrTaskAction;
+type Action = SetCurrTaskAction | AddTaskAction;
 
 // TODO: should not receive entire state. just a slice!
-const currentTask = (state: State | undefined = initialState, action: Action): State => {
+// tslint:disable-next-line:no-any
+const tasks = (state: any | undefined = initialState, action: Action): any => {
   switch (action.type) {
     case TaskTypes.SET_CURRENT_TASK:
       return {
         ...state,
         currentTask: {
-          id: 0,
-          name: action.payload.taskName
+          assignee: '',
+          description: '',
+          estimate: 0,
+          name: action.payload.taskName,
+          priority: 0,
+          progress: 0,
+          seconds_spent: 0,
+        }
+      };
+    case TaskTypes.ADD_TASK:
+      return {
+        ...state,
+        tasks: {
+          tasks:
+          [
+            ...state.tasks.tasks,
+            {
+              assignee: action.payload.assignee,
+              description: action.payload.description,
+              estimate: action.payload.estimate,
+              name: action.payload.name,
+              priority: action.payload.priority,
+              progress: 0,
+              seconds_spent: 0,
+            }
+          ]
         }
       };
     default:
@@ -21,13 +46,9 @@ const currentTask = (state: State | undefined = initialState, action: Action): S
   }
 };
 
-/* const taskInputReducer = combineReducers({
-  currentTask
-}); */
-
 const taskInputReducer = combineReducers({
-  currentTask,
-  form: formReducer
+  form: formReducer,
+  tasks
 });
 
 export default taskInputReducer;

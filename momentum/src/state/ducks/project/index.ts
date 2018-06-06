@@ -1,7 +1,7 @@
-import taskInputReducer from './reducers';
+import projectReducer from './reducers';
 
-export { default as taskInputActionCreators } from './action-creators';
-export { default as taskInputOperations } from './operations';
-export { default as taskInputSelectors } from './selectors';
+export { default as projectActionCreators } from './action-creators';
+export { default as projectOperations } from './operations';
+export { default as projectSelectors } from './selectors';
 
-export default taskInputReducer;
+export default projectReducer;

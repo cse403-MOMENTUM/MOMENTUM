@@ -6,7 +6,7 @@ class VisualizationData extends React.Component {
 
  public render() {
    return (
-    <Grid className="datavis">
+    <Grid className="VisualizationData">
      <Grid.Row>
       <Grid.Column width={7}>
       <NormalDistribution
@@ -14,7 +14,7 @@ class VisualizationData extends React.Component {
       // width={960} height={450}
       z_limit={4}
       margin={{
-        bottom: 30,
+        bottom: 50,
         left: 50,
         right: 20,
         top: 20
@@ -23,8 +23,7 @@ class VisualizationData extends React.Component {
       <Grid.Column width={9} className="description middle aligned">
        <div className="ui align">
         <Header as="h4">Project Data Visualization</Header>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong.
-         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+        <p>To the left is a dot plot visualization of how many more hours we think your project will take to complete. Each dot represents a 1 in 20 chance that your project will be completed in about the number of hours labeled on the x-axis.
          </p>
         </div>
       </Grid.Column>
